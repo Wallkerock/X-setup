@@ -7,6 +7,6 @@ This repository contain configuration files for three tiling window managers:
 
 Repository contain also few types panels:
 
-- basic <b>i3status</b>
-- <b>i3pystatus</b> which is more configurable and extensible status bar for i3wm
-- <b>polybar</b> highly customizable universal bar for many windowm managers
+- basic <a href="https://i3wm.org/i3status/manpage.html">i3status</a>
+- <a href="https://github.com/enkore/i3pystatus">i3pystatus</a> which is more configurable and extensible status bar for i3wm
+- <a href="https://github.com/polybar/polybar">polybar</a> highly customizable universal bar for many windowm managers
