@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Power Menu
+Exec=bash -c 'sh ~/.scripts/power-menu.sh &'
+Icon=system-log-out
+Terminal=false
+Categories=System;start;
+Comment=Shutdown Menu
+Name[en_US.utf8]=Power Menu

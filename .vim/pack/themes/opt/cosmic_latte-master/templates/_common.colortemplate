@@ -1,0 +1,133 @@
+# general ui (neutral colors) ------------------------------------------
+
+# regular text
+Bold               none   none   bold
+Conceal            none   none
+Directory          none   none   bold
+EndOfBuffer        none   none
+FoldColumn         gry3   none
+Ignore             none   none
+Italic             none   none   italic
+ModeMsg            none   none
+MoreMsg            none   none
+NonText            none   none
+Normal             gry3   gry0
+Question           none   none
+SignColumn         gry3   none
+Terminal           none   none
+Title              none   none   bold
+Underlined         none   none   underline
+
+# comment text
+Comment            gry2   none
+CursorLineNr       gry2   none
+LineNr             gry2   none
+
+# highlighting - light
+ColorColumn        none   gry1
+CursorColumn       none   gry1
+CursorLine         none   gry1
+DiffChange         none   gry1
+Folded             none   gry1
+Pmenu              gry3   gry1
+QuickFixLine       none   gry1
+StatusLineNC       gry3   gry1
+StatusLineTermNC   gry3   gry1
+TabLine            gry3   gry1
+ToolbarButton      gry3   gry1   bold
+VisualNOS          gry3   gry1
+WildMenu           gry3   gry1
+
+# highlighting - medium
+PmenuSel           gry3   gry0   reverse
+StatusLine         gry3   gry0   reverse
+StatusLineTerm     gry3   gry0   reverse
+TabLineSel         gry3   gry0   reverse
+
+# highlighting - strong
+Cursor             gryc   gry0   reverse
+MatchParen         gryc   gryp
+Visual             gryc   gryp
+
+# solid lines
+PmenuSbar          gryp   gryp
+PmenuThumb         gry3   gry3
+TabLineFill        gry1   gry1
+ToolbarLine        gry1   gry1
+VertSplit          gry1   gry1
+
+# spellcheck
+SpellBad           none   none   g=undercurl   s=sprd   t=underline
+SpellCap           none   none   g=undercurl   s=spbl   t=underline
+SpellLocal         none   none   g=undercurl   s=spcy   t=underline
+SpellRare          none   none   g=undercurl   s=spmg   t=underline
+
+# lexical highlighting (bright colors) ---------------------------------
+
+# types (magenta)
+StorageClass       mgnt   none
+Structure          mgnt   none
+Type               mgnt   none
+Typedef            mgnt   none
+
+# warnings (reverse magenta)
+TooLong            mgnt   gry0   reverse
+WarningMsg         mgnt   gry0   reverse
+
+# names (red)
+Function           red_   none
+Identifier         red_   none
+
+# errors, diff removals (reverse red)
+DiffDelete         red_   gry0   reverse
+DiffRemoved        red_   gry0   reverse
+Error              red_   gry0   reverse
+ErrorMsg           red_   gry0   reverse
+
+# specials (gold)
+Debug              gold   none
+Delimiter          gold   none
+Special            gold   none
+SpecialChar        gold   none
+SpecialComment     gold   none
+SpecialKey         gold   none
+Tag                gold   none
+
+# search matches, diff changes (reverse gold)
+DiffChanged        gold   gry0   reverse
+DiffText           gold   gry0   reverse
+Search             srch   grys   reverse
+
+# statements (green)
+Conditional        gren   none
+Exception          gren   none
+Keyword            gren   none
+Label              gren   none
+Operator           gren   none
+Repeat             gren   none
+Statement          gren   none
+
+# diff additions (reverse green)
+DiffAdd            gren   gry0   reverse
+DiffAdded          gren   gry0   reverse
+
+# meta-statements (cyan)
+Define             cyan   none
+Include            cyan   none
+Macro              cyan   none
+PreCondit          cyan   none
+PreProc            cyan   none
+
+# todos (reverse cyan)
+Todo               cyan   gry0   reverse
+
+# constants (blue)
+Boolean            blue   none
+Character          blue   none
+Constant           blue   none
+Float              blue   none
+Number             blue   none
+String             blue   none
+
+# incremental search (reverse blue)
+IncSearch          blue   gry0   reverse

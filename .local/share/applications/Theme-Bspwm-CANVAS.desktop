@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Canvas
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_canvas.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm canvas
+Name[en_US.utf8]=Theme Bspwm Canvas

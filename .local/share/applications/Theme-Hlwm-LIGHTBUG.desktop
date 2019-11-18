@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Herbstluftwm LightBug
+Exec=bash -c 'sh ~/.scripts/themes/herbstluftwm_lightbug.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme herbstluftwm lightbug
+Name[en_US.utf8]=Theme Herbstluftwm LightBug

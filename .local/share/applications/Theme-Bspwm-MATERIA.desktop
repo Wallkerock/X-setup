@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Materia
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_materia.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm materia
+Name[en_US.utf8]=Theme Bspwm Materia

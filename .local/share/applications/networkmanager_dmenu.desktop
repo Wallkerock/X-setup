@@ -1,0 +1,7 @@
+[Desktop Entry]
+Categories=Settings;Network;
+Name=Networkmanager
+GenericName=dmenu networkmanager
+Exec=networkmanager_dmenu
+Icon=network-workgroup
+Type=Application

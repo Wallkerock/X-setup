@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Canvas Polybar
+Exec=bash -c 'sh ~/.scripts/theme-canvas-polybar.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=Vertex theme i3wm
+Name[en_US.utf8]=Theme Canvas Polybar

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Dark Orange
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_dark_orange.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm dark orange
+Name[en_US.utf8]=Theme Bspwm Dark Orange

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=i3wm Azul Polybar Titlebar
+Exec=bash -c 'sh ~/.scripts/themes/i3wm_azul_polybar_titlebar.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme i3wm azul polybar titlebar
+Name[en_US.utf8]=Theme i3wm Azul Polybar Titlebar

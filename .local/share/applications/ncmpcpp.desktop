@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=ncmpcpp
+Exec=bash -c 'urxvt -e ncmpcpp'
+#Exec=bash -c 'xfce4-terminal -e ncmpcpp'
+Icon=bomi
+Terminal=false
+Categories=Audio;server;media;start;
+Comment=Media sever started
+Name[en_US.utf8]=Ncmpcpp - MPD Music Player

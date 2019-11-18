@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Minidlna Stop
+Exec=bash -c 'sh ~/.scripts/minidlna-stop.sh'
+Icon=stop
+Terminal=false
+Categories=server;media;stop;
+Comment=Media sever started
+Name[en_US.utf8]=Minidlna Stop

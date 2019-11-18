@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Canvas Herbstluftwm
+Exec=bash -c 'sh ~/.scripts/theme-canvas-herbstluftwm.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=Vertex theme i3wm
+Name[en_US.utf8]=Theme Canvas Herbstluftwm

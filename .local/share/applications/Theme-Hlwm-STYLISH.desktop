@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Herbstluftwm Stylish
+Exec=bash -c 'sh ~/.scripts/themes/hlwm_stylish.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme herbstluftwm stylish
+Name[en_US.utf8]=Theme Herbstluftwm Stylish

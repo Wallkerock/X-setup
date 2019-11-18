@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=ranger
+Comment=Launches the ranger file manager
+Icon=utilities-terminal
+Terminal=false
+Exec=bash -c 'sh ~/.scripts/applications/ranger.sh'
+Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;
+Name[en_US]=ranger

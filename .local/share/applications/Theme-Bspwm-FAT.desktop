@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Fat
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_fat.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm fat
+Name[en_US.utf8]=Theme Bspwm Fat
