@@ -12,4 +12,4 @@ Repository contain also configuration files for these panels:
 - <a href="https://github.com/polybar/polybar">polybar</a> - highly customizable universal bar for many window managers
 
 
-<img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/2019-11-12-192820_1920x1080_scrot.png">
+<img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-polybar.png">
