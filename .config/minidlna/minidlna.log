@@ -1,0 +1,1544 @@
+[2018/02/09 00:24:49] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/09 00:24:49] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/09 00:24:49] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/09 00:24:49] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/09 00:24:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (4 files)!
+[2018/02/09 00:24:49] playlist.c:135: warn: Parsing playlists...
+[2018/02/09 00:24:49] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/09 00:24:50] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/09 00:25:11] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/09 00:26:08] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/09 00:26:08] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/09 00:26:08] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/09 00:26:08] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/09 00:26:08] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (4 files)!
+[2018/02/09 00:26:08] playlist.c:135: warn: Parsing playlists...
+[2018/02/09 00:26:08] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/09 00:26:09] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/09 00:26:15] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/09 12:15:09] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/09 12:15:09] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/09 12:15:09] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/09 12:15:09] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/09 12:15:09] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (4 files)!
+[2018/02/09 12:15:09] playlist.c:135: warn: Parsing playlists...
+[2018/02/09 12:15:09] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/09 12:15:10] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/09 12:15:20] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/11 20:21:53] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/11 20:21:53] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/11 20:21:53] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/11 20:21:53] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/11 20:21:54] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (15 files)!
+[2018/02/11 20:21:54] playlist.c:135: warn: Parsing playlists...
+[2018/02/11 20:21:54] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/11 20:21:54] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [6] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/11 20:22:00] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/13 00:31:28] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/13 00:31:28] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/13 00:31:28] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/13 00:31:28] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/13 00:31:29] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (27 files)!
+[2018/02/13 00:31:29] playlist.c:135: warn: Parsing playlists...
+[2018/02/13 00:31:29] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/13 00:31:30] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [18] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/13 00:31:35] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/14 18:46:02] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/14 18:46:02] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/14 18:46:02] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/14 18:46:02] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/14 18:46:03] metadata.c:697: warn: Opening /home/lubomir/Videos/Kleopatra _ Cleopatra 1963, CZ.avi failed! [Invalid data found when processing input]
+[2018/02/14 18:46:03] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Videos/Kleopatra _ Cleopatra 1963, CZ.avi
+[2018/02/14 18:46:04] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (31 files)!
+[2018/02/14 18:46:04] playlist.c:135: warn: Parsing playlists...
+[2018/02/14 18:46:04] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/14 18:46:05] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [19] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/14 18:46:09] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/16 20:16:18] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/16 20:16:18] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/16 20:16:18] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/16 20:16:18] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/16 20:16:20] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (32 files)!
+[2018/02/16 20:16:20] playlist.c:135: warn: Parsing playlists...
+[2018/02/16 20:16:20] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/16 20:16:21] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [18] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/16 20:16:26] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/19 07:14:08] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/19 07:14:08] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/19 07:14:08] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/19 07:14:08] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/19 07:14:10] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (35 files)!
+[2018/02/19 07:14:10] playlist.c:135: warn: Parsing playlists...
+[2018/02/19 07:14:10] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/19 07:14:11] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [19] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/19 07:14:16] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/19 10:02:43] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/19 10:02:43] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/19 10:02:43] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/19 10:02:43] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/19 10:02:46] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (35 files)!
+[2018/02/19 10:02:46] playlist.c:135: warn: Parsing playlists...
+[2018/02/19 10:02:46] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/19 10:02:46] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [19] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/19 10:02:57] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/22 22:03:42] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/22 22:03:42] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/22 22:03:42] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/22 22:03:42] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/22 22:03:44] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (35 files)!
+[2018/02/22 22:03:44] playlist.c:135: warn: Parsing playlists...
+[2018/02/22 22:03:44] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/22 22:03:45] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [19] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/22 22:03:51] minidlna.c:155: warn: received signal 15, good-bye
+[2018/02/24 20:04:05] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/02/24 20:04:05] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/02/24 20:04:05] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/02/24 20:04:05] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/02/24 20:04:08] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (35 files)!
+[2018/02/24 20:04:08] playlist.c:135: warn: Parsing playlists...
+[2018/02/24 20:04:08] playlist.c:269: warn: Finished parsing playlists.
+[2018/02/24 20:04:08] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [19] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/02/24 20:04:11] minidlna.c:155: warn: received signal 15, good-bye
+[2018/03/01 08:58:08] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/03/01 08:58:08] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/03/01 08:58:08] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/03/01 08:58:09] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/03/01 08:58:12] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (46 files)!
+[2018/03/01 08:58:12] playlist.c:135: warn: Parsing playlists...
+[2018/03/01 08:58:12] playlist.c:269: warn: Finished parsing playlists.
+[2018/03/01 08:58:12] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [25] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/03/01 08:58:15] minidlna.c:155: warn: received signal 15, good-bye
+[2018/03/11 20:50:38] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/03/11 20:50:38] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/03/11 20:50:38] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/03/11 20:50:38] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/03/11 20:50:42] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (52 files)!
+[2018/03/11 20:50:42] playlist.c:135: warn: Parsing playlists...
+[2018/03/11 20:50:42] playlist.c:269: warn: Finished parsing playlists.
+[2018/03/11 20:50:43] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [27] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/03/11 20:50:46] minidlna.c:155: warn: received signal 15, good-bye
+[2018/03/29 22:33:09] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/03/29 22:33:09] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/03/29 22:33:09] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/03/29 22:33:09] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/03/29 22:33:14] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (54 files)!
+[2018/03/29 22:33:14] playlist.c:135: warn: Parsing playlists...
+[2018/03/29 22:33:14] playlist.c:269: warn: Finished parsing playlists.
+[2018/03/29 22:33:14] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [26] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/03/29 22:33:21] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/13 20:15:20] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/13 20:15:20] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/13 20:15:20] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/13 20:15:20] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/13 20:15:25] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (62 files)!
+[2018/04/13 20:15:25] playlist.c:135: warn: Parsing playlists...
+[2018/04/13 20:15:25] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/13 20:15:26] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [33] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/13 20:15:45] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 11:47:01] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 11:47:01] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 11:47:01] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 11:47:01] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 11:47:06] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (69 files)!
+[2018/04/22 11:47:06] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 11:47:06] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 11:47:07] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [40] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 12:02:27] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 12:02:33] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 12:02:33] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 12:02:33] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 12:02:33] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 12:02:36] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (69 files)!
+[2018/04/22 12:02:36] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 12:02:36] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 12:02:36] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [40] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 12:03:51] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 12:04:00] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 12:04:00] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 12:04:00] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 12:04:00] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 12:04:03] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (69 files)!
+[2018/04/22 12:04:03] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 12:04:03] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 12:04:03] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [40] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 12:05:22] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 12:05:29] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 12:05:29] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 12:05:29] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 12:05:29] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 12:05:32] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (69 files)!
+[2018/04/22 12:05:32] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 12:05:32] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 12:05:32] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [40] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 12:06:41] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 12:06:46] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 12:06:46] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 12:06:46] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 12:06:46] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 12:06:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (69 files)!
+[2018/04/22 12:06:49] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 12:06:49] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 12:06:49] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [40] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 12:17:20] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 12:18:58] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 12:18:58] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 12:18:58] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 12:18:58] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 12:19:01] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (69 files)!
+[2018/04/22 12:19:01] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 12:19:01] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 12:19:01] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [40] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 13:03:32] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 13:03:50] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 13:03:50] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 13:03:50] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 13:03:50] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 13:03:53] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (69 files)!
+[2018/04/22 13:03:53] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 13:03:53] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 13:03:53] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [40] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 14:03:50] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2018/04/22 14:10:05] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 16:44:52] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 16:44:52] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 16:44:52] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 16:44:52] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 16:44:55] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (70 files)!
+[2018/04/22 16:44:55] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 16:44:55] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 16:44:56] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [41] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 16:45:35] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/04/22 16:45:48] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/04/22 17:14:22] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2018/04/22 17:14:22] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2018/04/22 17:23:07] minidlna.c:155: warn: received signal 15, good-bye
+[2018/04/22 17:23:13] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/04/22 17:23:13] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/04/22 17:23:13] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/04/22 17:23:13] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/04/22 17:23:16] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (71 files)!
+[2018/04/22 17:23:16] playlist.c:135: warn: Parsing playlists...
+[2018/04/22 17:23:16] playlist.c:269: warn: Finished parsing playlists.
+[2018/04/22 17:23:16] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [42] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/04/22 17:23:30] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/04/22 20:58:48] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/03 08:33:06] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/03 08:33:06] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/03 08:33:06] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/03 08:33:06] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/03 08:33:13] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (71 files)!
+[2018/05/03 08:33:13] playlist.c:135: warn: Parsing playlists...
+[2018/05/03 08:33:13] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/03 08:33:14] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [43] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/03 08:33:41] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/03 10:01:24] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/04 15:02:32] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/04 15:02:32] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/04 15:02:32] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/04 15:02:32] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/04 15:02:38] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (77 files)!
+[2018/05/04 15:02:38] playlist.c:135: warn: Parsing playlists...
+[2018/05/04 15:02:38] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/04 15:02:39] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [44] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/04 15:03:11] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/04 15:03:38] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (93, '1')
+[2018/05/04 15:04:08] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:09] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:10] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:16] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:16] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:17] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:24] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:24] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:25] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:36] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:36] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:36] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:04:47] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (98, '1')
+[2018/05/04 15:05:54] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (93, '1')
+[2018/05/04 15:06:05] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:06:49] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:06:49] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:07:02] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (93, '1')
+[2018/05/04 15:08:10] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/04 15:14:46] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/07 17:52:27] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/07 17:52:27] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/07 17:52:27] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/07 17:52:27] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/07 17:52:33] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (76 files)!
+[2018/05/07 17:52:33] playlist.c:135: warn: Parsing playlists...
+[2018/05/07 17:52:33] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/07 17:52:34] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [44] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/07 17:59:20] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/07 19:24:01] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (129, '1')
+[2018/05/07 19:24:01] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (129, '1')
+[2018/05/07 19:24:02] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (129, '1')
+[2018/05/07 19:25:28] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/07 19:54:11] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/07 19:54:19] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/07 19:54:19] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/07 19:54:19] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/07 19:54:19] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/07 19:54:24] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (79 files)!
+[2018/05/07 19:54:24] playlist.c:135: warn: Parsing playlists...
+[2018/05/07 19:54:24] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/07 19:54:25] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [47] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/07 19:55:31] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/07 20:44:40] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/09 17:35:23] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/09 17:35:23] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/09 17:35:24] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/09 17:35:24] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/09 17:35:30] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (81 files)!
+[2018/05/09 17:35:30] playlist.c:135: warn: Parsing playlists...
+[2018/05/09 17:35:30] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/09 17:35:31] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [49] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/09 17:36:01] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/09 18:39:59] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/09 19:35:24] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2018/05/09 21:28:36] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/10 16:30:22] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/10 16:30:22] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/10 16:30:22] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/10 16:30:22] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/10 16:30:29] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (82 files)!
+[2018/05/10 16:30:29] playlist.c:135: warn: Parsing playlists...
+[2018/05/10 16:30:29] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/10 16:30:29] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [50] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/10 18:51:23] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/17 17:17:07] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/17 17:17:07] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/17 17:17:07] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/17 17:17:07] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/17 17:17:15] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (86 files)!
+[2018/05/17 17:17:15] playlist.c:135: warn: Parsing playlists...
+[2018/05/17 17:17:15] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/17 17:17:15] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [54] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/17 17:19:12] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/17 18:10:54] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/17 20:23:19] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/18 13:10:02] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/18 13:10:02] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/18 13:10:02] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/18 13:10:02] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/18 13:10:11] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (94 files)!
+[2018/05/18 13:10:11] playlist.c:135: warn: Parsing playlists...
+[2018/05/18 13:10:11] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/18 13:10:11] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [61] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/18 13:16:12] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/18 15:40:55] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/18 18:19:35] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/23 19:43:32] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/23 19:43:32] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/23 19:43:32] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/23 19:43:32] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/23 19:43:41] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (97 files)!
+[2018/05/23 19:43:41] playlist.c:135: warn: Parsing playlists...
+[2018/05/23 19:43:41] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/23 19:43:42] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [64] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/23 19:49:58] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/23 19:56:11] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/23 19:56:11] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/23 19:56:11] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/23 19:56:11] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/23 19:56:16] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (100 files)!
+[2018/05/23 19:56:16] playlist.c:135: warn: Parsing playlists...
+[2018/05/23 19:56:16] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/23 19:56:16] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [64] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/23 19:57:39] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/23 19:58:15] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (123, '1')
+[2018/05/23 19:58:30] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 19:58:36] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 19:58:43] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/23 19:59:05] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 19:59:53] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 20:00:26] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 20:01:04] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 20:01:19] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (122, '1')
+[2018/05/23 20:02:09] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (121, '1')
+[2018/05/23 20:02:35] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 20:03:36] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/23 20:03:40] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/23 20:03:40] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/23 20:03:40] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/23 20:03:40] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/23 20:03:45] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (101 files)!
+[2018/05/23 20:03:45] playlist.c:135: warn: Parsing playlists...
+[2018/05/23 20:03:45] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/23 20:03:45] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [65] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/23 20:03:52] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/23 21:16:32] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (126, '1')
+[2018/05/23 21:16:52] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (125, '1')
+[2018/05/23 21:17:03] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (124, '1')
+[2018/05/23 21:18:01] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/23 21:18:24] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (126, '1')
+[2018/05/23 21:18:41] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2018/05/23 21:54:43] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/27 20:35:51] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/27 20:35:51] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/27 20:35:51] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/27 20:35:51] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/27 20:36:00] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (103 files)!
+[2018/05/27 20:36:00] playlist.c:135: warn: Parsing playlists...
+[2018/05/27 20:36:00] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/27 20:36:01] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [67] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/27 20:36:51] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/27 21:51:47] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (105, '1')
+[2018/05/27 22:34:59] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/29 12:53:20] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/29 12:53:20] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/29 12:53:20] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/29 12:53:20] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/29 12:53:30] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (103 files)!
+[2018/05/29 12:53:30] playlist.c:135: warn: Parsing playlists...
+[2018/05/29 12:53:30] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/29 12:53:30] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [67] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/29 12:53:33] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/29 12:54:46] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/29 12:54:58] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/29 12:54:58] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/29 12:54:58] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/29 12:54:58] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/05/29 12:55:03] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (105 files)!
+[2018/05/29 12:55:03] playlist.c:135: warn: Parsing playlists...
+[2018/05/29 12:55:03] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/29 12:55:03] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [76] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/29 12:55:11] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/29 12:56:13] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/29 12:57:05] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/29 12:57:05] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/29 12:57:05] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/29 12:57:12] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Pictures/Danniella-Levy-Giant-Tits-Wallpaper.jpg
+[2018/05/29 12:57:19] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Pictures/wallpapers/lusciousnet_black_and_white_773287330.jpg
+[2018/05/29 12:57:19] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Pictures/wallpapers/tumblr_nzbz2xRlzT1ubsampo1_1280.jpg
+[2018/05/29 12:57:20] playlist.c:135: warn: Parsing playlists...
+[2018/05/29 12:57:20] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/29 12:57:21] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [115] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/29 12:57:34] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/29 13:01:51] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/29 13:01:57] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/29 13:01:57] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/29 13:01:57] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/29 13:02:02] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Pictures/wallpapers/lusciousnet_black_and_white_773287330.jpg
+[2018/05/29 13:02:02] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Pictures/wallpapers/tumblr_nzbz2xRlzT1ubsampo1_1280.jpg
+[2018/05/29 13:02:02] playlist.c:135: warn: Parsing playlists...
+[2018/05/29 13:02:02] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/29 13:02:02] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [77] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/29 13:07:12] minidlna.c:155: warn: received signal 15, good-bye
+[2018/05/29 13:07:17] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/05/29 13:07:17] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/05/29 13:07:17] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/05/29 13:07:22] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Pictures/wallpapers/lusciousnet_black_and_white_773287330.jpg
+[2018/05/29 13:07:22] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Pictures/wallpapers/tumblr_nzbz2xRlzT1ubsampo1_1280.jpg
+[2018/05/29 13:07:27] playlist.c:135: warn: Parsing playlists...
+[2018/05/29 13:07:27] playlist.c:269: warn: Finished parsing playlists.
+[2018/05/29 13:07:27] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [470] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/05/29 13:22:56] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/05/29 13:24:35] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:27:59] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:27:59] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:28:00] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:28:54] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:35:18] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (642, '1')
+[2018/05/29 13:38:18] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:38:18] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:38:19] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/05/29 13:54:45] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (654, '1')
+[2018/05/29 13:57:02] minidlna.c:155: warn: received signal 15, good-bye
+[2018/06/27 16:57:37] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/06/27 16:57:37] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/06/27 16:57:37] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/06/27 16:57:37] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/06/27 16:57:47] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (117 files)!
+[2018/06/27 16:57:47] playlist.c:135: warn: Parsing playlists...
+[2018/06/27 16:57:47] playlist.c:269: warn: Finished parsing playlists.
+[2018/06/27 16:57:48] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [80] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/06/27 16:58:17] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/06/27 17:42:37] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2018/06/27 17:46:24] minidlna.c:155: warn: received signal 15, good-bye
+[2018/06/27 17:46:24] minidlna.c:173: warn: received signal 1, re-read
+[2018/07/01 12:28:13] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/01 12:28:13] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/01 12:28:13] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/01 12:28:13] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/01 12:28:14] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (7 files)!
+[2018/07/01 12:28:14] playlist.c:135: warn: Parsing playlists...
+[2018/07/01 12:28:14] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/01 12:28:14] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/01 13:05:25] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/01 13:09:00] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/01 13:09:00] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/01 13:09:00] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/01 13:09:00] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/01 13:09:00] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (7 files)!
+[2018/07/01 13:09:00] playlist.c:135: warn: Parsing playlists...
+[2018/07/01 13:09:00] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/01 13:09:01] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2018/07/01 13:09:01] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2018/07/01 13:09:01] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/01 13:09:07] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/01 13:09:11] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/01 13:09:11] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/01 13:09:11] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/01 13:09:11] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/01 13:09:12] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (7 files)!
+[2018/07/01 13:09:12] playlist.c:135: warn: Parsing playlists...
+[2018/07/01 13:09:12] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/01 13:09:12] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2018/07/01 13:09:12] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2018/07/01 13:09:12] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/01 13:09:30] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/01 13:11:08] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/01 13:11:08] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/01 13:11:08] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/01 13:11:08] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/01 13:11:08] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (7 files)!
+[2018/07/01 13:11:08] playlist.c:135: warn: Parsing playlists...
+[2018/07/01 13:11:08] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/01 13:11:09] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2018/07/01 13:11:09] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2018/07/01 13:11:09] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/01 13:11:16] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/01 13:15:21] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/01 13:15:21] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/01 13:15:21] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/01 13:15:21] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/01 13:15:21] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (7 files)!
+[2018/07/01 13:15:21] playlist.c:135: warn: Parsing playlists...
+[2018/07/01 13:15:21] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/01 13:15:21] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2018/07/01 13:15:21] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2018/07/01 13:15:22] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/01 13:15:44] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/01 13:15:52] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/01 13:15:52] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/01 13:15:52] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/01 13:15:52] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/01 13:15:52] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (7 files)!
+[2018/07/01 13:15:52] playlist.c:135: warn: Parsing playlists...
+[2018/07/01 13:15:52] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/01 13:15:52] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2018/07/01 13:15:52] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2018/07/01 13:15:53] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/01 13:16:07] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/01 13:16:31] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/01 13:16:31] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/01 13:16:31] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/01 13:16:31] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/01 13:16:31] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (7 files)!
+[2018/07/01 13:16:31] playlist.c:135: warn: Parsing playlists...
+[2018/07/01 13:16:31] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/01 13:16:31] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2018/07/01 13:16:31] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2018/07/01 13:16:32] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [5] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/01 13:16:39] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/06 17:26:20] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/06 17:26:20] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/06 17:26:20] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/06 17:26:20] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/06 17:26:23] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (26 files)!
+[2018/07/06 17:26:23] playlist.c:135: warn: Parsing playlists...
+[2018/07/06 17:26:23] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/06 17:26:23] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [20] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/06 17:27:07] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/06 17:27:10] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/06 17:27:10] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/06 17:27:10] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/06 17:27:10] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/06 17:27:12] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (26 files)!
+[2018/07/06 17:27:12] playlist.c:135: warn: Parsing playlists...
+[2018/07/06 17:27:12] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/06 17:27:12] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [20] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/06 17:27:19] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/06 17:27:45] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/06 17:27:45] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/06 17:27:45] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/06 17:27:45] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/06 17:27:47] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (26 files)!
+[2018/07/06 17:27:47] playlist.c:135: warn: Parsing playlists...
+[2018/07/06 17:27:47] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/06 17:27:47] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [20] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/06 17:27:59] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/06 17:28:15] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/06 17:28:15] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/06 17:28:15] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/06 17:28:15] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/06 17:28:16] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (26 files)!
+[2018/07/06 17:28:16] playlist.c:135: warn: Parsing playlists...
+[2018/07/06 17:28:16] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/06 17:28:17] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [20] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/06 17:28:46] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/07/06 17:51:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (49, '1')
+[2018/07/06 17:53:11] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (45, '1')
+[2018/07/06 17:55:11] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (46, '1')
+[2018/07/06 17:57:19] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (47, '1')
+[2018/07/06 18:01:07] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (48, '1')
+[2018/07/06 18:01:25] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:01:40] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:02:19] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:03:03] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:03:03] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:03:04] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:03:30] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:03:30] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:04:25] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:05:12] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:08:22] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:09:37] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/07/06 18:11:19] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/07 10:20:31] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/07 10:20:31] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/07 10:20:31] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/07 10:20:31] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/07 10:20:34] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (28 files)!
+[2018/07/07 10:20:34] playlist.c:135: warn: Parsing playlists...
+[2018/07/07 10:20:34] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/07 10:20:35] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [20] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/07 10:25:09] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/07 10:25:26] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/07 10:25:26] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/07 10:25:26] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/07 10:25:26] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/07 10:25:28] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (28 files)!
+[2018/07/07 10:25:28] playlist.c:135: warn: Parsing playlists...
+[2018/07/07 10:25:28] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/07 10:25:28] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [20] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/07 11:03:34] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/30 13:42:01] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/30 13:42:01] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/30 13:42:01] monitor.c:125: error: inotify_add_watch(/home/lubomir/Videos/Barabbas (1961) [1080p] [YTS.AG]) [No such file or directory]
+[2018/07/30 13:42:01] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [20] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/30 13:42:08] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/31 10:52:11] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/31 10:52:11] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/31 10:52:11] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/31 10:52:11] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/31 10:52:15] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (42 files)!
+[2018/07/31 10:52:15] playlist.c:135: warn: Parsing playlists...
+[2018/07/31 10:52:15] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/31 10:52:16] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [27] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/31 10:52:24] minidlna.c:155: warn: received signal 15, good-bye
+[2018/07/31 11:27:39] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/07/31 11:27:39] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/07/31 11:27:39] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/07/31 11:27:39] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/07/31 11:27:40] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (42 files)!
+[2018/07/31 11:27:40] playlist.c:135: warn: Parsing playlists...
+[2018/07/31 11:27:40] playlist.c:269: warn: Finished parsing playlists.
+[2018/07/31 11:27:41] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [27] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/07/31 11:27:48] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/05 12:39:43] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/05 12:39:43] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/05 12:39:43] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/05 12:39:43] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/05 12:39:47] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (44 files)!
+[2018/08/05 12:39:47] playlist.c:135: warn: Parsing playlists...
+[2018/08/05 12:39:47] playlist.c:269: warn: Finished parsing playlists.
+[2018/08/05 12:39:48] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [28] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/08/05 12:40:25] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/08/05 12:41:49] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/08/05 12:42:14] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/08/05 12:43:43] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/05 14:04:29] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/05 14:04:29] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/05 14:04:29] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/05 14:04:29] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/05 14:04:34] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (43 files)!
+[2018/08/05 14:04:34] playlist.c:135: warn: Parsing playlists...
+[2018/08/05 14:04:34] playlist.c:269: warn: Finished parsing playlists.
+[2018/08/05 14:04:35] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [28] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/08/05 14:04:47] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/08/05 15:00:30] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (44, '1')
+[2018/08/05 15:08:12] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/05 15:08:12] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/05 15:08:17] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/05 15:08:17] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/05 15:08:17] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/05 15:08:17] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/05 15:08:18] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (43 files)!
+[2018/08/05 15:08:18] playlist.c:135: warn: Parsing playlists...
+[2018/08/05 15:08:18] playlist.c:269: warn: Finished parsing playlists.
+[2018/08/05 15:08:19] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [28] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/08/05 15:08:41] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/05 18:05:55] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/05 18:05:55] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/05 18:05:55] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/05 18:05:55] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/05 18:05:57] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (43 files)!
+[2018/08/05 18:05:57] playlist.c:135: warn: Parsing playlists...
+[2018/08/05 18:05:57] playlist.c:269: warn: Finished parsing playlists.
+[2018/08/05 18:05:57] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [28] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/08/05 18:06:02] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/13 20:15:45] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/13 20:15:45] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/13 20:15:45] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/13 20:15:45] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/13 20:15:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (46 files)!
+[2018/08/13 20:15:49] playlist.c:135: warn: Parsing playlists...
+[2018/08/13 20:15:49] playlist.c:269: warn: Finished parsing playlists.
+[2018/08/13 20:15:50] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [29] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/08/13 20:15:52] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/14 14:41:25] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/14 14:41:25] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/14 14:41:25] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/14 14:41:25] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/14 14:41:30] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (52 files)!
+[2018/08/14 14:41:30] playlist.c:135: warn: Parsing playlists...
+[2018/08/14 14:41:30] playlist.c:269: warn: Finished parsing playlists.
+[2018/08/14 14:41:30] monitor.c:218: warn: WARNING: Inotify max_user_watches [8192] is low or close to the number of used watches [35] and I do not have permission to increase this limit.  Please do so manually by writing a higher value into /proc/sys/fs/inotify/max_user_watches.
+[2018/08/14 15:15:43] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/08/14 15:18:55] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/08/14 15:18:55] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/08/14 15:19:07] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/08/14 15:50:06] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (77, '1')
+[2018/08/14 15:55:32] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/08/14 16:43:48] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/15 16:11:29] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/15 16:11:29] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/15 16:11:29] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/15 16:11:29] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/15 16:11:34] minidlna.c:155: warn: received signal 15, good-bye
+[2018/08/25 20:17:11] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/08/25 20:17:11] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/08/25 20:17:11] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/08/25 20:17:11] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/08/25 20:17:22] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (50 files)!
+[2018/08/25 20:17:22] playlist.c:135: warn: Parsing playlists...
+[2018/08/25 20:17:22] playlist.c:269: warn: Finished parsing playlists.
+[2018/08/25 20:17:51] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/08/25 20:19:16] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/08/25 20:19:37] minidlna.c:155: warn: received signal 15, good-bye
+[2018/09/03 08:03:09] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/09/03 08:03:09] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/09/03 08:03:09] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/09/03 08:03:09] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/09/03 08:03:15] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (50 files)!
+[2018/09/03 08:03:15] playlist.c:135: warn: Parsing playlists...
+[2018/09/03 08:03:15] playlist.c:269: warn: Finished parsing playlists.
+[2018/09/03 08:03:17] minidlna.c:155: warn: received signal 15, good-bye
+[2018/09/03 11:53:16] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/09/03 11:53:16] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/09/03 11:53:16] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/09/03 11:53:16] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/09/03 11:53:17] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (50 files)!
+[2018/09/03 11:53:17] playlist.c:135: warn: Parsing playlists...
+[2018/09/03 11:53:17] playlist.c:269: warn: Finished parsing playlists.
+[2018/09/03 11:53:27] minidlna.c:155: warn: received signal 15, good-bye
+[2018/09/18 00:09:51] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/09/18 00:09:51] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/09/18 00:09:51] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/09/18 00:09:51] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/09/18 00:09:56] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (48 files)!
+[2018/09/18 00:09:56] playlist.c:135: warn: Parsing playlists...
+[2018/09/18 00:09:56] playlist.c:269: warn: Finished parsing playlists.
+[2018/09/18 00:10:02] minidlna.c:155: warn: received signal 15, good-bye
+[2018/09/19 18:33:55] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/09/19 18:33:55] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/09/19 18:33:56] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/09/19 18:33:56] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/09/19 18:34:00] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (44 files)!
+[2018/09/19 18:34:00] playlist.c:135: warn: Parsing playlists...
+[2018/09/19 18:34:00] playlist.c:269: warn: Finished parsing playlists.
+[2018/09/19 18:34:06] minidlna.c:155: warn: received signal 15, good-bye
+[2018/09/21 13:44:29] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/09/21 13:44:29] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/09/21 13:44:29] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/09/21 13:44:29] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/09/21 13:44:33] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (45 files)!
+[2018/09/21 13:44:33] playlist.c:135: warn: Parsing playlists...
+[2018/09/21 13:44:33] playlist.c:269: warn: Finished parsing playlists.
+[2018/09/21 13:44:39] minidlna.c:155: warn: received signal 15, good-bye
+[2018/09/23 21:06:45] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/09/23 21:06:45] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/09/23 21:06:45] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/09/23 21:06:45] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/09/23 21:06:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (47 files)!
+[2018/09/23 21:06:49] playlist.c:135: warn: Parsing playlists...
+[2018/09/23 21:06:49] playlist.c:269: warn: Finished parsing playlists.
+[2018/09/23 21:06:56] minidlna.c:155: warn: received signal 15, good-bye
+[2018/10/03 07:04:53] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/10/03 07:04:53] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/10/03 07:04:53] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/10/03 07:04:53] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/10/03 07:04:59] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (50 files)!
+[2018/10/03 07:04:59] playlist.c:135: warn: Parsing playlists...
+[2018/10/03 07:04:59] playlist.c:269: warn: Finished parsing playlists.
+[2018/10/03 07:05:01] minidlna.c:155: warn: received signal 15, good-bye
+[2018/10/19 11:04:41] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/10/19 11:04:41] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/10/19 11:04:41] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/10/19 11:04:41] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/10/19 11:04:46] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (52 files)!
+[2018/10/19 11:04:46] playlist.c:135: warn: Parsing playlists...
+[2018/10/19 11:04:46] playlist.c:269: warn: Finished parsing playlists.
+[2018/10/19 11:05:23] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2018/10/19 11:06:33] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:06:55] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:07:16] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:08:42] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:09:48] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:10:26] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (52, '1')
+[2018/10/19 11:10:40] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (53, '1')
+[2018/10/19 11:11:04] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:11:29] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:12:42] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (51, '1')
+[2018/10/19 11:14:48] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (45, '1')
+[2018/10/19 11:16:31] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (45, '1')
+[2018/10/19 11:18:11] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (78, '1')
+[2018/10/19 11:18:11] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (78, '1')
+[2018/10/19 11:18:12] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (78, '1')
+[2018/10/19 11:18:23] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:18:24] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:18:24] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:18] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:18] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:19] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:28] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:28] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:29] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:54] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:55] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:20:55] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:23:37] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (73, '1')
+[2018/10/19 11:23:37] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (73, '1')
+[2018/10/19 11:23:38] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (73, '1')
+[2018/10/19 11:23:44] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:23:44] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:23:45] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:24:12] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:24:12] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:24:13] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:24:48] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:24:48] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:24:49] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:25:15] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:25:16] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:25:16] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 11:25:37] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 12:27:53] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2018/10/19 12:30:44] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (45, '1')
+[2018/10/19 12:48:37] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (45, '1')
+[2018/10/19 12:50:23] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (45, '1')
+[2018/10/19 14:59:48] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/03 17:21:53] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/03 17:21:53] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/03 17:21:53] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/03 17:21:53] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/03 17:21:58] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (55 files)!
+[2018/12/03 17:21:58] playlist.c:135: warn: Parsing playlists...
+[2018/12/03 17:21:58] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/03 17:22:04] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/06 12:01:48] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/06 12:01:48] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/06 12:01:48] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/06 12:01:48] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/06 12:01:53] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (56 files)!
+[2018/12/06 12:01:53] playlist.c:135: warn: Parsing playlists...
+[2018/12/06 12:01:53] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/06 12:01:56] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/06 12:17:09] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/06 12:17:09] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/06 12:17:09] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/06 12:17:09] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/06 12:17:10] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (56 files)!
+[2018/12/06 12:17:10] playlist.c:135: warn: Parsing playlists...
+[2018/12/06 12:17:10] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/06 12:17:39] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/07 09:53:33] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/07 09:53:33] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/07 09:53:33] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/07 09:53:33] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/07 09:53:39] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (56 files)!
+[2018/12/07 09:53:39] playlist.c:135: warn: Parsing playlists...
+[2018/12/07 09:53:39] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/07 09:53:40] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/16 00:01:06] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/16 00:01:06] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/16 00:01:06] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/16 00:01:06] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/16 00:01:11] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (57 files)!
+[2018/12/16 00:01:11] playlist.c:135: warn: Parsing playlists...
+[2018/12/16 00:01:11] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/16 00:01:22] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/16 21:31:14] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/16 21:31:14] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/16 21:31:14] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/16 21:31:14] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/16 21:31:19] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (57 files)!
+[2018/12/16 21:31:19] playlist.c:135: warn: Parsing playlists...
+[2018/12/16 21:31:19] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/16 21:31:25] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/18 13:01:46] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/18 13:01:46] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/18 13:01:46] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/18 13:01:46] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/18 13:01:52] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (57 files)!
+[2018/12/18 13:01:52] playlist.c:135: warn: Parsing playlists...
+[2018/12/18 13:01:52] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/18 13:01:56] minidlna.c:155: warn: received signal 15, good-bye
+[2018/12/30 01:23:06] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2018/12/30 01:23:06] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2018/12/30 01:23:06] minidlna.c:1089: warn: HTTP listening on port 8200
+[2018/12/30 01:23:06] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2018/12/30 01:23:11] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (62 files)!
+[2018/12/30 01:23:11] playlist.c:135: warn: Parsing playlists...
+[2018/12/30 01:23:11] playlist.c:269: warn: Finished parsing playlists.
+[2018/12/30 01:23:15] minidlna.c:155: warn: received signal 15, good-bye
+[2019/01/03 23:39:12] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/01/03 23:39:12] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/01/03 23:39:12] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/01/03 23:39:12] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/01/03 23:39:18] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (67 files)!
+[2019/01/03 23:39:18] playlist.c:135: warn: Parsing playlists...
+[2019/01/03 23:39:18] playlist.c:269: warn: Finished parsing playlists.
+[2019/01/03 23:39:28] minidlna.c:155: warn: received signal 15, good-bye
+[2019/01/06 10:35:38] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/01/06 10:35:38] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/01/06 10:35:38] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/01/06 10:35:38] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/01/06 10:35:44] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (76 files)!
+[2019/01/06 10:35:44] playlist.c:135: warn: Parsing playlists...
+[2019/01/06 10:35:44] playlist.c:269: warn: Finished parsing playlists.
+[2019/01/06 10:35:46] minidlna.c:155: warn: received signal 15, good-bye
+[2019/01/07 20:31:43] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/01/07 20:31:43] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/01/07 20:31:43] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/01/07 20:31:43] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/01/07 20:31:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (77 files)!
+[2019/01/07 20:31:49] playlist.c:135: warn: Parsing playlists...
+[2019/01/07 20:31:49] playlist.c:269: warn: Finished parsing playlists.
+[2019/01/07 20:32:14] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/01/07 21:17:01] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (115, '1')
+[2019/01/07 21:59:13] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (116, '1')
+[2019/01/07 22:01:43] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2019/01/07 22:47:49] minidlna.c:155: warn: received signal 15, good-bye
+[2019/01/26 15:16:19] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/01/26 15:16:19] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/01/26 15:16:19] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/01/26 15:16:19] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/01/26 15:16:25] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (82 files)!
+[2019/01/26 15:16:25] playlist.c:135: warn: Parsing playlists...
+[2019/01/26 15:16:25] playlist.c:269: warn: Finished parsing playlists.
+[2019/01/26 15:17:05] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/01/26 15:17:16] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/01/26 15:34:30] minidlna.c:155: warn: received signal 15, good-bye
+[2019/01/29 18:43:47] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/01/29 18:43:47] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/01/29 18:43:47] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/01/29 18:43:47] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/01/29 18:43:53] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (83 files)!
+[2019/01/29 18:43:53] playlist.c:135: warn: Parsing playlists...
+[2019/01/29 18:43:53] playlist.c:269: warn: Finished parsing playlists.
+[2019/01/29 18:43:59] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/01 09:50:49] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/01 09:50:49] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/01 09:50:49] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/01 09:50:49] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/01 09:51:07] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (85 files)!
+[2019/02/01 09:51:07] playlist.c:135: warn: Parsing playlists...
+[2019/02/01 09:51:07] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/01 09:53:14] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/01 12:54:54] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/01 12:54:54] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/01 12:54:54] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/01 12:54:54] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/01 12:54:57] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (86 files)!
+[2019/02/01 12:54:57] playlist.c:135: warn: Parsing playlists...
+[2019/02/01 12:54:57] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/01 12:55:40] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/02/01 13:29:09] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (27, '1')
+[2019/02/01 13:45:44] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/02/01 13:46:06] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/01 13:46:15] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/01 13:46:15] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/01 13:46:15] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/01 13:46:15] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/01 13:46:17] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (86 files)!
+[2019/02/01 13:46:17] playlist.c:135: warn: Parsing playlists...
+[2019/02/01 13:46:17] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/01 13:47:24] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/02/01 15:48:29] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/12 17:49:41] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/12 17:49:41] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/12 17:49:41] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/12 17:49:41] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/12 17:49:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (93 files)!
+[2019/02/12 17:49:49] playlist.c:135: warn: Parsing playlists...
+[2019/02/12 17:49:49] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/12 17:49:55] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/12 17:51:17] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/12 17:51:17] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/12 17:51:17] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/12 17:51:17] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/12 17:51:19] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (93 files)!
+[2019/02/12 17:51:19] playlist.c:135: warn: Parsing playlists...
+[2019/02/12 17:51:19] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/12 17:51:24] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/14 15:56:42] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/14 15:56:42] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/14 15:56:42] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/14 15:56:42] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/14 15:56:50] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (95 files)!
+[2019/02/14 15:56:50] playlist.c:135: warn: Parsing playlists...
+[2019/02/14 15:56:50] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/14 15:56:53] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/15 18:51:05] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/15 18:51:05] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/15 18:51:05] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/15 18:51:05] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/15 18:51:12] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/15 18:51:12] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/17 13:18:58] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/17 13:18:58] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/17 13:18:58] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/17 13:18:58] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/17 13:19:07] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (95 files)!
+[2019/02/17 13:19:07] playlist.c:135: warn: Parsing playlists...
+[2019/02/17 13:19:07] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/17 13:19:08] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/20 10:21:06] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/20 10:21:07] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/20 10:21:07] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/20 10:21:07] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/20 10:21:15] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (96 files)!
+[2019/02/20 10:21:15] playlist.c:135: warn: Parsing playlists...
+[2019/02/20 10:21:15] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/20 10:21:24] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/20 10:27:52] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/20 10:27:52] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/20 10:27:52] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/20 10:27:52] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/20 10:27:55] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (96 files)!
+[2019/02/20 10:27:55] playlist.c:135: warn: Parsing playlists...
+[2019/02/20 10:27:55] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/20 10:28:04] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/22 10:16:28] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/22 10:16:28] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/22 10:16:28] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/22 10:16:28] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/22 10:16:36] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (96 files)!
+[2019/02/22 10:16:36] playlist.c:135: warn: Parsing playlists...
+[2019/02/22 10:16:36] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/22 10:16:40] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/22 10:56:28] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/22 10:56:28] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/22 10:56:28] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/22 10:56:28] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/22 10:56:30] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (98 files)!
+[2019/02/22 10:56:30] playlist.c:135: warn: Parsing playlists...
+[2019/02/22 10:56:30] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/22 10:56:53] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/02/22 11:30:36] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/22 11:40:53] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/22 11:40:53] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/22 11:40:53] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/22 11:40:53] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/22 11:40:56] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (98 files)!
+[2019/02/22 11:40:56] playlist.c:135: warn: Parsing playlists...
+[2019/02/22 11:40:56] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/22 11:41:06] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/24 14:54:06] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/24 14:54:06] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/24 14:54:06] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/24 14:54:06] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/24 14:54:13] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (94 files)!
+[2019/02/24 14:54:13] playlist.c:135: warn: Parsing playlists...
+[2019/02/24 14:54:13] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/24 14:54:46] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/02/24 16:50:41] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (26, '1')
+[2019/02/24 18:53:31] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (33, '1')
+[2019/02/24 18:55:27] minidlna.c:155: warn: received signal 15, good-bye
+[2019/02/24 19:02:16] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/02/24 19:02:16] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/02/24 19:02:16] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/02/24 19:02:16] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/02/24 19:02:19] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (94 files)!
+[2019/02/24 19:02:19] playlist.c:135: warn: Parsing playlists...
+[2019/02/24 19:02:19] playlist.c:269: warn: Finished parsing playlists.
+[2019/02/24 19:02:27] minidlna.c:155: warn: received signal 15, good-bye
+[2019/03/09 13:28:47] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/03/09 13:28:47] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/03/09 13:28:47] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/03/09 13:28:47] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/03/09 13:28:58] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (95 files)!
+[2019/03/09 13:28:58] playlist.c:135: warn: Parsing playlists...
+[2019/03/09 13:28:58] playlist.c:269: warn: Finished parsing playlists.
+[2019/03/09 13:29:08] minidlna.c:155: warn: received signal 15, good-bye
+[2019/04/09 17:41:11] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/04/09 17:41:12] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/04/09 17:41:12] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/04/09 17:41:12] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/04/09 17:41:22] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (95 files)!
+[2019/04/09 17:41:22] playlist.c:135: warn: Parsing playlists...
+[2019/04/09 17:41:22] playlist.c:269: warn: Finished parsing playlists.
+[2019/04/09 17:41:27] minidlna.c:155: warn: received signal 15, good-bye
+[2019/04/16 18:55:54] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/04/16 18:55:54] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/04/16 18:55:54] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/04/16 18:55:54] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/04/16 18:56:04] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (90 files)!
+[2019/04/16 18:56:04] playlist.c:135: warn: Parsing playlists...
+[2019/04/16 18:56:04] playlist.c:269: warn: Finished parsing playlists.
+[2019/04/16 18:56:13] minidlna.c:155: warn: received signal 15, good-bye
+[2019/04/16 19:53:55] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/04/16 19:53:55] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/04/16 19:53:55] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/04/16 19:53:55] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/04/16 19:53:58] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (90 files)!
+[2019/04/16 19:53:58] playlist.c:135: warn: Parsing playlists...
+[2019/04/16 19:53:58] playlist.c:269: warn: Finished parsing playlists.
+[2019/04/16 19:54:09] minidlna.c:155: warn: received signal 15, good-bye
+[2019/04/29 07:40:05] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/04/29 07:40:05] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/04/29 07:40:05] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/04/29 07:40:05] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/04/29 07:40:13] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (90 files)!
+[2019/04/29 07:40:13] playlist.c:135: warn: Parsing playlists...
+[2019/04/29 07:40:13] playlist.c:269: warn: Finished parsing playlists.
+[2019/04/29 07:40:43] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/04/29 07:48:04] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2019/04/29 07:48:12] minidlna.c:155: warn: received signal 15, good-bye
+[2019/04/29 19:51:08] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/04/29 19:51:08] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/04/29 19:51:08] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/04/29 19:51:08] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/04/29 19:51:17] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (93 files)!
+[2019/04/29 19:51:17] playlist.c:135: warn: Parsing playlists...
+[2019/04/29 19:51:17] playlist.c:269: warn: Finished parsing playlists.
+[2019/04/29 19:51:32] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/04/29 22:25:28] minidlna.c:155: warn: received signal 15, good-bye
+[2019/05/03 14:23:58] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/05/03 14:23:58] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/05/03 14:23:58] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/05/03 14:23:58] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/05/03 14:24:03] metadata.c:697: warn: Opening /home/lubomir/Videos/Princezna.Mononoke.1997.SDTV.x264-PiP.mkv failed! [Invalid data found when processing input]
+[2019/05/03 14:24:03] scanner.c:490: warn: Unsuccessful getting details for /home/lubomir/Videos/Princezna.Mononoke.1997.SDTV.x264-PiP.mkv
+[2019/05/03 14:24:07] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (94 files)!
+[2019/05/03 14:24:07] playlist.c:135: warn: Parsing playlists...
+[2019/05/03 14:24:07] playlist.c:269: warn: Finished parsing playlists.
+[2019/05/03 14:36:05] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/05/03 14:36:24] minidlna.c:155: warn: received signal 15, good-bye
+[2019/05/05 12:57:37] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/05/05 12:57:37] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/05/05 12:57:37] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/05/05 12:57:37] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/05/05 12:57:46] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (94 files)!
+[2019/05/05 12:57:46] playlist.c:135: warn: Parsing playlists...
+[2019/05/05 12:57:46] playlist.c:269: warn: Finished parsing playlists.
+[2019/05/05 12:58:42] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/05/05 14:32:27] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (28, '1')
+[2019/05/05 14:32:27] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (28, '1')
+[2019/05/05 14:32:28] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (28, '1')
+[2019/05/05 14:32:52] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/05/05 14:32:52] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/05/05 14:32:52] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/05/05 15:18:35] minidlna.c:155: warn: received signal 15, good-bye
+[2019/05/05 15:18:49] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/05/05 15:18:49] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/05/05 15:18:49] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/05/05 15:18:49] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/05/05 15:18:53] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (94 files)!
+[2019/05/05 15:18:53] playlist.c:135: warn: Parsing playlists...
+[2019/05/05 15:18:53] playlist.c:269: warn: Finished parsing playlists.
+[2019/05/05 15:19:24] minidlna.c:155: warn: received signal 15, good-bye
+[2019/05/28 16:19:05] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/05/28 16:19:05] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/05/28 16:19:05] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/05/28 16:19:05] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/05/28 16:19:14] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (97 files)!
+[2019/05/28 16:19:14] playlist.c:135: warn: Parsing playlists...
+[2019/05/28 16:19:14] playlist.c:269: warn: Finished parsing playlists.
+[2019/05/28 16:24:00] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/05/28 18:40:40] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (37, '1')
+[2019/05/28 18:41:10] minidlna.c:155: warn: received signal 15, good-bye
+[2019/05/29 14:35:22] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/05/29 14:35:22] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/05/29 14:35:22] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/05/29 14:35:22] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/05/29 14:35:31] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (98 files)!
+[2019/05/29 14:35:31] playlist.c:135: warn: Parsing playlists...
+[2019/05/29 14:35:31] playlist.c:269: warn: Finished parsing playlists.
+[2019/05/29 14:36:03] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/05/29 14:50:07] minidlna.c:155: warn: received signal 15, good-bye
+[2019/05/29 15:48:45] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/05/29 15:48:45] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/05/29 15:48:45] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/05/29 15:48:45] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/05/29 15:48:47] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (99 files)!
+[2019/05/29 15:48:47] playlist.c:135: warn: Parsing playlists...
+[2019/05/29 15:48:47] playlist.c:269: warn: Finished parsing playlists.
+[2019/05/29 15:49:00] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/05/29 17:21:25] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (41, '1')
+[2019/05/29 17:21:52] minidlna.c:155: warn: received signal 15, good-bye
+[2019/05/30 19:04:35] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/05/30 19:04:35] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/05/30 19:04:35] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/05/30 19:04:35] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/05/30 19:04:45] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (100 files)!
+[2019/05/30 19:04:45] playlist.c:135: warn: Parsing playlists...
+[2019/05/30 19:04:45] playlist.c:269: warn: Finished parsing playlists.
+[2019/05/30 19:05:40] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/05/30 21:03:29] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (50, '1')
+[2019/05/30 21:17:46] minidlna.c:155: warn: received signal 15, good-bye
+[2019/06/16 15:10:14] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/06/16 15:10:14] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/06/16 15:10:14] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/06/16 15:10:14] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/06/16 15:10:25] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (100 files)!
+[2019/06/16 15:10:25] playlist.c:135: warn: Parsing playlists...
+[2019/06/16 15:10:25] playlist.c:269: warn: Finished parsing playlists.
+[2019/06/16 15:11:04] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/06/16 17:07:17] minidlna.c:155: warn: received signal 15, good-bye
+[2019/06/20 19:02:24] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/06/20 19:02:24] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/06/20 19:02:24] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/06/20 19:02:24] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/06/20 19:02:25] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (1 files)!
+[2019/06/20 19:02:25] playlist.c:135: warn: Parsing playlists...
+[2019/06/20 19:02:25] playlist.c:269: warn: Finished parsing playlists.
+[2019/06/20 19:02:25] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2019/06/20 19:02:25] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2019/06/20 19:02:41] minidlna.c:155: warn: received signal 15, good-bye
+[2019/06/20 19:02:51] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/06/20 19:02:51] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/06/20 19:02:51] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/06/20 19:02:51] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/06/20 19:02:51] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (1 files)!
+[2019/06/20 19:02:51] playlist.c:135: warn: Parsing playlists...
+[2019/06/20 19:02:51] playlist.c:269: warn: Finished parsing playlists.
+[2019/06/20 19:02:52] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2019/06/20 19:02:52] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2019/06/20 19:03:00] minidlna.c:155: warn: received signal 15, good-bye
+[2019/06/20 19:03:19] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/06/20 19:03:19] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/06/20 19:03:19] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/06/20 19:03:19] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/06/20 19:03:19] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (1 files)!
+[2019/06/20 19:03:19] playlist.c:135: warn: Parsing playlists...
+[2019/06/20 19:03:19] playlist.c:269: warn: Finished parsing playlists.
+[2019/06/20 19:03:19] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2019/06/20 19:03:19] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2019/06/20 19:03:32] minidlna.c:155: warn: received signal 15, good-bye
+[2019/06/20 19:36:46] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/06/20 19:36:46] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/06/20 19:36:46] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/06/20 19:36:46] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/06/20 19:36:46] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (1 files)!
+[2019/06/20 19:36:46] playlist.c:135: warn: Parsing playlists...
+[2019/06/20 19:36:46] playlist.c:269: warn: Finished parsing playlists.
+[2019/06/20 19:36:47] sql.c:117: warn: sql_get_int_field: step failed: SQL logic error
+SELECT (select count(distinct DETAIL_ID) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID glob '*$*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL)) + (select count(*) from OBJECTS o left join DETAILS d on (o.DETAIL_ID = d.ID) where (OBJECT_ID = '*') and (o.CLASS like "item.videoItem%" and REF_ID is NULL))
+[2019/06/20 19:36:47] upnpsoap.c:123: warn: Returning UPnPError 708: Unsupported or invalid search criteria
+[2019/06/20 19:36:53] minidlna.c:155: warn: received signal 15, good-bye
+[2019/06/21 16:09:32] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/06/21 16:09:32] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/06/21 16:09:32] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/06/21 16:09:32] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/06/21 16:09:34] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (20 files)!
+[2019/06/21 16:09:34] playlist.c:135: warn: Parsing playlists...
+[2019/06/21 16:09:34] playlist.c:269: warn: Finished parsing playlists.
+[2019/06/21 16:11:39] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/06/21 16:15:00] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/06/21 18:00:17] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (24, '1')
+[2019/06/21 18:02:04] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/04 11:01:42] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/04 11:01:42] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/04 11:01:42] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/04 11:01:42] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/04 11:01:44] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (30 files)!
+[2019/07/04 11:01:44] playlist.c:135: warn: Parsing playlists...
+[2019/07/04 11:01:44] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/04 11:02:21] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/07/04 11:58:07] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (30, '1')
+[2019/07/04 12:01:42] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2019/07/04 12:01:42] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2019/07/04 12:05:40] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/12 19:17:48] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/12 19:17:48] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/12 19:17:48] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/12 19:17:48] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/12 19:17:52] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (35 files)!
+[2019/07/12 19:17:52] playlist.c:135: warn: Parsing playlists...
+[2019/07/12 19:17:52] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/12 19:18:02] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/16 19:52:45] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/16 19:52:45] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/16 19:52:45] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/16 19:52:45] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/16 19:52:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (42 files)!
+[2019/07/16 19:52:49] playlist.c:135: warn: Parsing playlists...
+[2019/07/16 19:52:49] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/16 19:53:13] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/07/16 22:13:07] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (48, '1')
+[2019/07/16 22:13:42] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/21 15:21:33] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/21 15:21:33] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/21 15:21:33] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/21 15:21:33] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/21 15:21:38] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (48 files)!
+[2019/07/21 15:21:38] playlist.c:135: warn: Parsing playlists...
+[2019/07/21 15:21:38] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/21 15:22:34] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/07/21 16:29:13] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (80, '1')
+[2019/07/21 16:29:56] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (79, '1')
+[2019/07/21 16:30:43] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (78, '1')
+[2019/07/21 16:32:30] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (77, '1')
+[2019/07/21 16:34:31] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (80, '1')
+[2019/07/21 17:19:17] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (34, '1')
+[2019/07/21 17:21:51] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/21 17:22:01] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/21 17:22:01] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/21 17:22:01] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/21 17:22:01] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/21 17:22:03] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (48 files)!
+[2019/07/21 17:22:03] playlist.c:135: warn: Parsing playlists...
+[2019/07/21 17:22:03] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/21 17:22:06] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/22 12:09:43] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/22 12:09:43] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/22 12:09:43] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/22 12:09:43] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/22 12:09:49] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (51 files)!
+[2019/07/22 12:09:49] playlist.c:135: warn: Parsing playlists...
+[2019/07/22 12:09:49] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/22 12:11:41] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/07/22 14:09:43] upnpevents.c:369: warn: upnp_event_send: send(): Connection refused
+[2019/07/22 16:08:05] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/25 17:30:41] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/25 17:30:41] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/25 17:30:41] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/25 17:30:41] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/25 17:30:45] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (52 files)!
+[2019/07/25 17:30:45] playlist.c:135: warn: Parsing playlists...
+[2019/07/25 17:30:45] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/25 17:31:54] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/07/25 19:26:16] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (71, '1')
+[2019/07/25 19:57:14] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/28 19:05:37] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/28 19:05:37] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/28 19:05:37] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/28 19:05:37] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/28 19:05:42] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (53 files)!
+[2019/07/28 19:05:42] playlist.c:135: warn: Parsing playlists...
+[2019/07/28 19:05:42] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/28 19:05:45] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/28 20:43:10] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/28 20:43:10] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/28 20:43:10] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/28 20:43:10] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/28 20:43:12] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (53 files)!
+[2019/07/28 20:43:12] playlist.c:135: warn: Parsing playlists...
+[2019/07/28 20:43:12] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/28 20:43:46] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/07/28 20:56:56] minidlna.c:155: warn: received signal 15, good-bye
+[2019/07/29 12:19:06] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/07/29 12:19:06] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/07/29 12:19:06] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/07/29 12:19:06] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/07/29 12:19:11] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (53 files)!
+[2019/07/29 12:19:11] playlist.c:135: warn: Parsing playlists...
+[2019/07/29 12:19:11] playlist.c:269: warn: Finished parsing playlists.
+[2019/07/29 12:19:17] minidlna.c:155: warn: received signal 15, good-bye
+[2019/09/01 13:20:14] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/09/01 13:20:14] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/09/01 13:20:14] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/09/01 13:20:14] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/09/01 13:20:20] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (66 files)!
+[2019/09/01 13:20:20] playlist.c:135: warn: Parsing playlists...
+[2019/09/01 13:20:20] playlist.c:269: warn: Finished parsing playlists.
+[2019/09/01 13:21:22] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/09/01 15:08:18] minidlna.c:155: warn: received signal 15, good-bye
+[2019/09/15 12:25:39] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/09/15 12:25:39] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/09/15 12:25:39] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/09/15 12:25:39] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/09/15 12:25:46] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (72 files)!
+[2019/09/15 12:25:46] playlist.c:135: warn: Parsing playlists...
+[2019/09/15 12:25:46] playlist.c:269: warn: Finished parsing playlists.
+[2019/09/15 12:25:57] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/09/15 12:28:39] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (49, '1')
+[2019/09/15 13:38:37] minidlna.c:155: warn: received signal 15, good-bye
+[2019/09/21 21:30:04] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/09/21 21:30:04] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/09/21 21:30:04] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/09/21 21:30:04] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/09/21 21:30:11] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (77 files)!
+[2019/09/21 21:30:11] playlist.c:135: warn: Parsing playlists...
+[2019/09/21 21:30:11] playlist.c:269: warn: Finished parsing playlists.
+[2019/09/21 21:41:51] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/09/21 23:21:19] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (52, '1')
+[2019/09/21 23:21:19] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (52, '1')
+[2019/09/21 23:21:20] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (52, '1')
+[2019/09/22 00:54:34] minidlna.c:155: warn: received signal 15, good-bye
+[2019/09/22 18:31:11] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/09/22 18:31:11] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/09/22 18:31:11] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/09/22 18:31:11] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/09/22 18:31:18] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (77 files)!
+[2019/09/22 18:31:18] playlist.c:135: warn: Parsing playlists...
+[2019/09/22 18:31:18] playlist.c:269: warn: Finished parsing playlists.
+[2019/09/22 18:31:46] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/09/22 18:33:14] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/09/22 19:55:03] minidlna.c:155: warn: received signal 15, good-bye
+[2019/10/28 17:06:25] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/10/28 17:06:25] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/10/28 17:06:25] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/10/28 17:06:25] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/10/28 17:06:34] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (95 files)!
+[2019/10/28 17:06:34] playlist.c:135: warn: Parsing playlists...
+[2019/10/28 17:06:34] playlist.c:269: warn: Finished parsing playlists.
+[2019/10/28 17:07:21] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/10/28 19:22:56] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (145, '1')
+[2019/10/28 19:23:41] minidlna.c:155: warn: received signal 15, good-bye
+[2019/11/02 20:07:01] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/11/02 20:07:01] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/11/02 20:07:01] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/11/02 20:07:01] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/11/02 20:07:09] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (95 files)!
+[2019/11/02 20:07:09] playlist.c:135: warn: Parsing playlists...
+[2019/11/02 20:07:09] playlist.c:269: warn: Finished parsing playlists.
+[2019/11/02 20:29:16] minidlna.c:155: warn: received signal 15, good-bye
+[2019/11/02 21:00:37] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/11/02 21:00:37] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/11/02 21:00:37] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/11/02 21:00:37] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/11/02 21:00:40] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (95 files)!
+[2019/11/02 21:00:40] playlist.c:135: warn: Parsing playlists...
+[2019/11/02 21:00:40] playlist.c:269: warn: Finished parsing playlists.
+[2019/11/02 21:01:15] minidlna.c:155: warn: received signal 15, good-bye
+[2019/11/02 21:02:06] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/11/02 21:02:06] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/11/02 21:02:06] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/11/02 21:02:06] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/11/02 21:02:10] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (107 files)!
+[2019/11/02 21:02:10] playlist.c:135: warn: Parsing playlists...
+[2019/11/02 21:02:10] playlist.c:269: warn: Finished parsing playlists.
+[2019/11/02 21:02:25] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/11/02 22:07:32] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (25, '1')
+[2019/11/02 22:18:32] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/02 22:18:32] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/02 22:18:33] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/02 22:41:54] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/02 22:42:30] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (158, '1')
+[2019/11/02 22:43:18] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (157, '1')
+[2019/11/02 22:43:50] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/02 22:49:52] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (155, '1')
+[2019/11/02 22:51:11] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (154, '1')
+[2019/11/02 22:52:28] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (151, '1')
+[2019/11/02 22:53:33] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/02 22:54:06] minidlna.c:155: warn: received signal 15, good-bye
+[2019/11/07 10:47:41] minidlna.c:1048: warn: Starting MiniDLNA version 1.2.1.
+[2019/11/07 10:47:41] minidlna.c:346: warn: Creating new database at /home/lubomir/.config/minidlna/cache/files.db
+[2019/11/07 10:47:41] minidlna.c:1089: warn: HTTP listening on port 8200
+[2019/11/07 10:47:41] scanner.c:731: warn: Scanning /home/lubomir/Videos
+[2019/11/07 10:47:50] scanner.c:820: warn: Scanning /home/lubomir/Videos finished (108 files)!
+[2019/11/07 10:47:50] playlist.c:135: warn: Parsing playlists...
+[2019/11/07 10:47:50] playlist.c:269: warn: Finished parsing playlists.
+[2019/11/07 10:52:53] upnpsoap.c:123: warn: Returning UPnPError 701: No such object error
+[2019/11/07 11:54:08] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/07 11:56:17] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (75, '1')
+[2019/11/07 12:00:27] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (127, '1')
+[2019/11/07 12:08:01] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (60, '1')
+[2019/11/07 14:15:32] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (168, '1')
+[2019/11/07 14:20:25] upnpsoap.c:123: warn: Returning UPnPError 402: Invalid Args
+[2019/11/07 14:22:23] sql.c:41: error: SQL ERROR 19 [UNIQUE constraint failed: BOOKMARKS.ID]
+INSERT into BOOKMARKS (ID, WATCH_COUNT) VALUES (75, '1')
+[2019/11/07 14:46:15] minidlna.c:155: warn: received signal 15, good-bye

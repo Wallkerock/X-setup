@@ -1,0 +1,7 @@
+# MPV configuration
+
+sub-font-size=40
+sub-codepage=cp1250
+#sub-codepage=enca:sk:cp1250
+#sub-codepage=enca:cz:cp1250
+

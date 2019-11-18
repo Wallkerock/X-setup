@@ -1,0 +1,36 @@
+[
+    {
+        "caption": "Preferences: BrowserBookmarks Settings",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/BrowserBookmarks/BrowserBookmarks.sublime-settings"}
+        },
+    {
+        "caption": "Preferences: BrowserBookmarks Key Bindings",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/BrowserBookmarks/Default (Windows).sublime-keymap",
+            "platform": "Windows"
+        }
+    },
+    {
+        "caption": "Preferences: BrowserBookmarks Key Bindings",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/BrowserBookmarks/Default (OSX).sublime-keymap",
+            "platform": "OSX"
+        }
+    },
+    {
+        "caption": "Preferences: BrowserBookmarks Key Bindings",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/BrowserBookmarks/Default (Linux).sublime-keymap",
+            "platform": "Linux"
+        }
+    },
+    {
+        "caption": "BrowserBookmarks : Show bookmarks",
+        "command": "show_bookmarks"
+    }
+]

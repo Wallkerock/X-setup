@@ -1,0 +1,1 @@
+{"description": "Sublime Text 2 package for converting CSS hexadecimal colors into RGBA.", "url": "https://github.com/aroscoe/Hex-to-RGBA", "platforms": ["*"], "version": "2013.08.25.18.14.14", "sublime_text": "<3000", "dependencies": []}

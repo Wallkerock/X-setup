@@ -1,0 +1,19 @@
+# New in Lanzhou 1.0
+
+* A lot of minor visual and behavioral fixes
+
+*Note: New theme variations may be a little bit rough around edges, I'll be pushing updates to fix existing issues in the nearest future. If you have any suggestions for improvements and fixes, please feel free to add issues at GitHub: http://github.com/kliu/sublime-theme-lanzhou/issues*
+
+***
+
+# How to activate new variations
+
+*Example settings*
+
+    {
+      "theme": "Lanzhou.sublime-theme"
+      "color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme"
+    }
+
+
+*Note: Don't forget to restart Sublime Text after activating the theme.*

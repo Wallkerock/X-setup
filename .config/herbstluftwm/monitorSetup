@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+
+# add default tags
+echo "Adding default tags"
+for i in {1..9} ; do
+    hc add default-$i
+done
+echo "Removing hcs default tag"
+hc use default-1
+hc merge_tag default 
+
+
+
+# detect monitors (bash magic)
+echo "Detecting monitors"
+# gets all monitors according to xrandr
+allMonitors=($(hc detect_monitors -l))
+# sorts them by xoffset (dunno, magic)
+allMonitors=($(printf "%s\n" "${allMonitors[@]}" | sort -t+ -k2))
+# again magic, passes them as arguments to set_monitors
+hc set_monitors ${allMonitors[*]// /|}
+
+
+
+
+
+# implement proper tags
+monitorCount=$(getMonitorCount)
+echo "Getting monitor count: $monitorCount"
+
+echo "Creating tags and keybindings"
+for (( monitorIndex=0; monitorIndex<monitorCount; monitorIndex++ )) ; do
+    for key in ${tagKeys[@]} ; do
+        tag=$monitorIndex"_"$key
+        previousTag=$(((key - 1 + tagAmount) % tagAmount))
+        nextTag=$(((key + 1) % tagAmount))
+        hc and + add "$tag" \
+               + ! silent get_attr tags.by-name."$tag".my_monitor \
+               + chain , new_attr int tags.by-name."$tag".my_monitor \
+                       , set_attr tags.by-name."$tag".my_monitor $monitorIndex \
+                       , new_attr string tags.by-name."$tag".my_previous_tag \
+                       , set_attr tags.by-name."$tag".my_previous_tag "$previousTag"\
+                       , new_attr string tags.by-name."$tag".my_next_tag \
+                       , set_attr tags.by-name."$tag".my_next_tag "$nextTag" \
+                       , new_attr int tags.by-name."$tag".my_monitor_index \
+                       , set_attr tags.by-name."$tag".my_monitor_index "$key"
+    done
+    hc chain , focus_monitor $monitorIndex \
+             , use $monitorIndex"_1"
+done
+
+echo "Deleting default tags"
+for i in {1..9} ; do
+    hc merge_tag default-$i
+done

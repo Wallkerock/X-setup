@@ -1,0 +1,29 @@
+# Write your default config options here!
+
+# Nastavenia pre titulky
+unicode=yes
+utf8=yes
+fontconfig=1
+font='DejaVu Sans'
+subpos=100
+spualign=-1
+spuaa=4
+slang=sk,svk,slo,cz,cs,cze,en,eng,und,
+subfont-encoding=unicode
+subcp='windows-1250'
+subcp=enca:sk:utf-8
+subcp=enca:sk:iso-8859-2
+subfont-autoscale=3
+subfont-blur=2.0
+subfont-outline=5.0
+subfont-text-scale=6
+subfont='Days One'
+sub-bg-alpha="0"
+sub-bg-color="0"
+sub-fuzziness=1
+ass=yes
+ass-border-color=002b8200
+ass-color=ffffff00
+ass-font-scale=1
+embeddedfonts=yes
+

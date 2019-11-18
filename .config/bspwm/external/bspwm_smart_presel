@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Lets BSPWM send the marked {or just the focused} node to a receptacle
+# {or a preselection}.  This script is part of my dotfiles:
+# https://gitlab.com/protesilaos/dotfiles.
+#
+# Copyright (c) 2019 Protesilaos Stavrou <info@protesilaos.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+receptacle=$(bspc query -N -n ".leaf.!window.local" | awk NR==1)
+
+window_promotion()
+{
+	if [ -n "$receptacle" ] > /dev/null ; then
+    bspc node -n "$receptacle" 
+    elif [ -z "$(bspc query -N -n last.!automatic.local)" ]; then \
+        bspc node -s biggest.!focused.local; \
+    else \
+        bspc node -n last.!automatic.local; \
+    fi 
+}
+
+if bspc query -N -n "@/.!automatic" > /dev/null ; then
+	bspc node -n @/ || window_promotion
+	else
+    	if [ -n "$receptacle" ] > /dev/null ; then
+    			bspc node -n "$receptacle" 
+    		elif [ -z "$(bspc query -N -n last.!automatic.local)" ]; then \
+       			 bspc node -s biggest.!focused.local; \
+    		else \
+       			 bspc node -n last.!automatic.local; \
+    	fi 
+fi

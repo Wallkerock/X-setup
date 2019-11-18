@@ -1,0 +1,22 @@
+#!/bin/sh
+
+tray=trayer-srg
+
+if pkill -x $tray; then
+    exit
+fi
+
+m=$(herbstclient list_monitors | grep FOCUS | cut -d : -f 1)
+case $m in
+    0|1) m=0 ;;
+    2|3) m=1 ;;
+esac
+
+$tray \
+    --edge right \
+    --distancefrom right \
+    --distance 0 \
+    --margin 17 \
+    --widthtype request \
+    --align left \
+    --monitor $m &

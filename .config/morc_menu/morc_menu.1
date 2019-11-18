@@ -1,0 +1,399 @@
+.\" emacs:  -*- nroff -*-     vim: ft=nroff
+.\" other parameters are allowed: see man(7), man(1)
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7). Also refer to groff(7).
+.TH morc_menu 1 "2016-03-15" "morc_menu version 1" "desktop application menu" morc_menu
+.SH NAME
+.PP
+.HP 14
+morc_menu \- categorized desktop application menu, independent of any window manager
+.SH SYNOPSIS
+.PP
+.TP 10
+.B morc_menu
+.RI " [ " conf= " [ " path/to/file" " | " none " ] ] [ " no-sys " ]"
+.br
+.RI " " txt " | " xml " [ " in_file " ]"
+.br
+.RI " [ " build " [ " usr " | " loc " | " xml " [" in_file "] ] [" outfile "] ]"
+.br
+.RI " [ " show " [ " categories " | " desired " | " files " ] ]"
+
+.SH DESCRIPTION
+\ 
+.br
+\fBmorc_menu\fP is a bash script that provides categorized menus of
+available applications in a manner similar to Openbox / Fluxbox
+style menus, but without requiring any window manager or its
+dependencies, and with wide lattitude for customization using its
+configuration file.
+
+.SH OPTIONS
+\ 
+.br
+When run with no parameters, \fBmorc_menu\fP displays a
+dynamically-created, navigable, and selectable menu of installed GUI
+applications. Depending upon the chose front-end the menu may also be
+searchable.
+
+.TP 7
+conf=
+Over-ride the default order of reading configuration files. This
+option must be listed first. It may point to the path of a specific
+configuration file which will be the \fBonly\fP one read, or it may be
+set to '\fBnone\fP' to ignore all configuration files.
+
+.RE
+.TP 7
+no-sys
+Ignore the system-wide pre-built morc_menu txt definition file. See
+below, section 'System-wide definition file'. This option must precede
+any of the following options
+
+.RE
+.TP 7
+xml
+Display a static menu from the xml file specified, or if none is specified, from the default (See below, section "Input files").
+
+.RE
+.TP 7
+txt
+Display a static menu from the txt file specified, or if none is specified, from the default (See below, section "Input files").
+
+.RE
+.TP 7
+show
+Print to STDOUT the selected sub-option:
+
+.RS 7
+.TP 5
+categories
+A complete list of all categories referred to in all .desktop files of
+folder /usr/share/applications.
+
+.RE
+.RS 7
+.TP 5
+desired
+The list of categories that will actually appear in your menu. It is
+based upon settings in the configuration file or the default.
+
+.RE
+.RS 7
+.TP 5
+files
+A complete list of all .desktop files in /usr/share/applications.
+
+.RE
+.TP 7
+build
+Build a static menu definition file, in text format, and name it as specified, or the default (see section "Output files"). This option accepts any one of three optional restrictions to compiling an entire menu:
+
+.RS 7
+.TP 5
+usr
+Build a menu file only from .desktop file data in folder /usr/share/applications.
+
+.RE
+.RS 7
+.TP 5
+loc
+Build a menu file only from .desktop file data in folder ~/.local/share/applications.
+
+.RE
+.RS 7
+.TP 5
+xml
+Build a menu file only from the specified xml file or the default (see
+section "Input files"). This option was originally intended to compare
+the results of this script with methods used by other window managers.
+It takes as input an xml file in in the format read by Openbox /
+Fluxbox and as produced by the likes of \fBob_menu_generator\fP. The
+output is a text file usable by the other options of this script. You
+will notice that some of those generator programs inject entries even
+for programs which have no .desktop entries and might not even exist.
+
+.SH REQUIREMENTS
+\ 
+.br
+.SS Front-end
+\fBmorc_menu\fP requires some form of presenter program to which it
+passes its menus. It was originally designed to work with
+\fBdmenu-manjaro\fP (a feature-augmented version of \fBdmenu\fP), but
+it also funcitons with the normal version of \fBdmenu\fP, as well as
+with \fBrofi\fP, \fBzenity\fP, \fByada\fP and probably others. If
+you've expressed an interest in \fBmorc_menu\fP because of its
+minimalism, flexibility, and full-features, we recommend using
+\fBdmenu\fP as the front-end - it is the lightest presenter, is highly
+customizable, and when presenting a menu it responds to your keyboard
+input by updating the menu to the subset of matching keystrokes. The
+\fBdmenu-manjaro\fP augmented version of \fBdmenu\fP adds support for
+customized positioning the menu anywhere on your desktop, mouse
+support, and adjustable line height. Refer to the configuration file
+for examples.
+
+.SS Positioning menu at mouse pointer
+By default, \fBmorc_menu\fP presents its menus at a static position on
+the display, but setting variable 'use_mouse_position=TRUE' in the
+\fBmorc_menu\fP configuration file will have \fBmorc_menu\fP position
+the menu at the mouse pointer, but only if: 1) the presenter supports
+this (eg. \fBdmenu-manjaro\fP or \fBrofi\fP, but not \fBdmenu\fP); 2)
+programs from two additional packages, \fBxdotool\fP and
+\fBwmutils\fP, are available; and 3) variable 'menu_cmd' is set using
+the menu position string literals discussed in the configuration file.
+There are handy examples in-place, so in practice all you'll probably
+need to do is uncomment a line.
+
+.SS Environment
+\fBmorc_menu\fP expects that the programs the user wishes to have
+represented in the menu be described in accordance with the
+\fBfreedesktop\fP standard in '.desktop' files, and that those files
+be present in locations consistent with the Linux LSB standard. In
+plain English, any normally maintained Linux distribution and probably
+pretty much any *nix distribution.
+
+.SH SETUP
+\ 
+.br
+If your distribution has a packaged version of this script, it is
+advisable to install that package. That should automatically place the
+configuration files and this man page in the locations appropriate for
+your distribution, and include any customizations that your
+distribution's packager may have added.
+
+Manually installing the script involves five steps: Copy this script
+file to a convenient location, for example, somewhere on your $PATH;
+Make it executable by running 'chmod +x /path/to/file'; Optionally,
+copy the script's associated config file to ${HOME}/.config/morc_menu;
+Optionally, copy the script's associated man page to somehwere your
+system will recognize (run command 'manpath', and if you can not place
+it in any of those places, run 'man manpath' to see how to set
+$MANPATH), and; Create a keybinding for the script. An example
+keybinding for use with the i3 window manager would be to modify
+your ${HOME}/.i3/config file to include a statement in the form:
+
+  bindsym $mod+z exec "${HOME}/path/to/morc_menu"
+
+.SH CUSTOMIZATION
+\ 
+.br
+
+This script offers methods to customize both the content of menus, and
+their 'look' ('skin'). These methods are in the form of run-time
+options and configuration file options.
+
+.SS Static content customization
+
+The script offers run-time options to create a static menu based upon
+a text file that it can initially build for you (option 'build') and
+which you are then free to manually edit. The format of the text file
+data is:
+
+    menu_name delim name delim execuatble
+
+where:
+
+    menu_name  is either the category or the value of
+               the string identifying a 'favorite'
+               item, by default '000'
+    delim      is a delimiter, by default '---'
+    name       is the conversational name of the program
+    executable is the command-line to run
+
+Static menus will never be updated by changes to your operating system
+or by operations performed by your system's package manager. They may
+possily be adjusted by \fBmorc_menu\fP if certain variables in the
+configuration file are changed. See the configuration file's in-line
+documentation for details.
+
+.SS Static and Dynamic content customization
+
+All available configuration options should be documented in place in
+the configuration file. They include the options to define:
+
+\fBDesired categories\fP: Categories to be displayed in your menu.
+
+\fBCategory aliases\fP: It turns out that some of the most commonly
+used category names displayed to users don't match the '.desktop'
+definitions. The configuration file has an array variable for
+customizing this behavior.
+
+\fBUnwanted names and executables\fP: Easily exclude items from your menu.
+
+\fBSkins\fP: A desired 'look' can be obtained by defining
+\fBmorc_menu\fP's front-end and the parameters to pass to that
+front-end, which typically include coloring, positioning, sizing and
+fonts. Configuration files desired for those front-end can also be
+imported. Also, the prefixes and suffixes which mark sub-menus may be
+defined.
+
+\fBPositioning and Geometry\fP: This will be suject to the limitations
+of the presenter you choose. For example, \fBdmenu\fP does not support
+this, but \fBdmenu-manjaro\fP and \fBrofi\fP do. These customization
+options allow the menu to appear anywhere on the screen, in any size.
+Examples are given in the configuration file.
+
+.SH ENVIRONMENTAL VARIABLES
+\ 
+.br
+.B ${MORC_MENU_DIR}
+.RS 3
+The folder for \fBmorc_menu\fP's default configuration and backup
+files. If it is unset, or is set to an unreadable folder, or upon
+failure to write to it, the default folder ${HOME}/.config/morc_menu
+is used.
+
+.SH FILES
+Except as otherwise noted, the location for all the files in this
+section is ${MORC_MENU_DIR}. The format of all \fI.txt\fP files is as
+discussed above in section 'Static content customization'.
+
+.TP 3
+\fBmorc_menu_v1.conf\fP
+This file contains \fBmorc_menu\fP's configuration and customization
+options. If you would like all configuration file input to be ignored,
+invoke \fBmorc_menu\fP with a first parameter 'conf=none'. You may
+also use that optional first parameter 'conf=' to specify a
+non-default filename for a config file, in which case only that config
+file will be used. By default, the script reads its configuration
+options from up to four files, in the following sequence, allowing
+later reads to modify prior settings (ie. last on the list wins):
+
+  /usr/share/morc_menu/morc_menu_v1.conf
+
+  /usr/local/share/morc_menu/morc_menu_v1.conf
+
+  ${HOME}/.local/share/morc_menu/morc_menu_v1.conf
+
+  ${MORC_MENU_DIR}/morc_menu_v1.conf
+
+.TP 3
+\fBmorc_menu.txt\fP
+The default input for displaying a static menu, and the default output
+for creating one.
+
+.TP 3
+\fBmorc_menu.xml\fP
+The default input for constructing a static menu based upon xml
+generated by the like of \fBob_men_generator\fP (see above, section
+OPTIONS).
+
+.TP 3
+\fBmorc_menu_xml.txt\fP
+The default output for static menus created from xml.
+
+.TP 3
+\fBmorc_menu_usr.txt\fP
+The default output for static menus created from data in folder
+/usr/share/applications.
+
+.TP 3
+\fBmorc_menu_loc.txt\fP
+The default output for static menus created from data in folder
+${HOME}/.local/share/applications.
+
+.RS 3
+.SS System-wide definition file
+A system administrator may elect to create and maintain a base-line system-wide menu definition file that all user may reference. \fBmorc_menu\fP expects such a file to exist at /etc/morc_menu.txt, and if it exists, \fBmorc_menu\fP will, by default, use that file instead of building a menu. This behavior may be altered at the command line with option 'no-sys', or in the conf file by setting variable 'ignore_system_txt' to 'TRUE'.
+
+.SS Desktop files
+\fBmorc_menu\fP generates menus based upon the presence of
+.desktop files in the system-wide definition folder
+/usr/share/applications and the user-local definition folder
+${HOME}/.local/share/applications, per the xfreedesktop and linux LSB
+standards. Your system may have additional .desktop files in other
+locations. That seems to be the case for 'optional' items. Linux's
+expectation is that if a sysadmin would like entries for those items
+system-wide, the sysadmin would copy them to /usr/share/applications.
+If you want them for a specific user, place them in that user's
+${HOME}/.local/share/applications folder. To find all system-wide
+desktop files, you can run a command in the form 'find /usr -type f
+-name "*.desktop"'.
+
+.SS Backup files
+
+The configuration file includes an option to set the number of backups
+to be kept. Setting that number to zero disables backups and will
+cause \fBmorc_menu\fP to delete currently stored backups the next time
+it checks them. Backups are stored in the ${MORC_MENU_DIR} folder, and
+are identifiable by their name ending in a timestamp. Backups are only
+added when they would be different from the most recent prior backup;
+Otherwise, the modification time of the most recent backup is updated,
+so its timestamp reflects when it was created and its modification
+time when a subsequent run of \fBmorc_menu\fP build was performed.
+
+.SH BUGS
+\ 
+.br
+.SS Reporting bugs
+
+It's strongly preferred to report bugs to the project's URL, currently
+https://github.com/Boruch-Baum/morc_menu. If that's not possible, the
+developer may be contacted directly by e-mail, prefixing the subject line "[MORC_MENU]".
+
+.SS Items don't appear or don't execute
+
+If you have another menu presenter available, it would be helpful to
+check whether that other presenter exhibits the same problem. The
+simplest way to permanently add an item is to add it to the morc_menu
+configuration file in array 'additional_entries', but the canonical
+way is to add a .desktop file to ${HOME}/.local/applications. If a
+program runs from the command line but not from the menu, and this is
+because it needs to be run from a particular folder or with particular
+additional parameters, you can either manually make those changes in
+the .desktop file, manually modify a static menu, or make two changes
+to the morc_menu configuration file: Add the element to array
+\'additional_entries', and add the undesired version of the
+executable to array 'unwanted_execs'.
+
+.SS Pixel counting
+
+The script does not auto-magically know the width and height of font
+characters in order to accurately calculate the perfect menu width and
+height. This can be in large measure ameliorated by adjusting the
+configuration variables 'line_height', 'avg_char_width',
+and 'menu_width'. For more information, see the configuration file's
+in-line documentation.
+
+.SS Panel overwriting
+
+If your desktop has panels along its borders, the script will not be
+aware of them, and its menus may overlap them.
+
+.SS Lack of icons
+
+Not a bug. The primary design consideration of the script was minimalism.
+
+.SH SEE ALSO
+\ 
+.br
+.IR dmenu (1), rofi (1), zenity (1), yada (1), ob_menu_generator (1)
+
+.SH COPYRIGHT
+\ 
+.br
+Copyright ©2016, Boruch Baum <boruch_baum AT gmx DOT com>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License aspublished by
+the Free Software Foundation; either version 3 of the License, or (at
+your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,
+USA

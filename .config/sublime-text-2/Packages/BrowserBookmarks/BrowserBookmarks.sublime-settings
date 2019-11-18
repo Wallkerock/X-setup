@@ -1,0 +1,13 @@
+{
+	// enable disable browsers
+	"chrome": true,
+	"firefox" : true,
+	
+	// chrome settings
+	"chrome-bookmarks-file" : null, 				// use this to fore a bookmarks json filepath (if automatic system does not work)
+
+	// firefox settings
+	"firefox-profile" : "default",					// profile name of firefox, default is "deault"
+	"firefox-bookmarkbackups-directory" : null, 	// filepath to the bookmarkbackups directory of firefox
+	
+}

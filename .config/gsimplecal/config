@@ -1,0 +1,16 @@
+how_calendar = 1
+show_timezones = 0
+mark_today = 1
+show_week_numbers = 1
+clock_format = %a %d %b %H:%M
+mainwindow_decorated = 0
+mainwindow_keep_above = 0
+mainwindow_sticky = 0
+mainwindow_skip_taskbar = 1
+mainwindow_resizable = 0
+mainwindow_position = 0
+mainwindow_xoffset = 1540
+mainwindow_yoffset = 840
+#clock_label = UTC
+#clock_tz = :UTC
+#clock_label = local

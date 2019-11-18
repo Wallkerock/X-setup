@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+bg0Color="1d2021"
+bg1Color="#282828"
+bg2Color="#3c3836"
+bg3Color="#504945"
+fg1Color="#ebdbb2"
+fg2Color="#a89984"
+fg3Color="#7c6f64"
+
+pinkColor="#d3869b"
+redColor="#fb4934"
+orangeColor="#fe8019"
+yellowColor="#fabd2f"
+limeColor="#b8bb26"
+greenColor="#b8bb26"
+blueColor="#83a598"
+
+darkRedColor="#cc241d"
+darkGreenColor="#98971a"
+darkYellowColor="#d79921"
+darkBlueColor="#458588"
+darkPurpleColor="#b16286"
+darkAquaColor="#689d6a"
+darkOrangeColor="#d65d0e"

@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BrowserBookmarks",
+		"Color Highlighter",
+		"ColorPicker",
+		"Hex-to-RGBA",
+		"Material Color Scheme",
+		"Material Monokai",
+		"Package Control",
+		"Theme - Afterglow",
+		"Theme - Flatland",
+		"Theme - Gravity",
+		"Theme - Lanzhou",
+		"Theme - Soda SolarizedDark",
+		"Theme - Solarized Flat",
+		"Theme - Solarized Space",
+		"Twilight+"
+	]
+}

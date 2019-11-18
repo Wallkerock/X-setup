@@ -1,0 +1,76 @@
+
+Thanks for using the Gravity theme!
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+or Twitter
+@dh_Frank
+
+
+*************************************************************************
+
+
+How to enable:
+
+To activate the theme for ST3, add or replace your current theme settings with the code below.
+
+Gravity Theme:
+
+    "theme": "Gravity.sublime-theme",
+    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
+
+
+Reverse Gravity Theme:
+
+    "theme": "Reverse Gravity.sublime-theme",
+    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
+
+
+Gravity One Theme:
+
+    "theme": "Gravity One.sublime-theme"
+
+Suggest using the "One Dark Sublime Text 3 Color Scheme" or "One Half Color Schemes" with Gravity One.
+  - https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme
+  - https://github.com/sonph/onehalf
+
+
+Blue highlight color option:
+
+    "gravity_highlight_color_blue": true
+
+
+Tabs: increase tab height:
+
+    "gravity_tab_height_tall": true
+
+
+Tabs: decrease tab height:
+
+    "gravity_tab_height_short": true
+
+
+Tabs: decrease tab font size:
+
+    "gravity_tab_font_small": true
+
+
+Tabs: bold text label for select tab:
+
+    "gravity_selected_tab_bold": true
+
+
+Blend macOS title bar with theme:
+
+    "gravity_title_bar": true
+
+
+Blend title bar with sidebar header:
+
+    "gravity_sidebar_header": true
