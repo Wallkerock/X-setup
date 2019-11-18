@@ -1,7 +1,7 @@
 # X-setup
 This repository contain configuration files for three tiling window managers:
 
-- i3wm
+- <a href="https://i3wm.org/">i3wm</a>
 - bspwm
 - herbstluftwm
 
