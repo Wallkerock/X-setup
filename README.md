@@ -11,6 +11,7 @@ Repository contain also configuration files for these panels:
 - <a href="https://github.com/enkore/i3pystatus">i3pystatus</a> - which is more configurable and extensible status bar for i3wm
 - <a href="https://github.com/polybar/polybar">polybar</a> - highly customizable universal bar for many window managers
 
-<h3>BSPWM with Polybar</h3>
+<br>
+<h4>Bspwm with Polybar</h4>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-polybar.png">
