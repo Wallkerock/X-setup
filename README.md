@@ -14,7 +14,7 @@ Repository contain also configuration files for these panels:
 <br>
 <h4>Bspwm with Polybar</h4>
 
-(https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-polybar.png)
+![preview-bspwm](https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-polybar.png)
 
 <br>
 <h4>i3wm with Polybar</h4>
