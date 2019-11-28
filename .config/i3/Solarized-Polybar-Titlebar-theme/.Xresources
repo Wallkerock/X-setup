@@ -7,37 +7,6 @@ Xft.hintstyle:   hintslight
 Xft.lcdfilter:   lcddefault
 
 ! ------------------------------------------------------------------------------
-! XTERM setup
-! ------------------------------------------------------------------------------
-
-XTerm*pointerColor:				#16A085
-XTerm*faceSize:					10
-XTerm*reverseVideo:				on
-XTerm*faceName:					xft:Hack:size=10
-XTerm*selectToClipboard:		true
-XTerm*cursorColor:				#476DB1
-
-xterm*foreground:	#1C1C1C
-xterm*background:	#E1E1E1
-xterm*color0:		#222531
-xterm*color1:		#BA2922
-xterm*color2:		#7E7E80
-xterm*color3:		#696969
-xterm*color4:		#2C3854
-xterm*color5:		#5D657E
-xterm*color6:		#638EE7
-xterm*color7:		#E0E0E0
-xterm*color8:		#4E4E4E
-xterm*color9:		#CC372C
-xterm*color10:		#8D8D8F
-xterm*color11:		#FFA500
-xterm*color12:		#507CEF
-xterm*color13:		#6578AB
-xterm*color14:		#416EDE
-xterm*color15:		#E8E8E8
-
-
-! ------------------------------------------------------------------------------
 ! ROFI setup
 ! ------------------------------------------------------------------------------
 
@@ -66,9 +35,9 @@ rofi.fullscreen:        true
 ! RXVT UNICODE setup
 ! ------------------------------------------------------------------------------
 
-URxvt.foreground:                 #433B1E
-URxvt.background:                 [95]#EEE8D5
-URxvt.cursorColor:                #433B1E
+*.foreground:                 #433B1E
+*.background:                 [95]#FDF6E3
+*.cursorColor:                #433B1E
 
 !! black dark/light
 *color0:                          #FDF6E3
@@ -80,7 +49,7 @@ URxvt.cursorColor:                #433B1E
 
 !! green dark/light
 *color2:                          #37342A
-*color10:                         #3B372A
+*color10:                         #4F4935
 
 !! yellow dark/light
 *color3:                          #393528
@@ -109,10 +78,10 @@ URxvt.cursorColor:                #433B1E
 Xcursor.theme: Breeze
 Xcursor.size:                   0
 
-URxvt.geometry:					160x40
-!URxvt.internalBorder:			10
-!URxvt.font:                      xft:DejaVu Sans Mono:size=10.5
-URxvt.font:                      xft:Ubuntu Mono:size=11
+*.geometry:					150x45
+!*.internalBorder:			10
+!*.font:                      xft:DejaVu Sans Mono:size=10.5
+*.font:                      xft:Ubuntu Mono:size=12
 
 ! alternative font settings with 'terminus':
 !URxvt.font: -*-fixed-*-r-normal--*-*-*-*-*-*-iso10646-*

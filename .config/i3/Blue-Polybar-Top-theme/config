@@ -331,7 +331,8 @@ exec_always --no-startup-id pkill sxhkd
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id compton -b
 #exec --no-startup-id nitrogen --restore
-exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
+#exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
+exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/Devil-Azul-City-1.jpg
 exec --no-startup-id pgrep pulseaudio || start-pulseaudio-x11
 exec --no-startup-id xfsettingsd
 exec_always --no-startup-id numlockx on
@@ -352,7 +353,7 @@ exec --no-startup-id xset -dpms s off
 #############################
 
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 0
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.

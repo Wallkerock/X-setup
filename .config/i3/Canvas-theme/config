@@ -112,7 +112,8 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-bindsym $mod+x exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -fn "Iosevka:bold:pixelsize=16.5" -nb '#1C1C1C' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#1C1C1C' -i"
+#bindsym $mod+x exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -fn "Iosevka:bold:pixelsize=16.5" -nb '#1C1C1C' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#1C1C1C' -i"
+bindsym $mod+x exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn "Ubuntu:bold:pixelsize=14" -nb '#4560CE' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#4560CE' -i"
 
 # change focus
 # bindsym $mod+j focus left
@@ -169,12 +170,19 @@ bindsym $mod+a focus parent
 bindsym $mod+d focus child
 
 # Pulse Audio controls
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && pkill -RTMIN+1
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && pkill -RTMIN+1
-# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1
-bindsym XF86AudioRaiseVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh up & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-bindsym XF86AudioLowerVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh down & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-bindsym XF86AudioMute exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh mute & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
+# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
+# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
+# bindsym XF86AudioRaiseVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh up & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+# bindsym XF86AudioLowerVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh down & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+# bindsym XF86AudioMute exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh mute & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+
+## zvýšenie hlasitosti
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.scripts/volume_dunst.sh high && pkill -RTMIN+1 i3blocks
+## zníženie hlasitosti
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.scripts/volume_dunst.sh low && pkill -RTMIN+1 i3blocks
+## stlmenie zvuku
+bindsym XF86AudioMute exec --no-startup-id ~/.scripts/volume_dunst.sh mute && pkill -RTMIN+1 i3blocks
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -351,26 +359,26 @@ bar {
         statusline #FFFFFF #white
         separator #545454
 
-        focused_workspace  #5D7CF1 #3D60E5 #D7DFFC
+        focused_workspace  #5D7CF1 #3D60E5 #FFFFFF
         active_workspace   #333333 #5f676a #ffffff
-        inactive_workspace #4D4D4D #3A3A3A #919AA8
+        inactive_workspace #4D4D4D #3A3A3A #AAADB0
         urgent_workspace   #FFCA64 #ffb52a #222222
     }
         i3bar_command i3bar
         position bottom
-        height 25
+#        height 25
 #        separator_symbol "//"
         workspace_buttons yes
 #        mode hide
 #        hidden_state show
 #        modifier $mod
-#        status_command i3status
-#        status_command py3status
-        status_command i3pystatus -c ~/.config/i3/i3pystatus.py
+        status_command i3status
+#        status_command py3status -c ~/.config/i3/py3status.conf
+#        status_command i3pystatus -c ~/.config/i3/i3pystatus.py
 #        status_command i3blocks -c ~/.config/i3/i3blocks.conf
 #        status_command i3status-rs ~/.config/i3/status.toml
+#        font pango:Iosevka, FontAwesome 11
         font pango:Iosevka, FontAwesome bold 11
-#        font pango:Cantarell, FontAwesome bold 10
 #        font pango:FontAwesome, xos4 Terminess Powerline Bold 10
 #        font pango:xos4 Terminus, FontAwesome bold 10
 }
@@ -382,16 +390,18 @@ exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dar
 exec --no-startup-id pgrep pulseaudio || start-pulseaudio-x11
 #exec --no-startup-id volumeicon
 exec --no-startup-id xfsettingsd
-#exec --no-startup-id pamac-tray
+exec --no-startup-id pamac-tray
 #exec --no-startup-id hp-systray
 exec_always --no-startup-id numlockx on
 exec --no-startup-id setxkbmap -layout "us,sk(qwerty),cz(qwerty)" -option grp:alt_shift_toggle
-#exec --no-startup-id gxkb
-#exec --no-startup-id clipit
-#exec --no-startup-id nm-applet
+#####
+exec --no-startup-id gxkb
+exec --no-startup-id clipit
+exec --no-startup-id nm-applet
+#####
 #exec --no-startup-id pulseaudio -k
-exec --no-startup-id greenclip daemon
-exec --no-startup-id sleep 1; greenclip clear
+#exec --no-startup-id greenclip daemon
+#exec --no-startup-id sleep 1; greenclip clear
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id pkill redshift && sleep 5; redshift -l 48.16:17.11 &
 exec_always --no-startup-id xrdb -load ~/.Xresources

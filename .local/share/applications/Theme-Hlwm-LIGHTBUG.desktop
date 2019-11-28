@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Herbstluftwm LightBug
-Exec=bash -c 'sh ~/.scripts/themes/herbstluftwm_lightbug.sh'
+Exec=bash -c 'sh ~/.scripts/themes/hlwm_lightbug.sh'
 Icon=style
 Terminal=false
 Categories=GTK;Settings;

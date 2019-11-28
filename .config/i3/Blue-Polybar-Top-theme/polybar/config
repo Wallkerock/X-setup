@@ -13,13 +13,13 @@ background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
 primary = #ffb52a
-secondary = #e60053
+secondary = #FF0000
 alert = #bd2c40
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 24
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -35,10 +35,10 @@ underline-size = 1
 underline-color = #00f
 
 border-top-size = 0
-border-top-color = #FFA500
+border-top-color = #4560CE
 ;border-top-color = #009BAE
 
-border-bottom-size = 2
+border-bottom-size = 0
 border-bottom-color = #4560CE
 
 border-left-size = 0
@@ -55,13 +55,13 @@ module-margin-right = 1
 
 separator = %{F#434343}%{F-}
 
-font-0 = Iosevka:bold:pixelsize=10;3
+font-0 = Iosevka:bold:pixelsize=11;3
 ;font-0 = Misc Fixed:bold:pixelsize=14;2
 font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=9;3
+font-3 = FontAwesome:pixelsize=11;3
 font-4 = Monaco:pixelsize=9;2
-font-5 = Roboto:pixelsize=9;3
+font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi i3 xwindow
 modules-center =
@@ -86,7 +86,7 @@ cursor-scroll = ns-resize
 [module/xwindow]
 type = internal/xwindow
 label-padding = 2
-label-foreground = #CCDCFF
+label-foreground = #D1D1D1
 label = %title:0:30:...%
 
 [module/i3]
@@ -292,7 +292,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF7676}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF3E3E}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -339,7 +339,7 @@ interval = 1
 ;   <bar-load>
 ;   <ramp-load>
 ;   <ramp-coreload>
-format = <label> <ramp-coreload>
+format = <label>
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load
@@ -376,7 +376,7 @@ interval = 5
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = %{F#C8FF99}vol: <label-volume>%{F-}
+format-volume = %{F#FF9F00}vol: <label-volume>%{F-}
 
 ; Available tags:
 ;   <label-muted> (default)
@@ -390,8 +390,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #FF403A
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 [module/info-publicip]
 type = custom/script
@@ -414,7 +415,7 @@ interval = 2.0
 ;udspeed-minwidth = 0
 
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %{F#A0BAF4}(%downspeed:8%)%{F-}%{A}
+label-connected = %{F#BABABA}(%downspeed:8%)%{F-}%{A}
 
 format-disconnected = <label-disconnected>
 label-disconnected = %{F#797979}ip: ?%{F-}%{A}
@@ -424,9 +425,9 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#D7FFAB}%d.%m.%Y %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#939393}.%m.%Y, %{F-}"
 
-time = %H:%M%{F#A0BAF4}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
+time = %H:%M%{F#939393}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
 time-alt = %H:%M
 
 ;format-prefix = 
@@ -438,7 +439,7 @@ label = %{F#FFFFFF}%date%%time%%{F-}
 [module/clipboard]
 type = custom/text
 ;content-padding = 2
-content-foreground = #FFFFFF
+content-foreground = #889EF4
 ;content-background = #6B88FA
 content = "cb"
 click-left = sh ~/.scripts/clipboard.sh
@@ -471,7 +472,7 @@ label-indicator-background = ${colors.secondary}
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF7676
+content-foreground = #FF3E3E
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu.sh

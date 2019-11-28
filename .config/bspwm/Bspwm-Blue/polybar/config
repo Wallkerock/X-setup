@@ -128,7 +128,7 @@ fuzzy-match = true
 [module/xwindow]
 type = internal/xwindow
 label-padding = 2
-label-foreground = #ACB9F2
+label-foreground = #D1D1D1
 label = %title:0:30:...%
 
 ;;;;;;;;;;;;;;;;;;
@@ -215,7 +215,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF7676}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF3E3E}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -318,8 +318,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #FF403A
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 ; Only applies if <ramp-volume> is used
 ramp-volume-0 = 
@@ -409,9 +410,9 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#FFFFFF}%d%{F-}%{F#A0BAF4}.%m.%Y  %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#9A9A9A}.%m.%Y  %{F-}"
 
-time = %{F#FFFFFF}%H:%M%{F#A0BAF4}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
+time = %{F#FFFFFF}%H:%M%{F#9A9A9A}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
 time-alt = %H:%M
 
 ;format-prefix = 
@@ -423,7 +424,7 @@ label = %{F#FFFFFF}%date%%time%%{F-}
 [module/reload]
 type = custom/text
 ;content-padding = 2
-content-foreground = #939393
+content-foreground = #767676
 ;content-background = #3555D0
 content = ""
 click-left = "cp ~/.config/bspwm/Bspwm-Blue/polybar/config /home/lubomir/.config/polybar/ &"
@@ -431,7 +432,7 @@ click-left = "cp ~/.config/bspwm/Bspwm-Blue/polybar/config /home/lubomir/.config
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF7676
+content-foreground = #FF3E3E
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh &

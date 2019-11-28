@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm LightningBug
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_lightningbug.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm lightningbug
+Name[en_US.utf8]=Theme Bspwm LightningBug

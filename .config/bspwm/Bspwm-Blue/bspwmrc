@@ -62,7 +62,7 @@ $HOME/.config/polybar/launch.sh
 feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-blue/dark_sky.jpg &
 #nitrogen --restore &
 ###############
-pgrep pulseaudio || start-pulseaudio-x11 &
+pgrep pulseaudio > /dev/null 2>&1 || start-pulseaudio-x11 &
 ###############
 pkill greenclip && sleep 1; greenclip daemon &
 sleep 1; greenclip clear &

@@ -13,7 +13,7 @@ background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
 primary = #ffb52a
-secondary = #e60053
+secondary = #FF0000
 alert = #bd2c40
 
 [bar/example]
@@ -29,7 +29,7 @@ bottom = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-overline-size = 2
+overline-size = 1
 overline-color = #FFFFFF
 underline-size = 1
 underline-color = #FFFFFF
@@ -110,17 +110,17 @@ label-mode-background = #ffb52a
 
 label-focused = %name%
 label-focused-foreground = #FFFFFF
-label-focused-background = #334CB2
-;label-focused-overline = #FFFFFF
-;label-focused-underline = #FFFFFF
+label-focused-background = #3D60E5
+;label-focused-overline = #1C1C1C
+;label-focused-underline = #1C1C1C
 label-focused-font = 0
 label-focused-padding = 1
 
 label-unfocused = %name%
 label-unfocused-foreground = #D7D7D7
 label-unfocused-background = #353535
-;label-unfocused-overline = #727272
-;label-unfocused-underline = #727272
+;label-unfocused-overline = #1C1C1C
+;label-unfocused-underline = #1C1C1C
 label-unfocused-font = 0
 label-unfocused-padding = 1
 
@@ -174,7 +174,7 @@ click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
 type = custom/script
 label-foreground = #FFFFFF
 exec = sh ~/.scripts/updates-pacman.sh
-interval = 60
+interval = 30
 click-left = sh ~/.scripts/updates-install-i3.sh
 click-right = sh ~/.scripts/checkupdates.sh
 
@@ -233,7 +233,7 @@ interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-overline = #4bffdc
 format = <label>
-label = %{F#BABABA}RAM: %percentage_used:2%%%{F-}
+label = %{F#FFFFFF}RAM: %percentage_used:2%%%{F-}
 
 [module/temperature]
 type = internal/temperature
@@ -294,7 +294,7 @@ interval = 60
 
 [module/connection]
 type = custom/script
-label-foreground = #00E2CD
+;label-foreground = #00E2CD
 interval = 5
 ;label = "eth"
 exec = ~/.scripts/network/web.sh
@@ -379,8 +379,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #FF403A
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 [module/date]
 type = internal/date

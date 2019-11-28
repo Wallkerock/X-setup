@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# variables
+
+if ! updates_arch=$(checkupdates 2> /dev/null | wc -l ); then
+     updates_arch=0
+fi
+ 
+if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then
+# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
+# if ! updates_aur=$(trizen -Syu --aur --quiet | wc -l); then
+     updates_aur=0
+fi
+ 
+updates=$(("$updates_arch" + "$updates_aur"))
+ 
+pacman=`cat ~/.pacman`
+AUR=`cat ~/.aur`
+ 
+echo $updates_arch > ~/.pacman
+echo $updates_aur > ~/.aur
+ 
+# polybar part
+ 
+if [ "$updates" -gt 0 ]; then
+     echo "ups: $updates"
+else
+     echo "ups: $updates"
+fi
+ 
+# notify function to be reused later
+notify() {
+    paplay /usr/share/sounds/freedesktop/stereo/message.oga;
+    if [ "$2" = "1" ]; then
+        notify-send --urgency=normal "$1 update: $2"&
+    else
+        notify-send --urgency=normal "$1 updates: $2"&
+    fi
+}
+ 
+# system (pacman) updates
+if [ "$updates_arch" != "$pacman" ]; then notify "System" $updates_arch; fi
+ 
+# AUR updates 
+if [ "$updates_aur" != "$AUR" ]; then notify "AUR" $updates_aur; fi

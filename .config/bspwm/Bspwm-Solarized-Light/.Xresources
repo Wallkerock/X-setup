@@ -36,7 +36,7 @@ rofi.fullscreen:        true
 ! ------------------------------------------------------------------------------
 
 *.foreground:                 #433B1E
-*.background:                 [95]#FDF6E3
+*.background:                 #FDF6E3
 *.cursorColor:                #433B1E
 
 !! black dark/light

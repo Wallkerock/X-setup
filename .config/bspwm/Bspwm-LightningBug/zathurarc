@@ -1,0 +1,41 @@
+set font                        "Cantarell 10"
+set default-bg                  "#101010" #00
+set default-fg                  "#D9D9D9" #01
+
+set statusbar-fg                "#DADADA" #04
+set statusbar-bg                "#464646" #01
+
+set inputbar-bg                 "#272727" #00 currently not used
+set inputbar-fg                 "#D7D7D7" #02
+
+set notification-error-bg       "#515FA7" #08
+set notification-error-fg       "#B3B3B3" #00
+
+set notification-warning-bg     "#26a98b" #08
+set notification-warning-fg     "#B3B3B3" #00
+
+set highlight-color             "#4C5987" #0A
+set highlight-active-color      "#5275FF" #0D
+
+set completion-highlight-fg     "#d3ebe9" #02
+set completion-highlight-bg     "#4e5165" #0C
+
+set completion-bg               "#272727" #02
+set completion-fg               "#B3B3B3" #0C
+
+set notification-bg             "#edb54b" #0B
+set notification-fg             "#313131" #00
+
+set recolor-lightcolor          "#272727" #00
+set recolor-darkcolor           "#CCCCCC" #06
+set recolor                     "true"
+
+set page-padding                "1"
+
+# setting recolor-keep true will keep any color your pdf has.
+# if it is false, itll just be black and white
+set recolor-keephue             "false"
+
+# Rest of your configs go here:
+
+

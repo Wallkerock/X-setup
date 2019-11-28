@@ -10,8 +10,8 @@ getVolume() {
 }
 
 case "$1" in
- up) pactl set-sink-volume @DEFAULT_SINK@ +2%; getVolume;;
- down) pactl set-sink-volume @DEFAULT_SINK@ -2%; getVolume;;
+ up) pactl set-sink-volume @DEFAULT_SINK@ +5%; getVolume;;
+ down) pactl set-sink-volume @DEFAULT_SINK@ -5%; getVolume;;
  mute) muted=$(pactl list sinks | grep 'Mute: yes')
        if [ -z "$muted" ]; then
         pactl set-sink-mute @DEFAULT_SINK@ 1

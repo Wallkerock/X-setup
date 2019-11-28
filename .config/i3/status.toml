@@ -1,16 +1,16 @@
 [theme]
 name = "slick"
 [theme.overrides]
-info_bg = "#268BD2"
-info_fg = "#232c31"
+info_bg = "#4560CE"
+info_fg = "#FFFFFF"
 idle_bg = "#1C1C1C"
-idle_fg = "#E3E9FF"
+idle_fg = "#FFFFFF"
 good_bg = "#859900"
 good_fg = "#232c31"
-warning_bg = "#b58900"
+warning_bg = "#FFB100"
 warning_fg = "#232c31"
-critical_bg = "#FF8888"
-critical_fg = "#232c31"
+critical_bg = "#FF0000"
+critical_fg = "#FFFFFF"
 separator = ""
 separator_bg = "#002933"
 separator_fg = "#A7BBC0"
@@ -20,7 +20,17 @@ name = "awesome"
 [icons.overrides]
 
 [[block]]
+block = "custom"
+command = "sh .scripts/ssh-rust.sh"
+interval = 5
+
+[[block]]
 block = "uptime"
+
+[[block]]
+block = "weather"
+format = "{weather} {temp}°, {wind} m/s"
+service = { name = "openweathermap", api_key = "e9dfc84bc65c9e141608847a204ee894", city_id = "3057963", units = "metric" }
 
 [[block]]
 block = "pacman"
@@ -65,7 +75,18 @@ format = "{1m}"
 block = "temperature"
 collapsed = false
 interval = 2
-format = "{max}° max"
+format = "{max}°C"
+
+[[block]]
+block = "net"
+device = "enp2s0"
+ssid = false
+ip = false
+speed_up = false
+speed_down = true
+graph_up = false
+graph_down = false
+interval = 5
 
 [[block]]
 block = "sound"

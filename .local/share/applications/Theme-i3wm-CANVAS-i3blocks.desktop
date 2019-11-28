@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=i3wm Canvas i3blocks
+Exec=bash -c 'sh ~/.scripts/themes/i3wm_canvas_i3blocks.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme i3wm canvas i3blocks
+Name[en_US.utf8]=Theme i3wm Canvas i3blocks

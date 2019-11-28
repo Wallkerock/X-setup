@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #
 # wm independent hotkeys
 #
@@ -12,10 +14,10 @@ super + shift + Return
 # program launcher
 
 alt + space
-	j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17" -nb '#3A57C7' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#3A57C7' -i"
+	j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17" -nb '#1C1C1C' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#1C1C1C' -i"
 
 super + z
-	dmenu_run -i -p 'Arch Linux ' -fn 'Iosevka:bold:pixelsize=17' -nb '#3A57C7' -nf '#FFFFFF' -sf '#3A57C7' -sb '#FFFFFF'
+	dmenu_run -i -p 'Arch Linux ' -fn 'Iosevka:bold:pixelsize=17' -nb '#1C1C1C' -nf '#FFFFFF' -sf '#1C1C1C' -sb '#FFFFFF'
 
 super + space
 	rofi -show drun -show-icons -drun-icon-theme Newaita-dark

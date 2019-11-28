@@ -108,8 +108,7 @@ bindsym $mod+t exec --no-startup-id pkill compton;exec --no-startup-id notify-se
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b;exec --no-startup-id notify-send 'Compton ON'
 bindsym $mod+Shift+d --release exec --no-startup-id "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id scrot
-bindsym $mod+Print --release exec --no-startup-id scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id scrot -d 8
+bindsym $mod+Print --release exec --no-startup-id scrot -d 8
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # start dmenu (a program launcher)
@@ -339,7 +338,7 @@ exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id compton -b
 #exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
-exec --no-startup-id pgrep pulseaudio || start-pulseaudio-x11
+exec --no-startup-id pgrep pulseaudio > /dev/null 2>&1 || start-pulseaudio-x11
 exec --no-startup-id xfsettingsd
 exec_always --no-startup-id numlockx on
 exec --no-startup-id setxkbmap -layout "us,sk(qwerty),cz(qwerty)" -option grp:alt_shift_toggle
