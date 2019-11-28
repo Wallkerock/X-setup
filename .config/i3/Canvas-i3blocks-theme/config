@@ -375,7 +375,7 @@ bar {
 #        status_command i3status
 #        status_command py3status -c ~/.config/i3/py3status.conf
 #        status_command i3pystatus -c ~/.config/i3/i3pystatus.py
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        status_command i3blocks
 #        status_command i3status-rs ~/.config/i3/status.toml
 #        font pango:Iosevka, FontAwesome 11
         font pango:Iosevka, FontAwesome bold 11
@@ -395,7 +395,7 @@ exec --no-startup-id xfsettingsd
 exec_always --no-startup-id numlockx on
 exec --no-startup-id setxkbmap -layout "us,sk(qwerty),cz(qwerty)" -option grp:alt_shift_toggle
 #####
-#exec --no-startup-id gxkb
+exec --no-startup-id gxkb
 exec --no-startup-id clipit
 exec --no-startup-id nm-applet
 #####

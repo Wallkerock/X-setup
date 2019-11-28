@@ -8,12 +8,12 @@
 ;=====================================================
 
 [colors]
-background = #1C1C1C
+background = #30479F
 background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
 primary = #ffb52a
-secondary = #FF0000
+secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
@@ -35,11 +35,11 @@ underline-size = 1
 underline-color = #00f
 
 border-top-size = 0
-border-top-color = #4560CE
+border-top-color = #FFA500
 ;border-top-color = #009BAE
 
 border-bottom-size = 0
-border-bottom-color = #4560CE
+border-bottom-color = #5072F8
 
 border-left-size = 0
 border-left-color = #FFA500
@@ -53,7 +53,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-separator = %{F#434343}%{F-}
+separator = %{F#5070E9}%{F-}
 
 font-0 = Iosevka:bold:pixelsize=11;3
 ;font-0 = Misc Fixed:bold:pixelsize=14;2
@@ -71,7 +71,7 @@ tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #1C1C1C
+tray-background = #30479F
 
 ;wm-restack = i3
 
@@ -86,7 +86,7 @@ cursor-scroll = ns-resize
 [module/xwindow]
 type = internal/xwindow
 label-padding = 2
-label-foreground = #D1D1D1
+label-foreground = #CCDCFF
 label = %title:0:30:...%
 
 [module/i3]
@@ -107,15 +107,15 @@ label-mode-background = #ffb52a
 
 label-focused = %name%
 label-focused-foreground = #FFFFFF
-label-focused-background = #3753C6
-;label-focused-overline = #FFFFFF
+;label-focused-background = #FFFFFF
+label-focused-overline = #FFFFFF
 ;label-focused-underline = #0CC8E0
 label-focused-font = 0
 label-focused-padding = 1
 
 label-unfocused = %name%
-label-unfocused-foreground = #FFFFFF
-label-unfocused-background = #383838
+label-unfocused-foreground = #90A7FF
+;label-unfocused-background = #7995FF
 ;label-unfocused-overline = #3f3f3f
 ;label-unfocused-underline = #3f3f3f
 label-unfocused-font = 0
@@ -230,7 +230,7 @@ click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
 [module/reload]
 type = custom/text
 ;content-padding = 2
-content-foreground = #7B7B7B
+content-foreground = #7E97FA
 ;content-background = #3555D0
 content = ""
 click-left = "cp ~/.config/i3/Blue-Polybar-Top-theme/polybar/config ~/.config/polybar/ &"
@@ -292,7 +292,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF3E3E}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF7676}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -376,7 +376,7 @@ interval = 5
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = %{F#FF9F00}vol: <label-volume>%{F-}
+format-volume = %{F#C8FF99}vol: <label-volume>%{F-}
 
 ; Available tags:
 ;   <label-muted> (default)
@@ -415,7 +415,7 @@ interval = 2.0
 ;udspeed-minwidth = 0
 
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %{F#BABABA}(%downspeed:8%)%{F-}%{A}
+label-connected = %{F#A0BAF4}(%downspeed:8%)%{F-}%{A}
 
 format-disconnected = <label-disconnected>
 label-disconnected = %{F#797979}ip: ?%{F-}%{A}
@@ -425,9 +425,9 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#FFFFFF}%d%{F-}%{F#939393}.%m.%Y, %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#A0BAF4}.%m.%Y, %{F-}"
 
-time = %H:%M%{F#939393}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
+time = %H:%M%{F#A0BAF4}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
 time-alt = %H:%M
 
 ;format-prefix = 
@@ -439,7 +439,7 @@ label = %{F#FFFFFF}%date%%time%%{F-}
 [module/clipboard]
 type = custom/text
 ;content-padding = 2
-content-foreground = #889EF4
+content-foreground = #FFFFFF
 ;content-background = #6B88FA
 content = "cb"
 click-left = sh ~/.scripts/clipboard.sh
@@ -472,7 +472,7 @@ label-indicator-background = ${colors.secondary}
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF3E3E
+content-foreground = #FF7676
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu.sh
