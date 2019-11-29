@@ -58,24 +58,18 @@ bspc config external_rules_command sh ~/.scripts/bspwm/windows_rules.sh
 
 ### AUTOSTART ###
 
-pkill compton
-compton -b --config ~/.config/compton.conf &
+pkill compton && sleep 1; compton &
 ###############
 $HOME/.config/polybar/launch.sh
-#feh --bg-fill /home/lubomir/Pictures/backgrounds/grumpy-1200.jpg &
-#feh --bg-fill /home/lubomir/Pictures/backgrounds/1920x1536.jpg &
-#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-azul.png &
 feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-azul-dark/storm0.jpg &
 #nitrogen --restore &
 ###############
-#pkill start-pulseaudio-x11
-start-pulseaudio-x11 &
+pgrep pulseaudio > /dev/null 2>&1 || start-pulseaudio-x11 &
 ###############
-pkill gnome-settings-daemon
-#gnome-settings-daemon &
+pkill greenclip && sleep 1; greenclip daemon &
+sleep 1; greenclip clear &
+xfsettingsd &
 setxkbmap -layout "us,sk(qwerty),cz(qwerty)" -option grp:alt_shift_toggle &
-#pulseaudio --kill &
-#pulseaudio --start &
 pkill polkit-gnome-authentication-agent-1
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xrdb -load ~/.Xresources &
