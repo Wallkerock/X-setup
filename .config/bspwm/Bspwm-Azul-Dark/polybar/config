@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #0076D4
+background = #0065B6
 background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
@@ -19,7 +19,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 1920
-height = 26
+height = 25
 ;offset-x = 20
 ;offset-y = 1%
 radius = 0.0
@@ -42,10 +42,10 @@ border-bottom-size = 0
 border-bottom-color = #0066B6
 
 border-left-size = 0
-border-left-color = #0076D4
+border-left-color = #0065B6
 
 border-right-size = 0
-border-right-color = #0076D4
+border-right-color = #0065B6
 
 padding-left = 0
 padding-right = 1
@@ -55,23 +55,23 @@ module-margin-right = 1
 
 separator = %{F#4AA4EB}%{F-}
 
-font-0 = Iosevka:bold:pixelsize=10;3
-;font-0 = Misc Fixed:bold:pixelsize=14;3
+font-0 = Iosevka:bold:pixelsize=11;3
+;font-0 = Misc Fixed:bold:pixelsize=14;2
 font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=9;2
+font-3 = FontAwesome:pixelsize=11;3
 font-4 = Monaco:pixelsize=9;2
 font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center =
-modules-right = system-uptime-pretty weather updates-arch gmail home filesystem memory temperature cpu pulseaudio eth xkeyboard date reload powermenu
+modules-right = ssh system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #0076D4
+tray-background = #0065B6
 
 wm-restack = bspwm
 
@@ -87,7 +87,7 @@ cursor-scroll = ns-resize
 type = internal/xwindow
 label-padding = 2
 label-foreground = #CAE8FF
-label = %title:0:40:...%
+label = %title:0:30:...%
 
 [module/bspwm]
 type = internal/bspwm
@@ -129,68 +129,15 @@ content-foreground = #FFFFFF
 content = ""
 click-left = "rofi -show drun -show-icons -drun-icon-theme Newaita-holidays-dark >/dev/null 2>&1 &"
 
-[module/mpd]
-type = internal/mpd
-host = 127.0.0.1
-port = 6600
-;password = mysecretpassword
+[module/ssh]
+type = custom/script
+exec = ~/.scripts/ssh.sh
+interval = 4
 
-interval = 1
-
-format-online = %{F#94A1D4}<label-time>%{F-} <bar-progress> %{F#94A1D4}<label-song>%{F-}
-
-; Available tags:
-;   <label-offline>
-;format-offline = <label-offline>
-
-; Available tokens:
-;   %artist%
-;   %album-artist%
-;   %album%
-;   %date%
-;   %title%
-; Default: %artist% - %title%
-label-song = %title%
-
-; Available tokens:
-;   %elapsed%
-;   %total%
-; Default: %elapsed% / %total%
-label-time = %elapsed% / %total%
-
-; Available tokens:
-;   None
-label-offline = 🎜 mpd is offline
-
-; Only applies if <icon-X> is used
-icon-play = 
-icon-pause = 
-icon-stop = 
-icon-prev = 
-icon-next = 
-icon-seekb = ⏪
-icon-seekf = ⏩
-icon-random = 
-icon-repeat = 
-;icon-repeatone = 🔂
-;icon-single = 🔂
-icon-consume = ✀
-
-; Used to display the state of random/repeat/repeatone/single
-; Only applies if <icon-[random|repeat|repeatone|single]> is used
-toggle-on-foreground = #ff
-toggle-off-foreground = #55
-
-; Only applies if <bar-progress> is used
-bar-progress-width = 20
-bar-progress-indicator = %{F#505050}%{F-}
-bar-progress-fill = %{F#8995C5}|%{F-}
-bar-progress-empty = %{F#5D7BF5}|%{F-}
-
-bar-progress-indicator-font = 3
-bar-progress-fill-font = 3
-bar-progress-empty-font = 3
-bar-progress-empty-foreground = ${colors.foreground-alt}
+[module/system-uptime-pretty]
+type = custom/script
+exec = sh ~/.scripts/system-uptime-pretty.sh
+interval = 30
 
 [module/weather]
 type = custom/script
@@ -198,7 +145,7 @@ type = custom/script
 label-foreground = #A5FFBB
 ;label-background = #3555D0
 interval = 300
-exec = sh ~/.scripts/weather-i3.sh -i
+exec = sh ~/.scripts/weather.sh -i
 click-left = sh ~/.scripts/pocasie.sh
 
 [module/background]
@@ -209,15 +156,10 @@ content-foreground = #FFFFFF
 content = ""
 click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
 
-[module/system-uptime-pretty]
-type = custom/script
-exec = sh ~/.scripts/system-uptime-pretty.sh
-interval = 30
-
 [module/updates-arch]
 type = custom/script
 label-foreground = #FFFFFF
-exec = sh ~/.scripts/updates-pac-bspwm.sh
+exec = sh ~/.scripts/updates-pacman.sh
 interval = 60
 click-left = sh ~/.scripts/updates-install.sh &
 click-right = sh ~/.scripts/checkupdates.sh &
@@ -267,7 +209,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FFB0CC}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF7A7A}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -335,7 +277,7 @@ format = <label>
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = %{F#FFFFFF}CPU: %percentage:2%%%{F-}
+label = %{F#15FF00}CPU: %percentage:2%%%{F-}
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -370,8 +312,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #FF7874
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 ; Only applies if <ramp-volume> is used
 ramp-volume-0 = 
@@ -397,6 +340,19 @@ bar-volume-empty = |
 bar-volume-empty-font = 3
 bar-volume-empty-foreground = #51AAF1
 
+[module/info-publicip]
+type = custom/script
+exec = ~/.scripts/info-publicip.sh
+interval = 60
+
+[module/connection]
+type = custom/script
+;label-foreground = #FF5151
+interval = 5
+;label = "eth"
+exec = ~/.scripts/network/web.sh
+click-left = networkmanager_dmenu
+
 [module/eth]
 type = internal/network
 interface = enp2s0
@@ -405,10 +361,19 @@ interval = 2.0
 ;udspeed-minwidth = 0
 
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %{A1:networkmanager_dmenu:}%{F#FFFFFF}down: %{F#BEE3FF}(%downspeed:8%)%{F-}%{A}
+label-connected = %{F#BEE3FF}(%downspeed:8%)%{F-}
 
 format-disconnected = <label-disconnected>
 label-disconnected = %{A1:networkmanager_dmenu:}%{F#797979}ip: ?%{F-}%{A}
+
+[module/clipboard]
+type = custom/text
+;content-padding = 2
+content-foreground = #FFFFFF
+;content-background = #6B88FA
+content = "cb"
+click-left = sh ~/.scripts/clipboard.sh &
+click-right = sh ~/.scripts/clipboard-clear.sh &
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -423,7 +388,7 @@ format-prefix-foreground = ${colors.foreground-alt}
 ;   %name%
 ;   %number%
 ; Default: %layout%
-label-layout = %{F#FFFFFF} %layout%%{F-}
+label-layout = %{F#FFD345} %layout%%{F-}
 ;label-layout-overline = ${colors.secondary}
 
 ; Available tokens:
@@ -439,10 +404,10 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#7AFFF5} %d.%m.%Y  %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#BEE3FF}.%m.%Y  %{F-}"
 
 time = %H:%M%{F#BEE3FF}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
-time-alt =  %H:%M
+time-alt = %H:%M
 
 ;format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -461,7 +426,7 @@ click-left = "cp ~/.config/bspwm/Bspwm-Azul-Dark/polybar/config /home/lubomir/.c
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FFB0CC
+content-foreground = #FF7A7A
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh &
