@@ -3,7 +3,7 @@
 killall -q polybar &
 #killall sxhkd &
 #pulseaudio -k &
-killall compton &
+killall picom &
 
 cp ~/.config/i3/Blue-Polybar-Top-theme/polybar/config /home/lubomir/.config/polybar &
 cp ~/.config/i3/Blue-Polybar-Top-theme/polybar/launch.sh /home/lubomir/.config/polybar &
@@ -22,7 +22,7 @@ cp ~/.config/i3/Blue-Polybar-Top-theme/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/termite/config /home/lubomir/.config/termite/ &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/groot-i-am-root-1.jpg &
 
 sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 

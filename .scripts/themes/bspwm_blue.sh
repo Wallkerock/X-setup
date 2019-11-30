@@ -13,7 +13,7 @@ cp ~/.config/bspwm/Bspwm-Blue/JSON.sublime-settings ~/.config/sublime-text-2/Pac
 cp ~/.config/bspwm/Bspwm-Blue/.Xresources /home/lubomir/ &
 cp ~/.config/bspwm/Bspwm-Blue/.vimrc /home/lubomir/ &
 cp ~/.config/bspwm/Bspwm-Blue/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/bspwm/Bspwm-Blue/compton.conf /home/lubomir/.config/ &
+cp ~/.config/bspwm/Bspwm-Blue/picom.conf /home/lubomir/.config/ &
 cp ~/.config/bspwm/Bspwm-Blue/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/bspwm/Bspwm-Blue/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/bspwm/Bspwm-Blue/termite/config /home/lubomir/.config/termite/ &
@@ -25,8 +25,8 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg &
 xfconf-query -c xsettings -p /Net/ThemeName -s "Canvas-dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Newaita-dark" &
 
-bspc config border_width         2
-bspc config window_gap           10
+bspc config border_width         3
+bspc config window_gap           6
 
 bspc config gapless_monocle true
 bspc config single_monocle false
@@ -48,5 +48,5 @@ sleep 1; xrdb ~/.Xresources &
 #killall -q polybar &
 #pulseaudio -k &
 killall sxhkd && sleep 1; sxhkd &
-killall compton && sleep 1; compton &
+killall picom && sleep 1; picom -b &
 killall dunst; notify-send "restart dunst" &

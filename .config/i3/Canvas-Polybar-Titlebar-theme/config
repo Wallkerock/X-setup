@@ -335,7 +335,7 @@ exec_always --no-startup-id pkill sxhkd
 
 # Autostart applications
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id compton -b
+exec_always --no-startup-id picom -b
 #exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
 exec --no-startup-id pgrep pulseaudio > /dev/null 2>&1 || start-pulseaudio-x11

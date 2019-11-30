@@ -3,7 +3,7 @@
 killall -q polybar &
 #killall sxhkd &
 #pulseaudio -k &
-killall compton &
+killall picom &
 
 cp ~/.config/i3/Canvas-theme/qt5ct.conf /home/lubomir/.config/qt5ct/ &
 cp ~/.config/i3/Canvas-theme/gimprc /home/lubomir/.config/GIMP/2.10/ &

@@ -173,16 +173,9 @@ bindsym $mod+d focus child
 # bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
 # bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
 # bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
-# bindsym XF86AudioRaiseVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh up & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-# bindsym XF86AudioLowerVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh down & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-# bindsym XF86AudioMute exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh mute & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-
-## zvýšenie hlasitosti
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.scripts/volume_dunst.sh high && pkill -RTMIN+1 i3blocks
-## zníženie hlasitosti
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.scripts/volume_dunst.sh low && pkill -RTMIN+1 i3blocks
-## stlmenie zvuku
-bindsym XF86AudioMute exec --no-startup-id ~/.scripts/volume_dunst.sh mute && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioRaiseVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh up & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+bindsym XF86AudioLowerVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh down & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+bindsym XF86AudioMute exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh mute & canberra-gtk-play -i audio-volume-change -d "changeVolume"
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -384,7 +377,7 @@ bar {
 }
 
 # Autostart applications
-exec_always --no-startup-id compton -b
+exec_always --no-startup-id picom -b
 #exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
 exec --no-startup-id pgrep pulseaudio || start-pulseaudio-x11

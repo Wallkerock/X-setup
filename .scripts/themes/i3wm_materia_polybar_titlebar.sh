@@ -26,7 +26,7 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/lake-village.jpg &
 
 sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 
-xfconf-query -c xsettings -p /Net/ThemeName -s "Breeze-Maia-Dark" &
+xfconf-query -c xsettings -p /Net/ThemeName -s "Materia-Manjaro-gtk" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Green-Numix-5" &
 
 sleep 1; xrdb ~/.Xresources &

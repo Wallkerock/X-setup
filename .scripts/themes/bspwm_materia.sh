@@ -13,7 +13,7 @@ cp ~/.config/bspwm/Bspwm-Materia/JSON.sublime-settings ~/.config/sublime-text-2/
 cp ~/.config/bspwm/Bspwm-Materia/.Xresources /home/lubomir/ &
 cp ~/.config/bspwm/Bspwm-Materia/.vimrc /home/lubomir/ &
 cp ~/.config/bspwm/Bspwm-Materia/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/bspwm/Bspwm-Materia/compton.conf /home/lubomir/.config/ &
+cp ~/.config/bspwm/Bspwm-Materia/picom.conf /home/lubomir/.config/ &
 cp ~/.config/bspwm/Bspwm-Materia/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/bspwm/Bspwm-Materia/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/bspwm/Bspwm-Materia/termite/config /home/lubomir/.config/termite/ &
@@ -46,5 +46,5 @@ sleep 1; xrdb ~/.Xresources &
 #killall -q polybar &
 #pulseaudio -k &
 killall sxhkd && sleep 1; sxhkd &
-killall compton && sleep 1; compton &
+killall picom && sleep 1; picom -b &
 killall dunst; notify-send "restart dunst" &

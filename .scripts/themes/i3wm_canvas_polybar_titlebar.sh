@@ -3,7 +3,7 @@
 killall -q polybar &
 #killall sxhkd &
 #pulseaudio -k &
-killall compton &
+killall picom &
 
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/polybar/config /home/lubomir/.config/polybar &
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/polybar/launch.sh /home/lubomir/.config/polybar &

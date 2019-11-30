@@ -13,7 +13,7 @@ cp ~/.config/bspwm/Bspwm-LightningBug/JSON.sublime-settings ~/.config/sublime-te
 cp ~/.config/bspwm/Bspwm-LightningBug/.Xresources /home/lubomir/ &
 cp ~/.config/bspwm/Bspwm-LightningBug/.vimrc /home/lubomir/ &
 cp ~/.config/bspwm/Bspwm-LightningBug/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/bspwm/Bspwm-LightningBug/compton.conf /home/lubomir/.config/ &
+cp ~/.config/bspwm/Bspwm-LightningBug/picom.conf /home/lubomir/.config/ &
 cp ~/.config/bspwm/Bspwm-LightningBug/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/bspwm/Bspwm-LightningBug/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/bspwm/Bspwm-LightningBug/termite/config /home/lubomir/.config/termite/ &
@@ -48,5 +48,5 @@ sleep 1; xrdb ~/.Xresources &
 #killall -q polybar &
 #pulseaudio -k &
 killall sxhkd && sleep 1; sxhkd &
-killall compton && sleep 1; compton &
+killall picom && sleep 1; picom -b &
 killall dunst; notify-send "restart dunst" &

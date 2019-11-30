@@ -15,7 +15,8 @@ set $mod Mod4
 # is used in the bar {} block below.
 #font -misc-fixed-bold-r-normal--13-120-75-75-C-70-iso10646-1
 #font pango: Iosevka bold 8.5
-font pango: Ubuntu bold 8.5
+#font pango: Ubuntu bold 8.5
+font pango: Cantarell bold 9.1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).

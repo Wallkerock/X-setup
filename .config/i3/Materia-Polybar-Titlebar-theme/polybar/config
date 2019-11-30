@@ -17,7 +17,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:HDMI3}
 width = 100%
 height = 25
 ;offset-x = 1%
@@ -62,11 +62,11 @@ font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
 font-3 = FontAwesome:pixelsize=11;3
 font-4 = Monaco:pixelsize=9;2
-font-5 = Roboto:pixelsize=9;3
+font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi i3
 modules-center =
-modules-right = system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -142,6 +142,11 @@ type = internal/xwindow
 label-padding = 2
 label-foreground = #ADADAD
 label = %title:0:30:...%
+
+[module/ssh]
+type = custom/script
+exec = ~/.scripts/ssh.sh
+interval = 4
 
 [module/system-uptime-pretty]
 type = custom/script
@@ -228,7 +233,7 @@ interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-overline = #4bffdc
 format = <label>
-label = %{F#BABABA}RAM: %percentage_used:2%%%{F-}
+label = %{F#FFFFFF}RAM: %percentage_used:2%%%{F-}
 
 [module/temperature]
 type = internal/temperature
@@ -336,7 +341,8 @@ type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
-sink = alsa_output.pci-0000_12_00.3.analog-stereo
+;sink = alsa_output.pci-0000_12_00.3.analog-stereo
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
@@ -364,8 +370,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #FF403A
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 [module/date]
 type = internal/date
