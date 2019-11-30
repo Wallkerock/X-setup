@@ -20,3 +20,8 @@ Repository contain also configuration files for these panels:
 <h4>i3wm with Polybar</h4>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/i3wm-polybar.png">
+
+<br>
+<h4>i3wm with i3blocks</h4>
+
+<img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/i3wm-i3blocks.png">
