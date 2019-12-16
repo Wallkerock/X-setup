@@ -26,7 +26,7 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "LightningBug-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Vibrancy-Full-Dark-Yellow" &
 
 bspc config border_width         2
-bspc config window_gap           10
+bspc config window_gap           6
 
 bspc config gapless_monocle true
 bspc config single_monocle false
@@ -39,7 +39,7 @@ bspc config normal_border_color             "#464646"
 bspc config presel_feedback_color           "#B8860B"
 bspc config window_gap                      "#bspwm_window_gap"
 
-bspc config top_padding         24
+bspc config top_padding         25
 bspc config right_padding       0
 bspc config bottom_padding      0
 bspc config left_padding        0

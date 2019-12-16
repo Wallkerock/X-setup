@@ -17,12 +17,13 @@ cp ~/.config/i3/Blue-Polybar-Top-theme/config ~/.config/i3/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/.Xresources /home/lubomir/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/.vimrc /home/lubomir/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/i3/Blue-Polybar-Top-theme/compton.conf /home/lubomir/.config/ &
+cp ~/.config/i3/Blue-Polybar-Top-theme/picom.conf /home/lubomir/.config/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/i3/Blue-Polybar-Top-theme/termite/config /home/lubomir/.config/termite/ &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/groot-i-am-root-1.jpg &
+#feh --bg-fill /home/lubomir/Pictures/backgrounds/BLACK-2.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg &
 
 sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 

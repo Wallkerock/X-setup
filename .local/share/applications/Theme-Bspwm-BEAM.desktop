@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Beam
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_beam.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm beam
+Name[en_US.utf8]=Theme Bspwm Beam

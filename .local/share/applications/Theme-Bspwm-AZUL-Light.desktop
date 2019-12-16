@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Bspwm Azul Light
-Exec=bash -c 'sh ~/.scripts/themes/bspwm_azul_light.sh'
-Icon=style
-Terminal=false
-Categories=GTK;Settings;
-Comment=theme bspwm azul light
-Name[en_US.utf8]=Theme Bspwm Azul Light

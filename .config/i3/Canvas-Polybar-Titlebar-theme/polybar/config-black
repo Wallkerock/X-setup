@@ -13,11 +13,11 @@ background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
 primary = #ffb52a
-secondary = #e60053
+secondary = #FF0000
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:HDMI3}
 width = 100%
 height = 25
 ;offset-x = 1%
@@ -29,7 +29,7 @@ bottom = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-overline-size = 2
+overline-size = 1
 overline-color = #FFFFFF
 underline-size = 1
 underline-color = #FFFFFF
@@ -54,7 +54,7 @@ module-margin-left = 1
 module-margin-right = 1
 
 separator = %{F#434343}%{F-}
-;separator = %{F#414141}┆%{F-}
+;separator = %{F#414141}│%{F-}
 
 font-0 = Iosevka:bold:pixelsize=11;3
 ;font-0 = Misc Fixed:bold:pixelsize=14;2
@@ -62,11 +62,11 @@ font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
 font-3 = FontAwesome:pixelsize=11;3
 font-4 = Monaco:pixelsize=9;2
-font-5 = Roboto:pixelsize=9;3
+font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi i3
 modules-center =
-modules-right = ssh system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -110,17 +110,17 @@ label-mode-background = #ffb52a
 
 label-focused = %name%
 label-focused-foreground = #FFFFFF
-;label-focused-background = #4560CE
-;label-focused-overline = #FFFFFF
-;label-focused-underline = #FFFFFF
+label-focused-background = #3D60E5
+;label-focused-overline = #1C1C1C
+;label-focused-underline = #1C1C1C
 label-focused-font = 0
 label-focused-padding = 1
 
 label-unfocused = %name%
-label-unfocused-foreground = #727272
-;label-unfocused-background = #7995FF
-;label-unfocused-overline = #727272
-;label-unfocused-underline = #727272
+label-unfocused-foreground = #D7D7D7
+label-unfocused-background = #353535
+;label-unfocused-overline = #1C1C1C
+;label-unfocused-underline = #1C1C1C
 label-unfocused-font = 0
 label-unfocused-padding = 1
 
@@ -153,13 +153,21 @@ type = custom/script
 exec = sh ~/.scripts/system-uptime-pretty.sh
 interval = 30
 
+[module/openweathermap-detailed]
+type = custom/script
+exec = sh ~/.scripts/openweathermap-detailed.sh
+label-foreground = #CAFF99
+interval = 600
+label-font = 0
+click-left = sh ~/.scripts/pocasie-i3.sh &
+
 [module/weather]
 type = custom/script
 ;label-padding = 2
 label-foreground = #CAFF99
 ;label-background = #3555D0
 interval = 300
-exec = sh ~/.scripts/weather.sh -i
+exec = sh ~/.scripts/weather.sh
 click-left = sh ~/.scripts/pocasie-i3.sh &
 
 [module/background]
@@ -174,7 +182,7 @@ click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
 type = custom/script
 label-foreground = #FFFFFF
 exec = sh ~/.scripts/updates-pacman.sh
-interval = 60
+interval = 30
 click-left = sh ~/.scripts/updates-install-i3.sh
 click-right = sh ~/.scripts/checkupdates.sh
 
@@ -233,7 +241,7 @@ interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-overline = #4bffdc
 format = <label>
-label = %{F#BABABA}RAM: %percentage_used:2%%%{F-}
+label = %{F#FFFFFF}RAM: %percentage_used:2%%%{F-}
 
 [module/temperature]
 type = internal/temperature
@@ -290,11 +298,12 @@ ramp-coreload-7 = █
 [module/info-publicip]
 type = custom/script
 exec = ~/.scripts/info-publicip.sh
+label-foreground = #FFFFFF
 interval = 60
 
 [module/connection]
 type = custom/script
-label-foreground = #00E2CD
+;label-foreground = #15FF00
 interval = 5
 ;label = "eth"
 exec = ~/.scripts/network/web.sh
@@ -311,7 +320,7 @@ format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %{F#BABABA}(%downspeed:8%)%{F-}%{A}
 
 format-disconnected = <label-disconnected>
-label-disconnected = %{F#797979}ip: ?%{F-}%{A}
+label-disconnected = %{F#797979}down: ?%{F-}%{A}
 
 [module/clipboard]
 type = custom/text
@@ -351,7 +360,8 @@ type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
-sink = alsa_output.pci-0000_12_00.3.analog-stereo
+;sink = alsa_output.pci-0000_12_00.3.analog-stereo
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
@@ -379,8 +389,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #FF403A
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 [module/date]
 type = internal/date

@@ -65,7 +65,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center =
-modules-right = system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -196,6 +196,14 @@ bar-progress-empty-foreground = ${colors.foreground-alt}
 type = custom/script
 exec = sh ~/.scripts/system-uptime-pretty.sh
 interval = 30
+
+[module/openweathermap-detailed]
+type = custom/script
+exec = sh ~/.scripts/openweathermap-detailed.sh
+label-foreground = #958564
+interval = 600
+label-font = 0
+click-left = sh ~/.scripts/pocasie.sh &
 
 [module/weather]
 type = custom/script
@@ -402,7 +410,8 @@ bar-volume-empty-foreground = #616161
 [module/info-publicip]
 type = custom/script
 exec = ~/.scripts/info-publicip.sh
-interval = 60
+label-foreground = #15FF00
+interval = 200
 
 [module/connection]
 type = custom/script

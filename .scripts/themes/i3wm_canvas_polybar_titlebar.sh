@@ -17,7 +17,7 @@ cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/config ~/.config/i3/ &
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/.Xresources /home/lubomir/ &
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/.vimrc /home/lubomir/ &
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/compton.conf /home/lubomir/.config/ &
+cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/picom.conf /home/lubomir/.config/ &
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/i3/Canvas-Polybar-Titlebar-theme/termite/config /home/lubomir/.config/termite/ &

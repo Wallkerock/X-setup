@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/lubomir/.config/bspwm/Bspwm-Graphite/termite'
+let g:netrw_dirhist_5='/home/lubomir/Downloads/folder'
+let g:netrw_dirhist_4='/home/lubomir/.config/bspwm/Bspwm-Graphite'
+let g:netrw_dirhist_3='/home/lubomir/.scripts'
+let g:netrw_dirhist_2='/home/lubomir/.local/share/applications'
+let g:netrw_dirhist_1='/home/lubomir/.scripts'

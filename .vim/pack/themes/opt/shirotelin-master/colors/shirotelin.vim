@@ -1,13 +1,13 @@
 "
-"   .-')    ('-. .-.         _  .-')                .-') _     ('-.                        .-') _  
-"  ( OO ). ( OO )  /        ( \( -O )              (  OO) )  _(  OO)                      ( OO ) ) 
-" (_)---\_),--. ,--.  ,-.-') ,------.  .-'),-----. /     '._(,------.,--.      ,-.-') ,--./ ,--,'  
-" /    _ | |  | |  |  |  |OO)|   /`. '( OO'  .-.  '|'--...__)|  .---'|  |.-')  |  |OO)|   \ |  |\  
-" \  :` `. |   .|  |  |  |  \|  /  | |/   |  | |  |'--.  .--'|  |    |  | OO ) |  |  \|    \|  | ) 
-"  '..`''.)|       |  |  |(_/|  |_.' |\_) |  |\|  |   |  |  (|  '--. |  |`-' | |  |(_/|  .     |/  
-" .-._)   \|  .-.  | ,|  |_.'|  .  '.'  \ |  | |  |   |  |   |  .--'(|  '---.',|  |_.'|  |\    |   
-" \       /|  | |  |(_|  |   |  |\  \    `'  '-'  '   |  |   |  `---.|      |(_|  |   |  | \   |   
-"  `-----' `--' `--'  `--'   `--' '--'     `-----'    `--'   `------'`------'  `--'   `--'  `--'   
+"   .-')    ('-. .-.         _  .-')                .-') _     ('-.                        .-') _
+"  ( OO ). ( OO )  /        ( \( -O )              (  OO) )  _(  OO)                      ( OO ) )
+" (_)---\_),--. ,--.  ,-.-') ,------.  .-'),-----. /     '._(,------.,--.      ,-.-') ,--./ ,--,'
+" /    _ | |  | |  |  |  |OO)|   /`. '( OO'  .-.  '|'--...__)|  .---'|  |.-')  |  |OO)|   \ |  |\
+" \  :` `. |   .|  |  |  |  \|  /  | |/   |  | |  |'--.  .--'|  |    |  | OO ) |  |  \|    \|  | )
+"  '..`''.)|       |  |  |(_/|  |_.' |\_) |  |\|  |   |  |  (|  '--. |  |`-' | |  |(_/|  .     |/
+" .-._)   \|  .-.  | ,|  |_.'|  .  '.'  \ |  | |  |   |  |   |  .--'(|  '---.',|  |_.'|  |\    |
+" \       /|  | |  |(_|  |   |  |\  \    `'  '-'  '   |  |   |  `---.|      |(_|  |   |  | \   |
+"  `-----' `--' `--'  `--'   `--' '--'     `-----'    `--'   `------'`------'  `--'   `--'  `--'
 "
 "                                                           created by yasukotelin
 
@@ -21,15 +21,14 @@ endif
 set t_Co=256
 let g:colors_name = "shirotelin"
 
-
 """"""""""""""""""""""
 " group-name
 """"""""""""""""""""""
 
-hi Comment term=NONE cterm=NONE ctermfg=22 gui=NONE guifg=#006300
+hi Comment term=NONE cterm=NONE ctermfg=247 gui=NONE guifg=#006300
 
 hi Constant term=bold cterm=bold ctermfg=19 gui=bold guifg=#0000C0
-hi String term=NONE cterm=NONE ctermfg=19 gui=NONE guifg=#0000C0
+hi String term=NONE cterm=NONE ctermfg=20 gui=NONE guifg=#0000C0
 hi Character term=NONE cterm=NONE ctermfg=19 gui=NONE guifg=#0000C0
 hi Number term=NONE cterm=NONE ctermfg=19 gui=NONE guifg=#0000C0
 hi Boolean term=NONE cterm=bold ctermfg=19 gui=bold guifg=#0000C0
@@ -46,7 +45,7 @@ hi Operator term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
 hi Keyword term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
 hi Exception term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
 
-hi PreProc term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
+hi PreProc term=bold cterm=bold ctermfg=22 gui=bold guifg=#3e347d
 hi Include term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
 hi Define term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
 hi Macro term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
@@ -82,7 +81,11 @@ hi Cursor term=NONE cterm=NONE ctermfg=231 ctermbg=0 gui=NONE guifg=bg guibg=fg
 " hi lCursor
 " hi CursorIM
 hi clear CursorColumn
-hi CursorLine term=underline cterm=underline gui=underline guibg=NONE
+
+hi CursorLine term=bold cterm=bold guifg=LightGrey guibg=Grey40 ctermfg=NONE ctermbg=255
+hi CursorLineNr term=bold cterm=bold guifg=#FFFFFF guibg=black ctermfg=White ctermbg=250
+hi LineNr term=NONE cterm=NONE ctermbg=255 ctermfg=240 gui=NONE guifg=#545454
+
 hi Directory term=NONE cterm=NONE ctermfg=17 gui=NONE guifg=#000161
 hi DiffAdd term=NONE cterm=NONE ctermbg=194 guibg=#C8FFC8
 hi DiffChange term=NONE cterm=NONE ctermbg=194 guibg=#C8FFC8
@@ -95,8 +98,7 @@ hi Folded term=NONE cterm=NONE ctermfg=17 ctermbg=253 guifg=DarkBlue guibg=Light
 hi FoldColumn term=NONE cterm=NONE ctermfg=17 ctermbg=248 guifg=DarkBlue guibg=Grey
 hi clear SignColumn
 hi IncSearch term=NONE cterm=NONE ctermbg=187 gui=NONE guibg=#cfcca3
-hi LineNr term=NONE cterm=NONE ctermfg=240 gui=NONE guifg=#545454
-hi CursorLineNr term=bold cterm=bold ctermfg=238 gui=bold guifg=#444444
+
 hi MatchParen term=NONE cterm=NONE ctermbg=219 gui=NONE guibg=#ffc7fe
 hi ModeMsg term=bold cterm=bold ctermfg=237 gui=bold guifg=#303030
 hi MoreMsg term=bold cterm=bold ctermfg=28 gui=bold guifg=SeaGreen
@@ -127,6 +129,19 @@ hi Visual term=NONE cterm=NONE ctermbg=153 gui=NONE guibg=#CDE8FF
 hi VisualNOS term=bold,underline cterm=bold,underline ctermfg=16 gui=bold,underline
 hi WarningMsg term=NONE cterm=NONE ctermfg=196 gui=NONE guifg=Red
 hi WildMenu term=NONE cterm=NONE ctermfg=16 ctermbg=226
+
+" BRACKETS COLOR
+hi MatchParen cterm=none ctermbg=lightgreen ctermfg=white
+
+" STATUS BAR COLORS
+au InsertEnter * hi statusline guifg=White guibg=#FF0000 ctermfg=196 ctermbg=252
+au InsertLeave * hi statusline guifg=White guibg=#EEE8D5 ctermfg=015 ctermbg=252
+hi statusline guifg=black guibg=NONE ctermfg=015 ctermbg=252
+
+hi User1 ctermfg=015 ctermbg=255 guibg=#4e4e4e guifg=#adadad
+hi User2 ctermfg=008 ctermbg=255 guibg=#303030 guifg=#adadad
+hi User3 ctermfg=231 ctermbg=255 guibg=#303030 guifg=#303030
+hi User4 ctermfg=239 ctermbg=255 guibg=#4e4e4e guifg=#4e4e4e
 
 " hi Scrollbar
 " hi Menu

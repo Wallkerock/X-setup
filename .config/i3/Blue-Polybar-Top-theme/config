@@ -41,7 +41,7 @@ focus_follows_mouse no
 
 # just window border in px
 new_window pixel 2
-new_float pixel 2
+new_float normal 2
 
 # Hide borders
 # tokens: 'none', 'vertical', 'horizontal', 'both', 'smart_no_gaps', 'smart', '1', 'yes', 'true', 'on', 'enable', 'active'
@@ -99,8 +99,8 @@ bindsym $mod+m exec smplayer
 bindsym $mod+o exec lowriter
 bindsym $mod+p exec pavucontrol
 #bindsym $mod+b exec --no-startup-id sh /home/lubomir/.scripts/networkmanager_dmenu.sh
-bindsym $mod+t exec --no-startup-id pkill compton;exec --no-startup-id notify-send 'Compton OFF'
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b;exec --no-startup-id notify-send 'Compton ON'
+bindsym $mod+t exec --no-startup-id pkill picom;exec --no-startup-id notify-send 'Compositor OFF'
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b;exec --no-startup-id notify-send 'Compositor ON'
 bindsym $mod+Shift+d --release exec --no-startup-id "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id scrot
 bindsym $mod+Print --release exec --no-startup-id scrot -w
@@ -269,6 +269,8 @@ for_window [class="Timeset-gui"] floating enable border normal
 #for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="Xarchiver"] floating enable sticky enable border normal 2
+# special floating
+for_window [instance="^float$" class="(?i)urxvt"] floating enable, move relative center
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -279,7 +281,7 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed 
 
 # Set shut down, restart and locking features
 bindsym $mod+l exec --no-startup-id "sh /home/lubomir/.config/lock.sh"
-bindsym $mod+0 mode "$mode_system"
+#bindsym $mod+0 mode "$mode_system"
 set $Locker sh /home/lubomir/.config/lock.sh
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
@@ -296,7 +298,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym $mod+0 mode "$mode_system"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -329,10 +331,10 @@ exec_always --no-startup-id pkill sxhkd
 
 # Autostart applications
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id compton -b
+exec_always --no-startup-id picom -b
 #exec --no-startup-id nitrogen --restore
-#exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
-exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/groot-i-am-root-1.jpg
+exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
+#exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/BLACK-2.jpg
 exec --no-startup-id pgrep pulseaudio || start-pulseaudio-x11
 exec --no-startup-id xfsettingsd
 exec_always --no-startup-id numlockx on
@@ -353,7 +355,7 @@ exec --no-startup-id xset -dpms s off
 #############################
 
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 6
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
@@ -381,24 +383,24 @@ mode "$mode_gaps" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
+        bindsym plus  gaps inner current plus 2
+        bindsym minus gaps inner current minus 2
         bindsym 0     gaps inner current set 0
 
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+plus  gaps inner all plus 2
+        bindsym Shift+minus gaps inner all minus 2
         bindsym Shift+0     gaps inner all set 0
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
+        bindsym plus  gaps outer current plus 2
+        bindsym minus gaps outer current minus 2
         bindsym 0     gaps outer current set 0
 
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+plus  gaps outer all plus 2
+        bindsym Shift+minus gaps outer all minus 2
         bindsym Shift+0     gaps outer all set 0
 
         bindsym Return mode "default"

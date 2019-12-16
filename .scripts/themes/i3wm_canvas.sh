@@ -15,7 +15,7 @@ cp ~/.config/i3/Canvas-theme/.i3status.conf /home/lubomir/ &
 cp ~/.config/i3/Canvas-theme/.Xresources /home/lubomir/ &
 cp ~/.config/i3/Canvas-theme/.vimrc /home/lubomir/ &
 cp ~/.config/i3/Canvas-theme/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/i3/Canvas-theme/compton.conf /home/lubomir/.config/ &
+cp ~/.config/i3/Canvas-theme/picom.conf /home/lubomir/.config/ &
 cp ~/.config/i3/Canvas-theme/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/i3/Canvas-theme/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/i3/Canvas-theme/termite/config /home/lubomir/.config/termite/ &

@@ -49,7 +49,7 @@ hi EndOfBuffer	  term=bold  cterm=bold  ctermfg=darkred guifg=#cc0000 gui=bold
 
 
 " LINE NUMBER
-hi LineNr ctermbg=235 ctermfg=Grey
+hi LineNr ctermbg=235 ctermfg=242
 
 " CURSOR LINE
 hi CursorLine term=bold cterm=bold ctermbg=235 guibg=Grey40 guifg=LightGrey

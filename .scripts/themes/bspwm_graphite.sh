@@ -20,8 +20,8 @@ cp ~/.config/bspwm/Bspwm-Graphite/termite/config /home/lubomir/.config/termite/ 
 
 sed -i 's/iconset=.*/iconset=Papirus/g' ~/.config/smplayer/smplayer.ini &
 
-#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/bspwm-logo.png &
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/minimalist.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/bspwm-logo.png &
+#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/minimalist.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Stylish-Light-Laptop" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Limon" &
@@ -29,6 +29,11 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "Limon" &
 bspc config border_width         3
 bspc config window_gap           16
 
+# bspc config automatic_scheme spiral
+bspc config automatic_scheme alternate
+bspc config initial_polarity second_child
+
+bspc config split_ratio          0.50
 bspc config borderless_monocle   false
 bspc config gapless_monocle      true
 bspc config single_monocle       false

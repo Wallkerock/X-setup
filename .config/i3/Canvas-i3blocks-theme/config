@@ -290,6 +290,8 @@ for_window [class="Timeset-gui"] floating enable border normal
 #for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="Xarchiver"] floating enable sticky enable border normal 2
+# special floating
+for_window [instance="^float$" class="(?i)urxvt"] floating enable, move relative center
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -300,8 +302,8 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed 
 
 # Set shut down, restart and locking features
 bindsym $mod+l exec --no-startup-id "sh /home/lubomir/.config/lock.sh && sleep 1"
-bindsym $mod+0 mode "$mode_system"
-set $Locker sh /home/lubomir/.config/lock.sh && sleep 1
+#bindsym $mod+0 mode "$mode_system"
+set $Locker sleep 1 && sh /home/lubomir/.config/lock.sh
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -317,7 +319,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym $mod+0 mode "$mode_system"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -360,7 +362,7 @@ bar {
     }
         i3bar_command i3bar
         position bottom
-#        height 25
+        height 25
 #        separator_symbol "//"
         workspace_buttons yes
 #        mode hide

@@ -11,10 +11,12 @@ cp ~/.config/herbstluftwm/Stylish-theme/autostart ~/.config/herbstluftwm/ &
 cp ~/.config/herbstluftwm/Stylish-theme/info-hlwm-workspaces.sh /home/lubomir/.config/herbstluftwm/ &
 cp ~/.config/herbstluftwm/Stylish-theme/.Xresources /home/lubomir/ &
 cp ~/.config/herbstluftwm/Stylish-theme/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/herbstluftwm/Stylish-theme/compton.conf /home/lubomir/.config/ &
+cp ~/.config/herbstluftwm/Stylish-theme/picom.conf /home/lubomir/.config/ &
 cp ~/.config/herbstluftwm/Stylish-theme/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/herbstluftwm/Stylish-theme/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/herbstluftwm/Stylish-theme/.vimrc /home/lubomir/ &
+
+feh --bg-fill /home/lubomir/Pictures/backgrounds/herbstluftwm-stylish/tapeta2.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Materia-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Materia-Dark" &
@@ -58,7 +60,6 @@ herbstclient set smart_frame_surroundings 1
 herbstclient set mouse_recenter_gap 0
 
 sleep 1; xrdb ~/.Xresources &
-feh --bg-fill /home/lubomir/Pictures/backgrounds/herbstluftwm-stylish/tapeta2.jpg &
-killall compton && sleep 1; compton &
+killall picom && sleep 1; picom &
 killall dunst; notify-send "restart dunst" &
 #killall conky

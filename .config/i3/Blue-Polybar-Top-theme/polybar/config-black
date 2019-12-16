@@ -65,7 +65,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi i3 xwindow
 modules-center =
-modules-right = ssh system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -210,6 +210,14 @@ type = custom/script
 exec = ~/.scripts/ssh.sh
 interval = 4
 
+[module/openweathermap-detailed]
+type = custom/script
+exec = sh ~/.scripts/openweathermap-detailed.sh
+label-foreground = #CAFF99
+interval = 600
+label-font = 0
+click-left = sh ~/.scripts/pocasie-i3.sh &
+
 [module/weather]
 type = custom/script
 ;label-padding = 2
@@ -250,7 +258,7 @@ click-right = sh ~/.scripts/checkupdates.sh
 
 [module/gmail]
 type = custom/script
-label = %{F#FFFFFF}mail: %output%%{F-}
+label = %{F#FFFFFF}%output%%{F-}
 interval = 30
 exec = ~/.scripts/mail.sh
 click-left = thunderbird &

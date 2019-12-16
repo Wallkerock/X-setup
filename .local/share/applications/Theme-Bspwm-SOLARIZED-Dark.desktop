@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Bspwm Solarized Dark
-Exec=bash -c 'sh ~/.scripts/themes/bspwm_solarized_dark.sh'
-Icon=style
-Terminal=false
-Categories=GTK;Settings;
-Comment=theme bspwm solarized dark
-Name[en_US.utf8]=Theme Bspwm Solarized Dark

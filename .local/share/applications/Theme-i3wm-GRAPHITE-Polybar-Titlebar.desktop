@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=I3wm Graphite Polybar Titlebar
-Exec=bash -c 'sh ~/.scripts/themes/i3wm_graphite_polybar_titlebar.sh'
-Icon=style
-Terminal=false
-Categories=GTK;Settings;
-Comment=theme i3wm graphite polybar titlebar
-Name[en_US.utf8]=Theme i3wm Graphite Polybar Titlebar

@@ -66,7 +66,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi i3
 modules-center =
-modules-right = ssh system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -153,13 +153,21 @@ type = custom/script
 exec = sh ~/.scripts/system-uptime-pretty.sh
 interval = 30
 
+[module/openweathermap-detailed]
+type = custom/script
+exec = sh ~/.scripts/openweathermap-detailed.sh
+label-foreground = #CAFF99
+interval = 600
+label-font = 0
+click-left = sh ~/.scripts/pocasie-i3.sh &
+
 [module/weather]
 type = custom/script
 ;label-padding = 2
 label-foreground = #CAFF99
 ;label-background = #3555D0
 interval = 300
-exec = sh ~/.scripts/weather.sh -i
+exec = sh ~/.scripts/weather.sh
 click-left = sh ~/.scripts/pocasie-i3.sh &
 
 [module/background]
@@ -290,11 +298,12 @@ ramp-coreload-7 = █
 [module/info-publicip]
 type = custom/script
 exec = ~/.scripts/info-publicip.sh
+label-foreground = #FFFFFF
 interval = 60
 
 [module/connection]
 type = custom/script
-;label-foreground = #00E2CD
+;label-foreground = #15FF00
 interval = 5
 ;label = "eth"
 exec = ~/.scripts/network/web.sh
@@ -311,7 +320,7 @@ format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %{F#BABABA}(%downspeed:8%)%{F-}%{A}
 
 format-disconnected = <label-disconnected>
-label-disconnected = %{F#797979}ip: ?%{F-}%{A}
+label-disconnected = %{F#797979}down: ?%{F-}%{A}
 
 [module/clipboard]
 type = custom/text

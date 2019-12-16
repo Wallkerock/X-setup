@@ -19,7 +19,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 24
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -55,17 +55,17 @@ module-margin-right = 1
 
 separator = %{F#5070E9}%{F-}
 
-font-0 = Iosevka:bold:pixelsize=10;3
+font-0 = Iosevka:bold:pixelsize=11;3
 ;font-0 = Misc Fixed:bold:pixelsize=14;2
 font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=9;3
+font-3 = FontAwesome:pixelsize=11;3
 font-4 = Monaco:pixelsize=9;2
-font-5 = Roboto:pixelsize=9;3
+font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi i3 xwindow
 modules-center =
-modules-right = ssh system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -210,6 +210,14 @@ type = custom/script
 exec = ~/.scripts/ssh.sh
 interval = 4
 
+[module/openweathermap-detailed]
+type = custom/script
+exec = sh ~/.scripts/openweathermap-detailed.sh
+label-foreground = #CAFF99
+interval = 600
+label-font = 0
+click-left = sh ~/.scripts/pocasie-i3.sh &
+
 [module/weather]
 type = custom/script
 ;label-padding = 2
@@ -250,7 +258,7 @@ click-right = sh ~/.scripts/checkupdates.sh
 
 [module/gmail]
 type = custom/script
-label = %{F#FFFFFF}mail: %output%%{F-}
+label = %{F#FFFFFF}%output%%{F-}
 interval = 30
 exec = ~/.scripts/mail.sh
 click-left = thunderbird &
@@ -339,7 +347,7 @@ interval = 1
 ;   <bar-load>
 ;   <ramp-load>
 ;   <ramp-coreload>
-format = <label> <ramp-coreload>
+format = <label>
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load
@@ -390,8 +398,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #FF403A
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 [module/info-publicip]
 type = custom/script
@@ -424,7 +433,7 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#D7FFAB}%d.%m.%Y %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#A0BAF4}.%m.%Y, %{F-}"
 
 time = %H:%M%{F#A0BAF4}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
 time-alt = %H:%M

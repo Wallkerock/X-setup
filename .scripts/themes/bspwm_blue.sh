@@ -25,11 +25,16 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg &
 xfconf-query -c xsettings -p /Net/ThemeName -s "Canvas-dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Newaita-dark" &
 
-bspc config border_width         3
+bspc config border_width         2
 bspc config window_gap           6
 
-bspc config gapless_monocle true
-bspc config single_monocle false
+# bspc config automatic_scheme spiral
+bspc config automatic_scheme alternate
+bspc config initial_polarity second_child
+
+bspc config split_ratio          0.50
+bspc config gapless_monocle      true
+bspc config single_monocle       false
 
 #bspc config focused_sticky_border_color     "#FFB600"
 bspc config focused_border_color            "#5D7DFB"
@@ -39,7 +44,7 @@ bspc config normal_border_color             "#464646"
 bspc config presel_feedback_color           "#5D7DFB"
 bspc config window_gap                      "#bspwm_window_gap"
 
-bspc config top_padding         24
+bspc config top_padding         25
 bspc config right_padding       0
 bspc config bottom_padding      0
 bspc config left_padding        0

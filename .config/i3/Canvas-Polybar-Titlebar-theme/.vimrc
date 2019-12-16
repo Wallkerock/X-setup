@@ -14,7 +14,7 @@ let mapleader =" "
 	set encoding=utf-8
 	set cursorline
 "    set cursorcolumn
-	set number relativenumber
+	set number
 	set tabstop=4
 	set shiftwidth=4
 	set expandtab

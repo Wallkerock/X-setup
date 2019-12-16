@@ -6,7 +6,7 @@
 # yay -Syu --aur; \
 # echo -e "\n\e[1;33mDone - press enter to exit:\e[0m"; read'
 
-urxvt -e bash -c "echo -e '\e[1;33mSystem ready to update. Enter to run PACMAN: \e[1;30m/Ctrl+c Exit/\e[0m'; read; \
+urxvt -name float -e bash -c "echo -e '\e[1;33mSystem ready to update. Enter to run PACMAN: \e[1;30m/Ctrl+c Exit/\e[0m'; read; \
 sudo pacman -Syu; \
 echo -e '\n\e[1;33mDone - press enter to run updates from AUR: \e[1;30m/Ctrl+c Exit/\e[0m'; read; \
 yay -Syu --aur; \

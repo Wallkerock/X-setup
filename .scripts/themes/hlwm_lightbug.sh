@@ -11,7 +11,7 @@ cp ~/.config/herbstluftwm/LightBug-theme/autostart ~/.config/herbstluftwm/ &
 cp ~/.config/herbstluftwm/LightBug-theme/info-hlwm-workspaces.sh /home/lubomir/.config/herbstluftwm/ &
 cp ~/.config/herbstluftwm/LightBug-theme/.Xresources /home/lubomir/ &
 cp ~/.config/herbstluftwm/LightBug-theme/ROFI.rasi /home/lubomir/.config/rofi/themes/ &
-cp ~/.config/herbstluftwm/LightBug-theme/compton.conf /home/lubomir/.config/ &
+cp ~/.config/herbstluftwm/LightBug-theme/picom.conf /home/lubomir/.config/ &
 cp ~/.config/herbstluftwm/LightBug-theme/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/herbstluftwm/LightBug-theme/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/herbstluftwm/LightBug-theme/.vimrc /home/lubomir/ &
@@ -60,6 +60,6 @@ herbstclient set smart_frame_surroundings 1
 herbstclient set mouse_recenter_gap 0
 
 sleep 1; xrdb ~/.Xresources &
-killall compton && sleep 1; compton &
+killall picom && sleep 1; picom &
 killall dunst; notify-send "restart dunst" &
 #killall conky

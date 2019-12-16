@@ -20,7 +20,7 @@ cp ~/.config/bspwm/Bspwm-Solarized-Dark/termite/config /home/lubomir/.config/ter
 
 sed -i 's/iconset=.*/iconset=Papirus/g' ~/.config/smplayer/smplayer.ini &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/by_upload.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/sky-solarized.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "NumixSolarizedDarkCyan" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Materia-Manjaro" &
@@ -36,7 +36,7 @@ bspc config normal_border_color             "#1D414A"
 bspc config presel_feedback_color           "#2AA198"
 bspc config window_gap                      "#bspwm_window_gap"
 
-bspc config top_padding         26
+bspc config top_padding         24
 bspc config right_padding       0
 bspc config bottom_padding      0
 bspc config left_padding        0
