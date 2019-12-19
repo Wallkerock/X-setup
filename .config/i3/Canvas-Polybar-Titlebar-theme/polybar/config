@@ -182,7 +182,7 @@ click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
 type = custom/script
 label-foreground = #FFFFFF
 exec = sh ~/.scripts/updates-pacman.sh
-interval = 30
+interval = 600
 click-left = sh ~/.scripts/updates-install-i3.sh
 click-right = sh ~/.scripts/checkupdates.sh
 
