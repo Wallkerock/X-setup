@@ -280,7 +280,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF7789}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF3E3E}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -460,7 +460,7 @@ click-left = "cp ~/.config/bspwm/Bspwm-Beam/polybar/config /home/lubomir/.config
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF7789
+content-foreground = #FF3E3E
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh &

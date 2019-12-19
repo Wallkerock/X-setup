@@ -64,7 +64,7 @@ rofi.fullscreen:        true
 *color13:                         #57A49E
 
 !! cyan dark/light
-*color6:                          #2AA198
+*color6:                          #26988F
 *color14:                         #30918B
 
 !! white dark/light

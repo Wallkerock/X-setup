@@ -203,12 +203,14 @@ super + w
 super + e ; {super + e,e}
 	bspc node {@/ --equalize,@parent --balance}
 
-# # Dynamic gaps
-# super + shift + bracket{left,right}
-# 	bspc config window_gap "$(($(bspc config window_gap) {-,+} 2 ))"
-# # Original gaps
-# super + shift + backslash
-# 	bspc config window_gap 26
+# Global Dynamic gaps
+alt + bracket{left,right}
+	bspc config window_gap "$(($(bspc config window_gap) {-,+} 2 ))"
+# Original gaps
+alt + backslash
+	bspc config window_gap 6
+alt + 0
+	bspc config window_gap 0
 
 # Focused Dynamic gaps
 super + shift + bracket{left,right}
@@ -220,12 +222,12 @@ super + shift + backslash
 super + shift + KP_0
 	bspc config -d focused window_gap 0
 
-# # Dybamic borders
-# super + ctrl + bracket{left,right}
-# 	bspc config border_width "$(($(bspc config border_width) {-,+} 1 ))"
-# # Original borders
-# super + ctrl + backslash
-# 	bspc config border_width 2
+# Global Dybamic borders
+alt + ctrl + bracket{left,right}
+	bspc config border_width "$(($(bspc config border_width) {-,+} 1 ))"
+# Original borders
+alt + ctrl + backslash
+	bspc config border_width 2
 
 # Focused Dybamic borders
 super + ctrl + bracket{left,right}
