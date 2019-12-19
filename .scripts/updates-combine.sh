@@ -24,16 +24,20 @@ echo $updates_arch > ~/.scripts/updates/pacman
 echo $updates_aur > ~/.scripts/updates/aur
 
 checkupdates > ~/.scripts/updates/pacman-text
-yay -Qua> ~/.scripts/updates/aur-text
+yay -Qua > ~/.scripts/updates/aur-text
 
 ##########################################
 ### POLYBAR PART (interval 60 seconds) ###
 ##########################################
 
-if [ "$updates" -gt 0 ]; then
-    echo "ups: $updates"
+if [ "$updates" = 0 ]; then
+    echo ""
+fi
+
+if [ "$updates" = 1 ]; then
+    echo %{F#FF3E3E}"up: $updates"%{F-}
 else
-    echo "ups: $updates"
+    echo %{F#FF3E3E}"ups: $updates"#{F-}
 fi
 
 ###########################

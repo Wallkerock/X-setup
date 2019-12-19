@@ -10,7 +10,7 @@ bspc rule -a \* -o state=floating && urxvt -geometry 150x50+356+120 -e bash -c "
 sudo pacman -Syu; \
 echo -e '\n\e[1;33mDone - press enter to run updates from AUR: \e[1;30m/Ctrl+c Exit/\e[0m'; read; \
 yay -Syu --aur; \
-echo -e '\n\e[1;33mDone - press enter to exit:\e[0m'; read" &
+echo -e '\n\e[1;33mDone - press enter to exit:\e[0m'; read; sh ~/.scripts/updates-pacman.sh" &
 
 # xfce4-terminal -x bash -c "echo -e '\e[1;33mSystem ready to update. Enter to run PACMAN: \e[1;30m/Ctrl+c Exit/\e[0m'; read; \
 # sudo pacman -Syu; \
