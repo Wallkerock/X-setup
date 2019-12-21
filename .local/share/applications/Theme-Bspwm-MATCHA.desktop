@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Matcha
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_matcha.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm matcha
+Name[en_US.utf8]=Theme Bspwm Matcha
