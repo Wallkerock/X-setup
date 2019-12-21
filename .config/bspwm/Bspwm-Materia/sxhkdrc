@@ -39,6 +39,9 @@ super + v ; {w,o,e,n,m,p,g,v,t,f,r}
 super + shift + x
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
+super + ctrl + r
+	cp ~/.config/bspwm/Bspwm-Materia/polybar/config /home/lubomir/.config/polybar/
+
 Print
 	scrot
 

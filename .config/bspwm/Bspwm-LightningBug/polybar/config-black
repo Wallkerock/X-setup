@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #1B1B1B
+background = #1C1C1C
 background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
@@ -19,7 +19,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 25
+height = 24
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -55,23 +55,23 @@ module-margin-right = 1
 
 separator = %{F#434343}%{F-}
 
-font-0 = Iosevka:bold:pixelsize=11;3
-;font-0 = Misc Fixed:bold:pixelsize=14;3
+font-0 = Iosevka:bold:pixelsize=10;3
+;font-0 = Misc Fixed:bold:pixelsize=14;2
 font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=11;3
+font-3 = FontAwesome:pixelsize=9;3
 font-4 = Monaco:pixelsize=9;2
 font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center =
-modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty weather updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
 
 tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #1B1B1B
+tray-background = #1C1C1C
 
 wm-restack = bspwm
 
@@ -110,7 +110,7 @@ label-focused-overline = #FFFFFF
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = #D3D3D3
+label-occupied-foreground = #BCD1FF
 ;label-occupied-background = #373737
 ;label-occupied-overline = #313131
 label-occupied-padding = 1
@@ -128,7 +128,7 @@ fuzzy-match = true
 [module/xwindow]
 type = internal/xwindow
 label-padding = 2
-label-foreground = #CBC7BF
+label-foreground = #ACB9F2
 label = %title:0:30:...%
 
 ;;;;;;;;;;;;;;;;;;
@@ -140,23 +140,10 @@ type = custom/script
 exec = ~/.scripts/ssh.sh
 interval = 4
 
-[module/system-uptime-pretty]
-type = custom/script
-exec = sh ~/.scripts/system-uptime-pretty.sh
-interval = 30
-
-[module/openweathermap-detailed]
-type = custom/script
-exec = sh ~/.scripts/openweathermap-detailed.sh
-label-foreground = #CAFF99
-interval = 600
-label-font = 0
-click-left = sh ~/.scripts/pocasie.sh &
-
 [module/weather]
 type = custom/script
 ;label-padding = 2
-label-foreground = #FFC345
+label-foreground = #CAFF99
 ;label-background = #3555D0
 interval = 300
 exec = sh ~/.scripts/weather.sh -i
@@ -169,6 +156,11 @@ content-foreground = #FFFFFF
 ;content-background = #5072F8
 content = ""
 click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
+
+[module/system-uptime-pretty]
+type = custom/script
+exec = sh ~/.scripts/system-uptime-pretty.sh
+interval = 30
 
 [module/updates-arch]
 type = custom/script
@@ -223,7 +215,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF3E3E}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF7676}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -312,7 +304,7 @@ interval = 5
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = %{F#9F9F9F}vol: <label-volume>%{F-}
+format-volume = %{F#A0BAF4}vol: <label-volume>%{F-}
 
 ; Available tags:
 ;   <label-muted> (default)
@@ -374,7 +366,7 @@ interval = 2.0
 ;udspeed-minwidth = 0
 
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %{F#9F9F9F}(%downspeed:8%)%{F-}%{A}
+label-connected = %{F#A0BAF4}(%downspeed:8%)%{F-}%{A}
 
 format-disconnected = <label-disconnected>
 label-disconnected = %{F#797979}ip: ?%{F-}%{A}
@@ -417,9 +409,9 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#FFFFFF}%d%{F-}%{F#9F9F9F}.%m.%Y  %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#A0BAF4}.%m.%Y  %{F-}"
 
-time = %{F#FFFFFF}%H:%M%{F#9F9F9F}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
+time = %{F#FFFFFF}%H:%M%{F#A0BAF4}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
 time-alt = %H:%M
 
 ;format-prefix = 
@@ -434,12 +426,12 @@ type = custom/text
 content-foreground = #939393
 ;content-background = #3555D0
 content = ""
-click-left = "cp ~/.config/bspwm/Bspwm-LightningBug/polybar/config /home/lubomir/.config/polybar/ &"
+click-left = "cp ~/.config/bspwm/Bspwm-Blue/polybar/config /home/lubomir/.config/polybar/ &"
 
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF3E3E
+content-foreground = #FF7676
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh &

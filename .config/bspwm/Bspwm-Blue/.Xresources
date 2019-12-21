@@ -41,7 +41,7 @@ rofi.fullscreen:        true
 
 !! black dark/light
 *color0:                          #222531
-*color8:                          #4E4E4E
+*color8:                          #6D6D6D
 
 !! red dark/light
 *color1:                          #BA2922

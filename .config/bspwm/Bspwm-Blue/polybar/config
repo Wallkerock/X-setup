@@ -65,7 +65,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center =
-modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -174,7 +174,7 @@ click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
 type = custom/script
 label-foreground = #FFFFFF
 exec = sh ~/.scripts/updates-pacman.sh
-interval = 60
+interval = 40
 click-left = sh ~/.scripts/updates-install.sh &
 click-right = sh ~/.scripts/checkupdates.sh &
 

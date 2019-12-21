@@ -19,7 +19,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 1920
-height = 24
+height = 25
 ;offset-x = 25
 ;offset-y = 1%
 radius = 0.0
@@ -38,7 +38,7 @@ border-top-size = 0
 border-top-color = #FFA500
 ;border-top-color = #009BAE
 
-border-bottom-size = 1
+border-bottom-size = 0
 border-bottom-color = #090200
 
 border-left-size = 0
@@ -55,11 +55,11 @@ module-margin-right = 1
 
 separator = %{F#403624}%{F-}
 
-font-0 = Iosevka:bold:pixelsize=10;3
+font-0 = Iosevka:bold:pixelsize=11;3
 ;font-0 = Misc Fixed:bold:pixelsize=14;3
 font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=9;3
+font-3 = FontAwesome:pixelsize=11;3
 font-4 = Monaco:pixelsize=9;2
 font-5 = Roboto:pixelsize=9;2
 
@@ -233,7 +233,7 @@ click-right = sh ~/.scripts/checkupdates.sh
 
 [module/gmail]
 type = custom/script
-label = %{F#958564}mail: %output%%{F-}
+label = %{F#958564}%output%%{F-}
 interval = 15
 exec = sh ~/.scripts/mail.sh
 ;click-left = firefox --new-window https://mail.google.com/mail/u/1/#inbox &
@@ -410,7 +410,7 @@ bar-volume-empty-foreground = #616161
 [module/info-publicip]
 type = custom/script
 exec = ~/.scripts/info-publicip.sh
-label-foreground = #15FF00
+label-foreground = #FFFFFF
 interval = 200
 
 [module/connection]
