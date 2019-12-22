@@ -8,7 +8,7 @@ hc() {
 
 hc emit_hook reload
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/herbstluftwm-stylish/tapeta2.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/herbstluftwm-canvas/dark_sky.jpg &
 
 # remove all existing keybindings
 hc keyunbind --all
@@ -18,7 +18,7 @@ hc keyunbind --all
 #Mod=Mod1    # Use alt as the main modifier
 Mod=Mod4   # Use the super key as the main modifier
 
-hc keybind $Mod-Shift-w spawn feh --bg-fill --randomize /home/lubomir/Pictures/backgrounds/herbstluftwm-stylish/*
+hc keybind $Mod-Shift-w spawn feh --bg-fill --randomize /home/lubomir/Pictures/backgrounds/herbstluftwm-canvas/*
 
 hc keybind $Mod-Shift-e quit
 hc keybind $Mod-Shift-r reload
@@ -33,7 +33,7 @@ hc keybind $Mod-F2 spawn firefox
 hc keybind $Mod-Shift-F2 spawn firefox -private-window
 hc keybind $Mod-F3 spawn thunderbird
 hc keybind $Mod-g spawn subl
-hc keybind $Mod-d spawn rofi -show drun
+hc keybind $Mod-d spawn rofi -show drun -show-icons -drun-icon-theme Newaita-dark
 hc keybind $Mod-n spawn urxvt -e ncmpcpp
 #hc keybind $Mod-n spawn xfce4-terminal -e ncmpcpp
 #hc keybind $Mod-n spawn gnome-terminal -e ncmpcpp
@@ -41,11 +41,12 @@ hc keybind $Mod-m spawn smplayer
 hc keybind $Mod-o spawn lowriter
 hc keybind $Mod-h spawn viewnior
 hc keybind $Mod-l spawn sh /home/lubomir/.config/lock.sh
-hc keybind $Mod-t spawn sh ~/.scripts/compton-off.sh
-hc keybind $Mod-Control-t spawn sh ~/.scripts/compton-on.sh
+#hc keybind $Mod-t spawn sh ~/.scripts/compton-off.sh
+#hc keybind $Mod-Control-t spawn sh ~/.scripts/compton-on.sh
 hc keybind Print spawn scrot
 hc keybind Shift-Print spawn scrot -d 8
-hc keybind $Mod-z spawn dmenu_run_hlwm
+hc keybind Alt-space spawn j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17.5" -nb '#1C1C1C' -nf '#FFFFFF' -sb '#3D60E5' -sf '#FFFFFF' -i"
+hc keybind Alt-r spawn cp ~/.config/herbstluftwm/Canvas-theme/polybar/config ~/.config/polybar/
 
 # power menu
 hc keybind $Mod-0 spawn sh ~/.scripts/power-menu-hlwm.sh
@@ -126,7 +127,7 @@ for i in ${!tag_names[@]} ; do
 done
 
 ## set initial frame padding
-herbstclient pad 0 24 0 0
+herbstclient pad 0 25 0 0
 # cycle through tags
 hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
@@ -167,8 +168,8 @@ hc attr theme.floating.reset 1
 hc set frame_border_active_color '#2B2B2B'
 hc set frame_border_normal_color '#1B1B1B'
 hc set frame_bg_normal_color '#7D7D7D'
-hc set frame_bg_active_color '#B7B7B7'
-hc set frame_active_opacity '50'
+hc set frame_bg_active_color '#3D60E5'
+hc set frame_active_opacity '60'
 hc set frame_normal_opacity '20'
 hc set frame_border_width 1
 hc set always_show_frame 1
@@ -177,7 +178,7 @@ hc set frame_transparent_width 2
 hc set frame_gap 6
 hc set focus_follows_mouse 0
 
-hc attr theme.active.color '#D4D4D4'
+hc attr theme.active.color '#5D7DFB'
 hc attr theme.normal.color '#454545'
 hc attr theme.urgent.color orange
 hc attr theme.inner_width 1

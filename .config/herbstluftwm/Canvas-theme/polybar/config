@@ -8,12 +8,8 @@
 ;=====================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-;background = #0A1214
-background = #0F0F0F
-;background = #182024
+background = #1C1C1C
 background-alt = #444444
-;foreground = ${xrdb:color7:#222}
 foreground = #FFFFFF
 foreground-alt = #555555
 primary = #ffb52a
@@ -21,9 +17,9 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:HDMI3}
 width = 100%
-height = 24
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -61,27 +57,25 @@ module-margin-right = 1
 separator = %{F#333333}%{F-}
 ;separator = %{F#303030}|%{F-}
 
-;font-0 = Iosevka:pixelsize=10;3
-font-0 = Iosevka:bold:pixelsize=10;3
-;font-0 = Consolas:pixelsize=10;22
-;font-0 = xos4 Terminesspowerline:pixelsize=14;2
+font-0 = Iosevka:bold:pixelsize=11;3
+;font-0 = Misc Fixed:bold:pixelsize=14;2
 font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=9;3
+font-3 = FontAwesome:pixelsize=11;3
 font-4 = Monaco:pixelsize=9;2
 font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi info-hlwm-workspaces
 modules-center =
-modules-right = system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #0F0F0F
+tray-background = #1C1C1C
 
-wm-restack = bspwm
+;wm-restack = bspwm
 ;wm-restack = i3
 
 ;override-redirect = true
@@ -113,7 +107,7 @@ content-foreground = #FFFFFF
 ;content-background = #5072F8
 ;content = ""
 content = "Menu"
-click-left = "rofi -show drun >/dev/null 2>&1 &"
+click-left = "rofi -show drun -show-icons -drun-icon-theme Newaita-dark >/dev/null 2>&1 &"
 
 [module/mpd]
 type = internal/mpd
@@ -179,13 +173,18 @@ bar-progress-fill-font = 3
 bar-progress-empty-font = 3
 bar-progress-empty-foreground = ${colors.foreground-alt}
 
+[module/ssh]
+type = custom/script
+exec = ~/.scripts/ssh.sh
+interval = 4
+
 [module/openweathermap-detailed]
 type = custom/script
 exec = sh ~/.scripts/openweathermap-detailed.sh
 label-foreground = #CAFF99
 interval = 600
 label-font = 0
-click-left = sh ~/.scripts/pocasie.sh &
+#click-left = sh ~/.scripts/pocasie.sh &
 
 [module/weather]
 type = custom/script
@@ -272,7 +271,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF7272}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF3E3E}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -340,7 +339,7 @@ format = <label>
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = %{F#E3E3E3}CPU %percentage:2%%%{F-}
+label = %{F#15FF00}CPU %percentage:2%%%{F-}
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -362,7 +361,7 @@ interval = 5
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = %{F#FFFFFF}vol: <label-volume>%{F-}
+format-volume = %{F#A0B4FF}vol: <label-volume>%{F-}
 
 ; Available tags:
 ;   <label-muted> (default)
@@ -376,8 +375,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #666
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 ; Only applies if <ramp-volume> is used
 ramp-volume-0 = 
@@ -444,10 +444,10 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#CCFF93} %d.%m.%Y  %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#909090}.%m.%Y, %{F-}"
 
 time = %H:%M%{F#909090}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
-time-alt =  %H:%M
+time-alt = %H:%M
 
 ;format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -485,12 +485,12 @@ type = custom/text
 content-foreground = #616161
 ;content-background = #3555D0
 content = ""
-click-left = "cp ~/.config/herbstluftwm/Stylish-theme/polybar/config ~/.config/polybar/ &"
+click-left = "cp ~/.config/herbstluftwm/Canvas-theme/polybar/config ~/.config/polybar/ &"
 
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF7272
+content-foreground = #FF3E3E
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-hlwm.sh &
