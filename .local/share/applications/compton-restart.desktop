@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Compton - Restart
-Exec=bash -c 'sh ~/.scripts/compton-restart.sh > /dev/null 2>&1'
-Icon=compton
-Terminal=false
-Categories=compositor;restart;
-Comment=Media sever started
-Name[en_US.utf8]=Compton - Restart 
