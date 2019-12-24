@@ -453,7 +453,7 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#FFFFFF}%d%{F-}%{F#7B8F95}.%m.%Y  %{F-}"
+date-alt = "%{F#FFFFFF}%d%{F-}%{F#7B8F95}.%m.%Y, %{F-}"
 
 time = %H:%M%{F#7B8F95}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
 time-alt = %H:%M

@@ -20,14 +20,21 @@ cp ~/.config/bspwm/Bspwm-Matcha/termite/config /home/lubomir/.config/termite/ &
 
 sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-matcha/fish.png &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-matcha/nature.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Matcha-dark-sea" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Vibrancy-Full-Dark-Teal" &
 
 bspc config border_width         2
-bspc config window_gap           10
+bspc config window_gap           12
 
+bspc config automatic_scheme alternate
+bspc config initial_polarity second_child
+
+#bspc config automatic_scheme spiral
+#bspc config initial_polarity first_child
+
+bspc config split_ratio 0.50
 bspc config gapless_monocle true
 bspc config single_monocle false
 

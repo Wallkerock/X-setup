@@ -11,19 +11,19 @@ super + shift + Return
 	termite
 
 super + z
-	dmenu_run -i -p 'Arch Linux ' -fn 'Iosevka:pixelsize=17' -nb '#141A1B' -nf '#2EB398' -sf '#141A1B' -sb '#2EB398'
+	dmenu_run -i -p 'Arch Linux ' -fn 'Iosevka:pixelsize=17.5' -nb '#141A1B' -nf '#2EB398' -sf '#141A1B' -sb '#2EB398'
 
 alt + space
-	j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17" -nb '#141A1B' -nf '#2EB398' -sb '#2EB398' -sf '#141A1B' -i"
+	j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17.5" -nb '#141A1B' -nf '#2EB398' -sb '#2EB398' -sf '#141A1B' -i"
 
 super + space
 	rofi -show drun -show-icons -drun-icon-theme Newaita-dark
 
 super + m
-	rofi  -show find -modi find:~/.scripts/finder.sh
+	find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu -i | xargs -0 xdg-open
 
 super + F1
-	nautilus --new-window
+	thunar
 
 super + F2
 	firefox
@@ -206,7 +206,7 @@ alt + bracket{left,right}
 	bspc config window_gap "$(($(bspc config window_gap) {-,+} 2 ))"
 # Original gaps
 alt + backslash
-	bspc config window_gap 10
+	bspc config window_gap 12
 alt + 0
 	bspc config window_gap 0
 
@@ -215,7 +215,7 @@ super + shift + bracket{left,right}
 	bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {-,+} 2 ))"
 # Original gaps
 super + shift + backslash
-	bspc config -d focused window_gap 10
+	bspc config -d focused window_gap 12
 
 super + shift + KP_0
 	bspc config -d focused window_gap 0
