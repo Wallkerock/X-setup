@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=i3wm Matcha Polybar Titlebar
+Exec=bash -c 'sh ~/.scripts/themes/i3wm_matcha_polybar_titlebar.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme i3wm matcha polybar titlebar
+Name[en_US.utf8]=Theme i3wm Matcha Polybar Titlebar

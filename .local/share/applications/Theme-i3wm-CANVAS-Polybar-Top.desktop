@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=i3wm Canvas Polybar Top
+Exec=bash -c 'sh ~/.scripts/themes/i3wm_canvas_polybar_top.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme i3wm canvas polybar
+Name[en_US.utf8]=Theme i3wm Canvas Polybar Top

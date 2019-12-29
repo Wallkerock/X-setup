@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=i3wm Blue Polybar Top
-Exec=bash -c 'sh ~/.scripts/themes/i3wm_blue_polybar_top.sh'
-Icon=style
-Terminal=false
-Categories=GTK;Settings;
-Comment=theme i3wm blue polybar
-Name[en_US.utf8]=Theme i3wm Blue Polybar Top
