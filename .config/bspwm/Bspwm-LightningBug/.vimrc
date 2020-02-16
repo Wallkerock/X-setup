@@ -13,6 +13,7 @@ let mapleader =" "
 	syntax on
 	set encoding=utf-8
 	set cursorline
+    set so=10
 "    set cursorcolumn
 	set number relativenumber
 	set tabstop=4

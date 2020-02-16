@@ -115,7 +115,7 @@ label-focused-overline = #2EB398
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = #AFC4CB
+label-occupied-foreground = #239B83
 ;label-occupied-background = #373737
 ;label-occupied-overline = #313131
 label-occupied-padding = 1

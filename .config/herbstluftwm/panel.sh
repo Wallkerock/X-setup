@@ -1,24 +1,5 @@
 #!/usr/bin/env bash
 
-# 
-#  ██                     ██                ██    ██           ████   ██  
-# ░██                    ░██               ░██   ░██          ░██░   ░██  
-# ░██       █████  ██████░██       ██████ ██████ ░██ ██   ██ ██████ ██████
-# ░██████  ██░░░██░░██░░█░██████  ██░░░░ ░░░██░  ░██░██  ░██░░░██░ ░░░██░ 
-# ░██░░░██░███████ ░██ ░ ░██░░░██░░█████   ░██   ░██░██  ░██  ░██    ░██  
-# ░██  ░██░██░░░░  ░██   ░██  ░██ ░░░░░██  ░██   ░██░██  ░██  ░██    ░██  
-# ░██  ░██░░██████░███   ░██████  ██████   ░░██  ███░░██████  ░██    ░░██ 
-# ░░   ░░  ░░░░░░ ░░░    ░░░░░   ░░░░░░     ░░  ░░░  ░░░░░░   ░░      ░░
-#                                     ██
-# ██████                             ░██
-#░██░░░██  ██████   ███████   █████  ░██
-#░██  ░██ ░░░░░░██ ░░██░░░██ ██░░░██ ░██
-#░██████   ███████  ░██  ░██░███████ ░██
-#░██░░░   ██░░░░██  ░██  ░██░██░░░░  ░██
-#░██     ░░████████ ███  ░██░░██████ ███
-#░░       ░░░░░░░░ ░░░   ░░  ░░░░░░ ░░░
-#
-
 hc() { "${herbstclient_command[@]:-herbstclient}" "$@" ;}
 monitor=${1:-0}
 geometry=( $(herbstclient monitor_rect "$monitor") )
@@ -29,16 +10,18 @@ fi
 # geometry has the format W H X Y
 x=${geometry[0]}
 y=${geometry[1]}
-panel_width=$((${geometry[2]} - 66))
-panel_height=16
-#font="-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*"
-#use xorg-xfontsel to pick a new font :3
-font="-*-terminesspowerline-medium-*-normal-*-12-*-*-*-*-*-*-*"
-font2="-misc-fontawesome-medium-r-normal--0-0-0-12-p-0-iso10646-1"
-#font="-*-tewi-*-*-*-*-*-*-*-*-*-*-*-*"
+panel_width=$((${geometry[2]} - 0))
+panel_height=23
+#font="-xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1"
+#font="-*-iosevka-bold-r-normal--12-120-0-0-m-0-iso10646-1"
+#font="-misc-fixed-bold-r-normal--14-130-75-75-c-70-iso10646-1"
+font="-*-inconsolata-bold-r-normal--14-140-0-0-m-0-iso10646-1"
+#font="-xos4-terminesspowerline-medium-r-normal--14-140-72-72-c-80-iso10646-1"
+#font="-misc-tamsyn-bold-r-normal--14-101-100-100-c-70-iso8859-1"
 bgcolor=$(hc get frame_border_normal_color)
 selbg=$(hc get window_border_active_color)
-selfg='#101010'
+selbg='#CC9100'
+selfg='#1B1B1B'
 
 ####
 # Try to find textwidth binary.
@@ -74,8 +57,6 @@ else
       awk '$0 != l { print ; l=$0 ; fflush(); }' "$@"
     }
 fi
-# My Functions
-
 
 hc pad $monitor $panel_height
 
@@ -90,7 +71,7 @@ hc pad $monitor $panel_height
     while true ; do
         # "date" output is checked once a second, but an event is only
         # generated if the output changed compared to the previous run.
-	date +$'date\t^fg(#d3d3d3)%H:%M^fg(#505050), %a ^fg(#d3d3d3)%d^fg(#505050)-%m-%Y'
+        date +$'date\t^fg(#efefef)%H:%M^fg(#909090), %Y-%m-^fg(#efefef)%d'
         sleep 1 || break
     done > >(uniq_linebuffered) &
     childpid=$!
@@ -108,7 +89,7 @@ hc pad $monitor $panel_height
         # and then waits for the next event to happen.
 
         bordercolor="#26221C"
-        separator="^bg()^fg($selbg)|"
+        separator="^bg()^fg(#414141)|"
         # draw tags
         for i in "${tags[@]}" ; do
             case ${i:0:1} in
@@ -119,13 +100,13 @@ hc pad $monitor $panel_height
                     echo -n "^bg(#9CA668)^fg(#141414)"
                     ;;
                 ':')
-                    echo -n "^bg()^fg(#ffffff)"
+                    echo -n "^bg(#383838)^fg(#ffffff)"
                     ;;
                 '!')
-                    echo -n "^bg(#FF0675)^fg(#141414)"
+                    echo -n "^bg(#FF5858)^fg(#FFFFFF)"
                     ;;
                 *)
-                    echo -n "^bg()^fg(#ababab)"
+                    echo -n "^bg()^fg(#616161)"
                     ;;
             esac
             if [ ! -z "$dzen2_svn" ] ; then
@@ -133,40 +114,19 @@ hc pad $monitor $panel_height
                 echo -n "^ca(1,\"${herbstclient_command[@]:-herbstclient}\" "
                 echo -n "focus_monitor \"$monitor\" && "
                 echo -n "\"${herbstclient_command[@]:-herbstclient}\" "
-                #echo -n "use \"${i:1}\") ${i:1} ^ca()"
-		echo -n "use \"${i:1}\") ^fn(FontAwesome:size=9)${i:1}^fn() ^ca()"
+                echo -n "use \"${i:1}\") ${i:1} ^ca()"
             else
                 # non-clickable tags if using older dzen
                 echo -n " ${i:1} "
             fi
         done
-#        echo -n "$separator"
-#        echo -n "^bg()^fg() ${windowtitle//^/^^}"
-        #battery
-        bat=`cat /sys/class/power_supply/BAT1/capacity`
-        batstat=`cat /sys/class/power_supply/BAT1/status`
-        if (($batstat=='Charging'))
-        then
-            batico="^i(/usr/share/icons/stlarch_icons/ac10.xbm)"
-        else
-            batico="^i(/usr/share/icons/stlarch_icons/batt5full.xbm)"
-        fi
-        bat="^fg($xicon)$batico ^fg($xtitle)bat ^fg($xfg)$bat^fg($xext)%"
-	#Vol
-	vol=$(amixer -c 0 get Master | tail -n 1 | cut -d '[' -f 2 | sed 's/%.*//g' | sed -n 1p)
-	#vol=$(amixer sget Master,0)
-	#pacman updates
-        #updates=`execi 200 checkupdates | wc -l`
-        #updates="^fg($xicon)^i(/usr/share/icons/stlarch_icons/pacman1.xbm) ^fg($xtitle)pac ^fg($xfg)$updates"
-	
+        echo -n "$separator"
+        echo -n "^bg()^fg() ${windowtitle//^/^^}"
         # small adjustments
-		#cpu_temp=$(echo -n $(sensors | grep "Core" | cut -b 16-19))
-		
-		mpc_current=$(mpc current)
-		right="  ♫ $mpc_current $separator^fg() $vol $separator^fg() $bat $separator^bg() $date $separator"
+        right="$separator^bg() $date $separator"
         right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
-        width=$($textwidth "$font" "$right_text_only  ")
+        width=$($textwidth "$font" "$right_text_only    ")
         echo -n "^pa($(($panel_width - $width)))$right"
         echo
 
@@ -223,15 +183,9 @@ hc pad $monitor $panel_height
 
     ### dzen2 ###
     # After the data is gathered and processed, the output of the previous block
-    # gets piped to dzen2...or is it conky? If this ceases to work at any point
-	# try changing 'conky' to '/dev/null'
+    # gets piped to dzen2.
 
-} 2> conky | dzen2 -w $panel_width -x $x -y $y -fn "$font" -h $panel_height \
+} 2> /dev/null | dzen2 -w $panel_width -x $x -y $y -fn "$font" -h $panel_height \
     -e 'button3=;button4=exec:herbstclient use_index -1;button5=exec:herbstclient use_index +1' \
-    -ta l -bg "$bgcolor" -fg '#efefef' &
+    -ta l -bg "$bgcolor" -fg '#efefef'
 
-#wait 2 seconds then load the stanlonetray
-
-sleep 2
-
-stalonetray

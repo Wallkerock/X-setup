@@ -12,7 +12,7 @@ herbstclient --idle "tag_*" 2>/dev/null | {
                     '#')
                         # the tag is viewed on the focused monitor
                         # TODO Add your formatting tags for focused workspaces
-                        echo "%{F#1B1B1B}%{B#BABABA}"
+                        echo "%{F#FFFFFF}%{B#B98300}"
                         ;;
                     ':')
                         # : the tag is not empty

@@ -90,12 +90,12 @@ URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-URxvt*cursorUnderline:            true
+!URxvt*cursorUnderline:            true
 URxvt*saveLines:                  5000
 !URxvt*lineSpace:                  0.1
 URxvt*letterSpace:                -1
 !!! perl extension
-Rxvt.perl-ext-common:             default,matcher,resize-font,url-select,keyboard-select,clipboard
+Rxvt.perl-ext-common:             default,matcher,resize-font,url-select,keyboard-select,clipboard,ibeamcursor
 URxvt.resize-font.smaller:        C-Down
 URxvt.resize-font.bigger:         C-Up
 !!! copy/paste

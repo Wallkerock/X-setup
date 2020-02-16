@@ -26,7 +26,7 @@
   spacing: 0;
   background-color: transparent;
 
-  font: "Roboto 11";
+  font: "Roboto 12";
   text-color: @text;
 }
 

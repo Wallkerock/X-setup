@@ -21,7 +21,7 @@ font pango: Cantarell bold 9.1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:Noto Sans 0
+#font pango:Roboto bold 9
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -50,13 +50,14 @@ hide_edge_borders none
 # change borders
 bindsym $mod+u border pixel 4
 bindsym $mod+y border pixel 1
-#bindsym $mod+n border normal
+bindsym $mod+Shift+b border normal
+bindsym $mod+Shift+Ctrl+b border pixel 2
 
 ## class                 border  backgr. text    indicator child_border
-client.focused          #5375F6 #4560CE #ffffff #FFBE42   #4560CE
-client.focused_inactive #84608F #765380 #D0D0D0 #505050   #765380
-client.unfocused        #616161 #505050 #A6A6A6 #505050   #505050
-client.urgent           #FFD380 #ffb52a #282828 #ffb52a   #ffb52a
+client.focused          #37A690 #10876E #ffffff #FFBE42   #2EB398
+client.focused_inactive #9D60AE #855791 #DFDFDF #505050   #8D519E
+client.unfocused        #4D5B5F #475154 #BCBCBC #475154   #475154
+client.urgent           #FFD380 #ffb52a #ffffff #ffb52a   #ffb52a
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
@@ -66,7 +67,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
-#bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Shift+Return exec --no-startup-id urxvt -name float
 
 # kill focused window
 bindsym $mod+q kill
@@ -84,21 +85,24 @@ bindsym $mod+F1 exec nautilus --new-window
 bindsym $mod+F2 exec firefox
 bindsym $mod+Shift+F2 exec firefox -private-window
 #bindsym $mod+F2 exec --no-startup-id google-chrome-stable
-bindsym $mod+F3 exec lowriter
+bindsym $mod+F3 exec thunderbird
 #bindsym $mod+c exec --no-startup-id "rofi -modi window,drun, -show drun -font 'hack 11' -show -columns 2"
+#bindsym $mod+c exec --no-startup-id rofi -show drun
 bindsym $mod+c exec --no-startup-id rofi -show drun -show-icons -drun-icon-theme Newaita-dark
-bindsym $mod+Shift+f exec --no-startup-id rofi  -show find -modi find:~/.scripts/finder.sh
-# bindsym $mod+F4 exec ranger
-bindsym $mod+Shift+F3 exec gksu geany
-bindsym $mod+F5 exec urxvt -e 'htop'
+#bindsym $mod+Shift+f exec --no-startup-id rofi -show find -modi find:~/.scripts/finder.sh
+bindsym $mod+Shift+f exec --no-startup-id sh -c "find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu -i | xargs -0 xdg-open"
+bindsym $mod+F4 exec evince
+#bindsym $mod+Shift+F3 exec gksu geany
+bindsym $mod+F5 exec urxvt -e htop
 bindsym $mod+g exec subl
 bindsym $mod+n exec urxvt -e ncmpcpp
 bindsym $mod+m exec smplayer
-bindsym $mod+Shift+w exec lowriter
+bindsym $mod+o exec lowriter
 bindsym $mod+p exec pavucontrol
 #bindsym $mod+b exec --no-startup-id sh /home/lubomir/.scripts/networkmanager_dmenu.sh
-bindsym $mod+t exec --no-startup-id pkill compton;exec --no-startup-id notify-send 'Compton OFF'
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b;exec --no-startup-id notify-send 'Compton ON'
+bindsym $mod+Ctrl+r exec --no-startup-id cp ~/.config/i3/Matcha-Polybar-Titlebar-theme/polybar/config ~/.config/polybar/
+bindsym $mod+t exec --no-startup-id pkill picom;exec --no-startup-id notify-send 'Compositor OFF'
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b;exec --no-startup-id notify-send 'Compositor ON'
 bindsym $mod+Shift+d --release exec --no-startup-id "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id scrot
 bindsym $mod+Print --release exec --no-startup-id scrot -w
@@ -112,8 +116,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-#bindsym $mod+x exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -b -fn "Iosevka:bold:pixelsize=16.5" -nb '#1C1C1C' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#1C1C1C' -i"
-bindsym $mod+x exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn "Ubuntu:bold:pixelsize=14" -nb '#4560CE' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#4560CE' -i"
+bindsym $mod+z exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17.5" -nb '#141A1B' -nf '#009B7B' -sb '#009B7B' -sf '#141A1B' -i"
 
 # change focus
 # bindsym $mod+j focus left
@@ -153,9 +156,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+s floating toggle
+#bindsym $mod+Shift+space floating toggle
 #bindsym $mod+s floating toggle
-#bindsym $mod+Shift+s floating toggle resize set 1200 700; move position center
+#bindsym $mod+s floating toggle resize set 1200 700; move position center
+bindsym $mod+Shift+s floating toggle sticky enable; move position center
 
 # Toggle between dock mode and hide mode
 bindsym $mod+h bar mode toggle
@@ -170,13 +174,13 @@ bindsym $mod+a focus parent
 bindsym $mod+d focus child
 
 # Pulse Audio controls
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
-# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1 i3blocks && sh .config/i3/i3blocks/volume.sh
+# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && pkill -RTMIN+1 & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && pkill -RTMIN+1 & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && pkill -RTMIN+1 i3blocks
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && pkill -RTMIN+1 i3blocks
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+1 i3blocks &&
+bindsym XF86AudioRaiseVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh up & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+bindsym XF86AudioLowerVolume exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh down & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+bindsym XF86AudioMute exec --no-startup-id sh ~/.scripts/volume-notification/volume-light.sh mute & canberra-gtk-play -i audio-volume-change -d "changeVolume"
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -184,69 +188,45 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-## switch to workspace - clear
-set $workspace1 "1"
-set $workspace2 "2"
-set $workspace3 "3"
-set $workspace4 "4"
-set $workspace5 "5"
-set $workspace6 "6"
-set $workspace7 "7"
-set $workspace8 "8"
-set $workspace9 "9"
+## POLYBAR setings
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
 
-## switch to workspace - povodne
-# set $workspace1 "1: "
-# set $workspace2 "2: "
-# set $workspace3 "3: "
-# set $workspace4 "4: "
-# set $workspace5 "5: "
-# set $workspace6 "6: "
-# set $workspace7 "7: "
-# set $workspace8 "8: "
-# set $workspace9 "9: "
-##set $workspace10 "Desk 10" # zakomentovane, lebo "mod+0" som nastavil na logout menu
+# POLYBAR setings
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
 
-## switch to workspace
-#set $workspace1 "1: "
-#set $workspace2 "2: "
-#set $workspace3 "3: "
-#set $workspace4 "4: "
-#set $workspace5 "5: "
-#set $workspace6 "6: "
-#set $workspace7 "7: "
-#set $workspace8 "8: "
-#set $workspace9 "9: "
-
-# switch to workspace
-bindsym $mod+1 workspace $workspace1
-bindsym $mod+2 workspace $workspace2
-bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace $workspace5
-bindsym $mod+6 workspace $workspace6
-bindsym $mod+7 workspace $workspace7
-bindsym $mod+8 workspace $workspace8
-bindsym $mod+9 workspace $workspace9
-#set $workspace10 "Desk 10" # zakomentovane, lebo "mod+0" som nastavil na logout menu
-
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
+# move focused container to workspace POLYBAR
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
 #set $workspace10 "Desk 10" # zakomentovane, lebo "mod+0" som nastavil na logout menu
 
 ## Programy na špecifických plochách
-assign [class="^Transmission-gtk"] $workspace9
-assign [class="^Gimp"] $workspace4
-assign [class="^libreoffice-writer|Soffice"] $workspace5
-assign [class="^Thunderbird"] $workspace8
+assign [class="^Transmission-gtk"] $ws9
+assign [class="^Gimp"] $ws4
+assign [class="^libreoffice-writer|Soffice"] $ws5
+assign [class="^Thunderbird"] $ws8
 
 for_window [class="^Transmission-gtk"] focus
 for_window [class="^Gimp"] focus
@@ -254,29 +234,29 @@ for_window [class="^libreoffice-writer|Soffice$"] focus
 for_window [class="^Thunderbird"] focus
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 2
+for_window [title="alsamixer"] floating enable border normal 2
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="Galculator"] floating enable border normal 2
 for_window [class="SuperTuxKart"] floating disable border normal 2
-#for_window [class="OpenArena"] floating enable border pixel 2
-for_window [class="Imagewriter"] floating enable border normal
-for_window [class="vlc"] floating enable border normal 2
-#for_window [class="smplayer"] floating enable;move position center border normal 2
+#for_window [class="openarena.x86_64"] floating enable border normal 2
+for_window [class="Imagewriter"] floating enable border normal 2
+#for_window [class="vlc"] floating enable border normal 2
+#for_window [class="smplayer"] floating enable; move position center border normal 2
 for_window [class="SimpleScreenRecorder"] floating enable border normal 2
-#for_window [class="Transmission-gtk"] floating disable border pixel 2
+#for_window [class="Transmission-gtk"] floating disable border normal 2
 #for_window [class="Viewnior"] floating enable border normal 2
 for_window [class="Ristretto"] floating enable border normal 2
-#for_window [class="stellarium"] floating enable border normal 2
 for_window [class="Gpicview"] floating enable border normal 2
 for_window [class="Gpick"] floating enable border normal 2
 for_window [class="feh"] floating enable border normal 2
 #for_window [class="Gedit"] floating enable border normal 2
 for_window [class="GParted"] floating enable border normal 2
+for_window [class="GParted"] floating enable border normal 2
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lxappearance"] floating enable sticky enable border normal 2
 for_window [title="MuseScore: Play Panel"] floating enable
-for_window [class="Nitrogen"] floating enable sticky enable border normal 2
+for_window [class="Nitrogen"] floating enable border normal 2
 for_window [class="Pavucontrol"] floating enable border normal 2
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pamac-updater"] floating enable
@@ -285,11 +265,14 @@ for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal 2
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
+for_window [class="Roman Brojo"] floating enable border normal 2
 for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 #for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="Xarchiver"] floating enable sticky enable border normal 2
+# special floating
+for_window [instance="^float$" class="(?i)urxvt"] floating enable, move relative center
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -299,11 +282,13 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-bindsym $mod+l exec --no-startup-id "sh /home/lubomir/.config/lock.sh && sleep 1"
-bindsym $mod+0 mode "$mode_system"
-set $Locker sh /home/lubomir/.config/lock.sh && sleep 1
+bindsym $mod+l exec --no-startup-id "sh /home/lubomir/.config/lock.sh"
+#bindsym $mod+0 mode "$mode_system"
+set $Locker sh /home/lubomir/.config/lock.sh
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+bindsym $mod+0 mode "$mode_system"
+
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
@@ -317,7 +302,29 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+set $mode_launcher Launch: w, e, r, s, d, t, o, p, s, f, g, z, c, v, n, m
+bindsym $mod+x mode "$mode_launcher"
+
+mode "$mode_launcher" {
+    bindsym w exec firefox, mode "default"
+    bindsym e exec subl, mode "default"
+    bindsym r exec urxvt -e ranger, mode "default"
+    bindsym t exec thunar, mode "default"
+    bindsym o exec lowriter, mode "default"
+    bindsym p exec pavucontrol, mode "default"
+    bindsym s exec smplayer, mode "default"
+    bindsym d exec evince, mode "default"
+    bindsym f exec nautilus --new-window, mode "default"
+    bindsym g exec gimp, mode "default"
+    bindsym z exec zathura, mode "default"
+    bindsym c exec galculator, mode "default"
+    bindsym v exec --no-startup-id vlc, mode "default"
+    bindsym n exec urxvt -e ncmpcpp, mode "default"
+    bindsym m exec mousepad, mode "default"
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -345,63 +352,26 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
- colors {
-        background #1C1C1C
-        statusline #FFFFFF #white
-        separator #545454
-
-        focused_workspace  #5D7CF1 #3D60E5 #FFFFFF
-        active_workspace   #333333 #5f676a #ffffff
-        inactive_workspace #4D4D4D #3A3A3A #AAADB0
-        urgent_workspace   #FFCA64 #ffb52a #222222
-    }
-        i3bar_command i3bar
-        position bottom
-#        height 25
-#        separator_symbol "//"
-        workspace_buttons yes
-#        mode hide
-#        hidden_state show
-#        modifier $mod
-#        status_command i3status
-#        status_command py3status -c ~/.config/i3/py3status.conf
-#        status_command i3pystatus -c ~/.config/i3/i3pystatus.py
-        status_command i3blocks
-#        status_command i3status-rs ~/.config/i3/status.toml
-#        font pango:Iosevka, FontAwesome 11
-        font pango:Iosevka, FontAwesome bold 11
-#        font pango:FontAwesome, xos4 Terminess Powerline Bold 10
-#        font pango:xos4 Terminus, FontAwesome bold 10
-}
+# Autokill
+exec_always --no-startup-id pkill sxhkd
 
 # Autostart applications
+exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom -b
 #exec --no-startup-id nitrogen --restore
-exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/dark_sky.jpg
+exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/blackcat.jpg
+#exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-matcha/nature.jpg
 exec --no-startup-id pgrep pulseaudio || start-pulseaudio-x11
-#exec --no-startup-id volumeicon
 exec --no-startup-id xfsettingsd
-#exec --no-startup-id pamac-tray
-#exec --no-startup-id hp-systray
 exec_always --no-startup-id numlockx on
 exec --no-startup-id setxkbmap -layout "us,sk(qwerty),cz(qwerty)" -option grp:alt_shift_toggle
-#####
-exec --no-startup-id gxkb
-exec --no-startup-id clipit
-exec --no-startup-id nm-applet
-#####
-#exec --no-startup-id pulseaudio -k
-#exec --no-startup-id greenclip daemon
-#exec --no-startup-id sleep 1; greenclip clear
+#exec --no-startup-id sh ~/.scripts/greenclip.sh
+exec --no-startup-id greenclip daemon
+exec --no-startup-id sleep 1; greenclip clear
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id pkill redshift && sleep 5; redshift -l 48.16:17.11 &
-exec_always --no-startup-id xrdb -load ~/.Xresources
-#exec --no-startup-id killall conky & sh /home/lubomir/.scripts/conky-startup.sh
-#exec --no-startup-id xautolock -time 15 -locker 'sh /home/lubomir/.config/lock.sh'
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id xautolock -time 15 -locker 'sh /home/lubomir/.config/lock.sh'
 
 ## Vypnutie vypinania monitoru
 exec --no-startup-id xset -dpms s off
@@ -439,24 +409,24 @@ mode "$mode_gaps" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
+        bindsym plus  gaps inner current plus 2
+        bindsym minus gaps inner current minus 2
         bindsym 0     gaps inner current set 0
 
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+plus  gaps inner all plus 2
+        bindsym Shift+minus gaps inner all minus 2
         bindsym Shift+0     gaps inner all set 0
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
+        bindsym plus  gaps outer current plus 2
+        bindsym minus gaps outer current minus 2
         bindsym 0     gaps outer current set 0
 
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+plus  gaps outer all plus 2
+        bindsym Shift+minus gaps outer all minus 2
         bindsym Shift+0     gaps outer all set 0
 
         bindsym Return mode "default"

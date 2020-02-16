@@ -1,4 +1,5 @@
 #! /bin/bash
+
 #
 # wm independent hotkeys
 #
@@ -34,8 +35,8 @@ super + shift + F2
 super + F3
 	thunderbird
 
-super + v ; {w,o,e,n,m,p,g,v,t,f,r,z}
-	{firefox,lowriter,subl,urxvt -e ncmpcpp,smplayer,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
+super + v ; {w,o,e,s,n,m,p,g,v,t,f,r,z}
+	{firefox,lowriter,subl,smplayer,urxvt -e ncmpcpp,mousepad,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
 
 super + shift + x
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
@@ -206,7 +207,7 @@ alt + bracket{left,right}
 	bspc config window_gap "$(($(bspc config window_gap) {-,+} 2 ))"
 # Original gaps
 alt + backslash
-	bspc config window_gap 12
+	bspc config window_gap 6
 alt + 0
 	bspc config window_gap 0
 
@@ -215,37 +216,38 @@ super + shift + bracket{left,right}
 	bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {-,+} 2 ))"
 # Original gaps
 super + shift + backslash
-	bspc config -d focused window_gap 12
+	bspc config -d focused window_gap 6
 
 super + shift + KP_0
 	bspc config -d focused window_gap 0
 
-# Global Dybamic borders
+# Global Dynamic borders
 alt + ctrl + bracket{left,right}
 	bspc config border_width "$(($(bspc config border_width) {-,+} 1 ))"
 # Original borders
 alt + ctrl + backslash
 	bspc config border_width 2
 
-# Focused Dybamic borders
+# Focused Dynamic borders
 super + ctrl + bracket{left,right}
 	bspc config -d focused border_width "$(($(bspc config -d focused border_width) {-,+} 1 ))"
 # Original borders
 super + ctrl + backslash
 	bspc config -d focused border_width 2
+
 ####################################
 
 # Expand tiled space
 super + alt + {Left,Down,Up,Right}
-	bspc node {@west -r -20,@south -r +20,@north -r -20,@east -r +20}
+	bspc node {@west -r -40,@south -r +40,@north -r -40,@east -r +40}
 
 # Contract tiled space
 super + alt + ctrl + {Left,Down,Up,Right}
-	bspc node {@east -r -20,@north -r +20,@south -r -20,@west -r +20}
+	bspc node {@east -r -40,@north -r +40,@south -r -40,@west -r +40}
 
 # move a floating window
 alt + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+	bspc node -v {-40 0,0 40,0 -40,40 0}
 
 # empty frame over half desktop
 super + shift + {h,j,k,l}

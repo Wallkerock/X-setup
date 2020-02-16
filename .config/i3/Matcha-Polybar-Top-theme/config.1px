@@ -159,7 +159,8 @@ bindsym $mod+e layout toggle split
 #bindsym $mod+Shift+space floating toggle
 #bindsym $mod+s floating toggle
 #bindsym $mod+s floating toggle resize set 1200 700; move position center
-bindsym $mod+Shift+s floating toggle sticky enable; move position center
+#bindsym $mod+Shift+s floating toggle sticky enable; move position center
+bindsym $mod+Shift+s "mark --add _; [con_mark=f] floating disable, border pixel 1, mark --add --toggle _; [con_mark=_] floating enable, border normal 1; mark --add --toggle f;"
 
 # Toggle between dock mode and hide mode
 bindsym $mod+h bar mode toggle

@@ -9,7 +9,7 @@ hc() {
 hc emit_hook reload
 
 #feh --bg-fill --randomize /home/lubomir/Pictures/backgrounds/*
-feh --bg-fill /home/lubomir/Pictures/backgrounds/openbox-lightbug.png &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/herbstluftwm-lightbug/openbox-lightbug.png &
 
 # remove all existing keybindings
 hc keyunbind --all
@@ -19,7 +19,7 @@ hc keyunbind --all
 #Mod=Mod1    # Use alt as the main modifier
 Mod=Mod4   # Use the super key as the main modifier
 
-hc keybind $Mod-Shift-w spawn feh --bg-fill --randomize /home/lubomir/Pictures/backgrounds/*
+hc keybind $Mod-Shift-w spawn feh --bg-fill --randomize /home/lubomir/Pictures/backgrounds/herbstluftwm-lightbug/*
 
 hc keybind $Mod-Shift-e quit
 hc keybind $Mod-Shift-r reload
@@ -44,6 +44,7 @@ hc keybind $Mod-Control-t spawn sh ~/.scripts/compton-on.sh
 hc keybind Print spawn scrot
 hc keybind $Mod-Print spawn scrot -d 8
 hc keybind $Mod-z spawn dmenu_run_hlwm
+hc keybind $Mod-Control-r spawn cp ~/.config/herbstluftwm/LightBug-theme/polybar/config ~/.config/polybar/
 
 # power menu
 hc keybind $Mod-0 spawn sh ~/.scripts/power-menu-hlwm.sh
@@ -64,10 +65,10 @@ hc keybind $Mod-Shift-Left  shift left
 hc keybind $Mod-Shift-Down  shift down
 hc keybind $Mod-Shift-Up    shift up
 hc keybind $Mod-Shift-Right shift right
-hc keybind $Mod-Shift-h     shift left
-hc keybind $Mod-Shift-j     shift down
-hc keybind $Mod-Shift-k     shift up
-hc keybind $Mod-Shift-l     shift right
+# hc keybind $Mod-Shift-h     shift left
+# hc keybind $Mod-Shift-j     shift down
+# hc keybind $Mod-Shift-k     shift up
+# hc keybind $Mod-Shift-l     shift right
 
 # splitting frames
 # create an empty frame at the specified direction
@@ -78,22 +79,29 @@ hc keybind $Mod-a split explode
 
 # resizing frames
 resizestep=0.025
-hc keybind $Mod-Control-h       resize left +$resizestep
-hc keybind $Mod-Control-j       resize down +$resizestep
-hc keybind $Mod-Control-k       resize up +$resizestep
-hc keybind $Mod-Control-l       resize right +$resizestep
+# hc keybind $Mod-Control-h       resize left +$resizestep
+# hc keybind $Mod-Control-j       resize down +$resizestep
+# hc keybind $Mod-Control-k       resize up +$resizestep
+# hc keybind $Mod-Control-l       resize right +$resizestep
 hc keybind $Mod-Control-Left    resize left +$resizestep
 hc keybind $Mod-Control-Down    resize down +$resizestep
 hc keybind $Mod-Control-Up      resize up +$resizestep
 hc keybind $Mod-Control-Right   resize right +$resizestep
 
+# gaps size
+hc keybind $Mod-Control-0   spawn sh ~/.scripts/herbstluftwm/gap-zero.sh
+hc keybind $Mod-Control-backslash   spawn sh ~/.scripts/herbstluftwm/gap-default.sh
+
+hc keybind $Mod-Control-equal   spawn sh ~/.scripts/herbstluftwm/increase.sh
+hc keybind $Mod-Control-minus   spawn sh ~/.scripts/herbstluftwm/decrease.sh
+
 ## hotkeys
-#hc keybind XF86AudioLowerVolume spawn ~/.config/herbstluftwm/volume.sh down
-#hc keybind XF86AudioRaiseVolume spawn ~/.config/herbstluftwm/volume.sh up
-#hc keybind XF86AudioMute spawn ~/.config/herbstluftwm/volume.sh mute
-hc keybind XF86AudioLowerVolume spawn amixer -q set Master 5%- unmute down
-hc keybind XF86AudioRaiseVolume spawn amixer -q set Master 5%+ unmute up
-hc keybind XF86AudioMute spawn amixer -q set Master toggle mute
+hc keybind XF86AudioLowerVolume spawn ~/.config/herbstluftwm/volume.sh down
+hc keybind XF86AudioRaiseVolume spawn ~/.config/herbstluftwm/volume.sh up
+hc keybind XF86AudioMute spawn ~/.config/herbstluftwm/volume.sh mute
+# hc keybind XF86AudioLowerVolume spawn amixer -q set Master 5%- unmute down
+# hc keybind XF86AudioRaiseVolume spawn amixer -q set Master 5%+ unmute up
+# hc keybind XF86AudioMute spawn amixer -q set Master toggle mute
 
 # tags
 tag_names=( {1..9} )
@@ -110,14 +118,14 @@ for i in ${!tag_names[@]} ; do
 done
 
 ## set initial frame padding
-herbstclient pad 0 24 0 0
+herbstclient pad 0 24 0 24
 # cycle through tags
 hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
 
 # layouting
 hc keybind $Mod-x remove
-hc keybind $Mod-s floating toggle
+hc keybind $Mod-Shift-s floating toggle
 hc keybind $Mod-Shift-f fullscreen toggle
 hc keybind $Mod-p pseudotile toggle
 hc keybind $Mod-e spawn sh ~/.scripts/float-maximize.sh
@@ -127,8 +135,10 @@ hc keybind $Mod-f spawn sh ~/.scripts/maximize.sh
 # I.e. if there are two windows within a frame, the grid layout is skipped.
 hc keybind $Mod-space                                                           \
             or , and . compare tags.focus.curframe_wcount = 2                   \
-                     . cycle_layout +1 vertical horizontal max grid    \
-               , cycle_layout +1
+                     . cycle_layout +1 vertical horizontal max vertical grid    \
+               , cycle_layorut +1
+
+hc keybind $Mod-s spawn sh ~/.config/herbstluftwm/scripts/toggle_single_float.sh
 
 # mouse
 hc mouseunbind --all
@@ -152,11 +162,13 @@ hc set frame_border_normal_color '#1B1B1B'
 hc set frame_bg_normal_color '#454545'
 #hc set frame_bg_active_color '#25448A'
 hc set frame_bg_active_color '#A8842E'
+hc set frame_active_opacity '70'
+hc set frame_normal_opacity '30'
 hc set frame_border_width 1
 hc set always_show_frame 1
 hc set frame_bg_transparent 1
 hc set frame_transparent_width 2
-hc set frame_gap 12
+hc set frame_gap 4
 hc set focus_follows_mouse 0
 
 hc attr theme.active.color '#CC9100'
@@ -206,18 +218,18 @@ hc detect_monitors
 #hc set_monitors 1920x1080+0+0
 
 # find the panel
-# panel=~/.config/herbstluftwm/panel.sh
-# [ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
-# for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
-#     # start it on each monitor
-#     "$panel" $monitor &
-# done
+panel=~/.config/herbstluftwm/panel.sh
+[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
+for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
+    # start it on each monitor
+    "$panel" $monitor &
+done
 
-# add an external panel
+# # add an external panel
 {
     pids=( )
     # reserve some space for the panel on monitor 0
-    hc pad 0 "" "" 0
+    hc pad 0 "" "" 24
     # start the panel itself and remember its pid
     polybar example -r &
     pids+=( $! )
@@ -231,15 +243,15 @@ hc detect_monitors
 } &
 
 # Autorun Apps
-# hc spawn autorun_application "polybar my-awesome-polybar"
-# hc spawn autorun_application "polybar bottom-bar"
-# cp ~/.config/herbstluftwm/LightBug-theme/polybar/config ~/.config/polybar/ &
-# sleep 1; sh $HOME/.config/polybar/launch.sh
-pgrep compton || compton &
-#pgrep compton || compton -b --config ~/.config/compton-hw.conf &
+pkill picom && sleep 1; picom -b &
 sleep 1; numlockx on &
-pgrep dunst || dunst &
+killall dunst; notify-send "restart dunst" &
+pkill greenclip && sleep 1; greenclip daemon &
+sleep 1; greenclip clear &
+sleep 1; xrdb ~/.Xresources &
+xfsettingsd &
+#perl ~/.scripts/herbstluftwm/decoration-per-tag.pl &
 setxkbmap -layout "us,sk(qwerty),cz(qwerty)" -option grp:alt_shift_toggle &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-killall redshift && sleep 7; redshift -l 48.16:17.11 &
+pkill redshift && sleep 5; redshift -l 48.16:17.11 &
 xset -dpms s off &

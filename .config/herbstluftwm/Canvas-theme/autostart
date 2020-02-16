@@ -24,25 +24,17 @@ hc keybind $Mod-Shift-e quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-q close
 hc keybind $Mod-Return spawn ${TERMINAL:-urxvt} # use your $TERMINAL with xterm as fallback
-#hc keybind $Mod-Return spawn ${TERMINAL:-xfce4-terminal} # use your $TERMINAL with xterm as fallback
-#hc keybind $Mod-Return spawn ${TERMINAL:-gnome-terminal} # use your $TERMINAL with xterm as fallback
-#hc keybind $Mod-d spawn dmenu_run -i -b -p 'Arch Linux ' -fn 'Noto Sans:bold:pixelsize=14' -nb '#8E1414' -nf '#D2E8F2' -sf '#fdf6e3' -sb '#008191'
 hc keybind $Mod-F1 spawn nautilus --new-window
 hc keybind $Mod-F2 spawn firefox
-#hc keybind $Mod-w spawn firefox
 hc keybind $Mod-Shift-F2 spawn firefox -private-window
 hc keybind $Mod-F3 spawn thunderbird
 hc keybind $Mod-g spawn subl
 hc keybind $Mod-d spawn rofi -show drun -show-icons -drun-icon-theme Newaita-dark
 hc keybind $Mod-n spawn urxvt -e ncmpcpp
-#hc keybind $Mod-n spawn xfce4-terminal -e ncmpcpp
-#hc keybind $Mod-n spawn gnome-terminal -e ncmpcpp
 hc keybind $Mod-m spawn smplayer
 hc keybind $Mod-o spawn lowriter
 hc keybind $Mod-h spawn viewnior
 hc keybind $Mod-l spawn sh /home/lubomir/.config/lock.sh
-#hc keybind $Mod-t spawn sh ~/.scripts/compton-off.sh
-#hc keybind $Mod-Control-t spawn sh ~/.scripts/compton-on.sh
 hc keybind Print spawn scrot
 hc keybind Shift-Print spawn scrot -d 8
 hc keybind Alt-space spawn j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17.5" -nb '#1C1C1C' -nf '#FFFFFF' -sb '#3D60E5' -sf '#FFFFFF' -i"
@@ -106,9 +98,9 @@ hc keybind $Mod-Control-minus   spawn sh ~/.scripts/herbstluftwm/decrease.sh
 # hc keybind XF86AudioRaiseVolume spawn amixer -q set Master 5%+ unmute up
 # hc keybind XF86AudioMute spawn amixer -q set Master toggle mute
 
-hc keybind XF86AudioRaiseVolume spawn sh ~/.scripts/volume-notification/volume.sh up
-hc keybind XF86AudioLowerVolume spawn sh ~/.scripts/volume-notification/volume.sh down
-hc keybind XF86AudioMute spawn sh ~/.scripts/volume-notification/volume.sh mute
+hc keybind XF86AudioRaiseVolume spawn sh ~/.scripts/volume-notification/volume-light.sh up
+hc keybind XF86AudioLowerVolume spawn sh ~/.scripts/volume-notification/volume-light.sh down
+hc keybind XF86AudioMute spawn sh ~/.scripts/volume-notification/volume-light.sh mute
 
 
 
@@ -201,7 +193,8 @@ hc set mouse_recenter_gap 0
 hc unrule -F
 #hc rule class=XTerm tag=3 # move all xterms to tag 3
 hc rule focus=on # normally focus new clients
-hc rule class=Transmission-gtk tag=9 # move all xterms to tag 3
+hc rule class=Transmission-gtk tag=9
+hc rule class=Gimp-2.10 tag=4
 #hc rule focus=off # normally do not focus new clients
 # give focus to most common terminals
 #hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm|Konsole)' focus=on
@@ -223,7 +216,7 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 hc detect_monitors
 #hc set_monitors 1920x1080+0+0
 
-# find the panel
+# # find the panel
 # panel=~/.config/herbstluftwm/panel.sh
 # [ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
 # for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do

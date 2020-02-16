@@ -8,7 +8,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 #bspc monitor -d          
 
 bspc config border_width         2
-bspc config window_gap           12
+bspc config window_gap           6
 
 bspc config focused_sticky_border_color     "#FFB600"
 bspc config focused_border_color            "#2EB398"
@@ -26,8 +26,8 @@ bspc config right_padding		0
 bspc config bottom_padding		0
 bspc config left_padding		0
 
-# bspc config automatic_scheme spiral
-# bspc config initial_polarity first_child
+bspc config automatic_scheme alternate
+bspc config initial_polarity second_child
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   false
@@ -62,7 +62,8 @@ bspc config external_rules_command sh ~/.scripts/bspwm/windows_rules.sh
 pkill picom && sleep 1; picom -b &
 ###############
 $HOME/.config/polybar/launch.sh
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-matcha/nature.jpg &
+#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-matcha/nature.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/blackcat.jpg &
 #nitrogen --restore &
 ###############
 pgrep pulseaudio || start-pulseaudio-x11 &

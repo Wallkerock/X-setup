@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #303030
+background = #232323
 background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
@@ -42,10 +42,10 @@ border-bottom-size = 0
 border-bottom-color = #202020
 
 border-left-size = 0
-border-left-color = #303030
+border-left-color = #232323
 
 border-right-size = 0
-border-right-color = #303030
+border-right-color = #232323
 
 padding-left = 0
 padding-right = 1
@@ -65,13 +65,13 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center = 
-modules-right = system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #303030
+tray-background = #232323
 
 wm-restack = bspwm
 
@@ -191,6 +191,11 @@ bar-progress-indicator-font = 3
 bar-progress-fill-font = 3
 bar-progress-empty-font = 3
 bar-progress-empty-foreground = ${colors.foreground-alt}
+
+[module/ssh]
+type = custom/script
+exec = ~/.scripts/ssh.sh
+interval = 4
 
 [module/system-uptime-pretty]
 type = custom/script

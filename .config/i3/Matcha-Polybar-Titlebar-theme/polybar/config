@@ -106,18 +106,18 @@ label-mode-background = #ffb52a
 ;label-mode-underline = #ffb52a
 
 label-focused = %name%
-label-focused-foreground = #FFFFFF
-label-focused-background = #14997E
+label-focused-foreground = #00E4B6
+;label-focused-background = #14997E
 ;label-focused-overline = #00A583
-;label-focused-underline = #00A583
+label-focused-underline = #00E4B6
 label-focused-font = 0
 label-focused-padding = 1
 
 label-unfocused = %name%
-label-unfocused-foreground = #9EB3B9
-label-unfocused-background = #36454A
+label-unfocused-foreground = #637479
+;label-unfocused-background = #36454A
 ;label-unfocused-overline = #293337
-;label-unfocused-underline = #293337
+label-unfocused-underline = #637479
 label-unfocused-font = 0
 label-unfocused-padding = 1
 
@@ -125,7 +125,7 @@ label-urgent = %name%
 label-urgent-foreground = #FFBE42
 ;label-urgent-background = #ffb52a
 ;label-urgent-overline = #ffb52a
-;label-urgent-underline = #FFB52A
+label-urgent-underline = #FFBE42
 label-urgent-font = 0
 label-urgent-padding = 1
 
@@ -362,7 +362,8 @@ type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
-sink = alsa_output.pci-0000_12_00.3.analog-stereo
+#sink = alsa_output.pci-0000_12_00.3.analog-stereo
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true

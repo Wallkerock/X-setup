@@ -27,7 +27,7 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Stylish-Light-Laptop" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Limon" &
 
 bspc config border_width         3
-bspc config window_gap           16
+bspc config window_gap           24
 
 # bspc config automatic_scheme spiral
 bspc config automatic_scheme alternate

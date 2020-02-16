@@ -7,37 +7,6 @@ Xft.hintstyle:   hintslight
 Xft.lcdfilter:   lcddefault
 
 ! ------------------------------------------------------------------------------
-! XTERM setup
-! ------------------------------------------------------------------------------
-
-XTerm*background:				#2b2b2b
-XTerm*foreground:				#e7e7e7
-XTerm*faceSize:					10
-XTerm*reverseVideo:				on
-XTerm*faceName:					xft:Hack:size=10
-XTerm*selectToClipboard:		true
-XTerm*cursorColor:              #CC9100
-
-xterm*foreground:	#1C1C1C
-xterm*background:	#E1E1E1
-xterm*color0:		#222531
-xterm*color1:		#BA2922
-xterm*color2:		#7E7E80
-xterm*color3:		#696969
-xterm*color4:		#2C3854
-xterm*color5:		#5D657E
-xterm*color6:		#638EE7
-xterm*color7:		#E0E0E0
-xterm*color8:		#4E4E4E
-xterm*color9:		#CC372C
-xterm*color10:		#8D8D8F
-xterm*color11:		#FFA500
-xterm*color12:		#507CEF
-xterm*color13:		#6578AB
-xterm*color14:		#416EDE
-xterm*color15:		#E8E8E8
-
-! ------------------------------------------------------------------------------
 ! ROFI setup
 ! ------------------------------------------------------------------------------
 
@@ -101,27 +70,34 @@ rofi.fullscreen:        true
 Xcursor.theme: Breeze
 Xcursor.size:                     0
 
-URxvt.geometry:                   130x30
-!URxvt.font:                       xft:Iosevka:size=10
-URxvt.font:                       xft:Ubuntu Mono:size=11
-!URxvt.internalBorder:             20
+*.geometry:					160x45
+*.internalBorder:			20
+!*.font:					xft:xos4 Terminus:size=11
+!*.font:					xft:DejaVu Sans Mono:size=11
+*.font:						xft:Ubuntu Mono:size=12
 
 ! alternative font settings with 'terminus':
+!URxvt.font: -*-fixed-*-r-normal--*-*-*-*-*-*-iso10646-*
 !URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
 !URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [90]#1C1C1C
-URxvt.foreground:                 #E8E8E8
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
-URxvt*cursorColor:                #CC9100
 URxvt*cursorBlink:                true
-URxvt*background:                 black
-URxvt*foreground:                 grey
+!URxvt*cursorUnderline:            true
 URxvt*saveLines:                  5000
-URxvt*letterSpace:                 -1
+!URxvt*lineSpace:                  0.1
+URxvt*letterSpace:                -1
+!!! perl extension
+Rxvt.perl-ext-common:             default,matcher,resize-font,url-select,keyboard-select,clipboard,ibeamcursor
+URxvt.resize-font.smaller:        C-Down
+URxvt.resize-font.bigger:         C-Up
+!!! copy/paste
+URxvt.clipboard.autocopy:         true
+URxvt.keysym.M-c:                 perl:clipboard:copy
+URxvt.keysym.M-v:                 perl:clipboard:paste
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
 ! URxvt*inheritPixmap:            true

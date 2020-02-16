@@ -65,7 +65,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center =
-modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -90,7 +90,7 @@ cursor-scroll = ns-resize
 [module/rofi]
 type = custom/text
 content-padding = 2
-content-foreground = #FFFFFF
+content-foreground = #FFB600
 ;content-background = #6B88FA
 content = ""
 click-left = "rofi -show drun -show-icons -drun-icon-theme Newaita-holidays-dark >/dev/null 2>&1 &"
@@ -103,14 +103,14 @@ enable-scroll = true
 reverse-scroll = false
 
 label-focused = %name%
-label-focused-foreground = #FFFFFF
+label-focused-foreground = #FFB600
 ;label-focused-background = #3F61E6
-;label-focused-underline = #FFFFFF
-label-focused-overline = #FFFFFF
+;label-focused-underline = #FFB600
+label-focused-overline = #FFB600
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = #D3D3D3
+label-occupied-foreground = #B8860B
 ;label-occupied-background = #373737
 ;label-occupied-overline = #313131
 label-occupied-padding = 1
@@ -142,13 +142,14 @@ interval = 4
 
 [module/system-uptime-pretty]
 type = custom/script
+;label-foreground = #FFB600
 exec = sh ~/.scripts/system-uptime-pretty.sh
 interval = 30
 
 [module/openweathermap-detailed]
 type = custom/script
 exec = sh ~/.scripts/openweathermap-detailed.sh
-label-foreground = #CAFF99
+label-foreground = #DF9F00
 interval = 600
 label-font = 0
 click-left = sh ~/.scripts/pocasie.sh &

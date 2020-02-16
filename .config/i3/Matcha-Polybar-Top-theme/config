@@ -40,8 +40,8 @@ focus_follows_mouse no
 #focus_wrapping force
 
 # just window border in px
-new_window pixel 1
-new_float normal 1
+new_window pixel 3
+new_float normal 3
 
 # Hide borders
 # tokens: 'none', 'vertical', 'horizontal', 'both', 'smart_no_gaps', 'smart', '1', 'yes', 'true', 'on', 'enable', 'active'
@@ -51,7 +51,7 @@ hide_edge_borders none
 bindsym $mod+u border pixel 4
 bindsym $mod+y border pixel 1
 bindsym $mod+Shift+b border normal
-bindsym $mod+Shift+Ctrl+b border pixel 2
+bindsym $mod+Shift+Ctrl+b border pixel 3
 
 ## class                 border  backgr. text    indicator child_border
 client.focused          #39AF97 #14997E #ffffff #FFBE42   #2EB398
@@ -84,19 +84,22 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+F1 exec nautilus --new-window
 bindsym $mod+F2 exec firefox
 bindsym $mod+Shift+F2 exec firefox -private-window
-# bindsym $mod+F3 exec thunderbird
+#bindsym $mod+F2 exec --no-startup-id google-chrome-stable
+bindsym $mod+F3 exec thunderbird
+#bindsym $mod+c exec --no-startup-id "rofi -modi window,drun, -show drun -font 'hack 11' -show -columns 2"
+#bindsym $mod+c exec --no-startup-id rofi -show drun
 bindsym $mod+c exec --no-startup-id rofi -show drun -show-icons -drun-icon-theme Newaita-dark
 #bindsym $mod+Shift+f exec --no-startup-id rofi -show find -modi find:~/.scripts/finder.sh
-bindsym $mod+Shift+f exec --no-startup-id sh -c "find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu -i | xargs -0 xdg-open"
-# bindsym $mod+F4 exec evince
-# #bindsym $mod+Shift+F3 exec gksu geany
-# bindsym $mod+F5 exec urxvt -e htop
-# bindsym $mod+g exec subl
-# bindsym $mod+n exec urxvt -e ncmpcpp
-# bindsym $mod+m exec smplayer
-# bindsym $mod+o exec lowriter
-# bindsym $mod+p exec pavucontrol
-# #bindsym $mod+b exec --no-startup-id sh /home/lubomir/.scripts/networkmanager_dmenu.sh
+bindsym $mod+Shift+f exec --no-startup-id find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu | xargs xdg-open
+bindsym $mod+F4 exec evince
+#bindsym $mod+Shift+F3 exec gksu geany
+bindsym $mod+F5 exec urxvt -e htop
+bindsym $mod+g exec subl
+bindsym $mod+n exec urxvt -e ncmpcpp
+bindsym $mod+m exec smplayer
+bindsym $mod+o exec lowriter
+bindsym $mod+p exec pavucontrol
+#bindsym $mod+b exec --no-startup-id sh /home/lubomir/.scripts/networkmanager_dmenu.sh
 bindsym $mod+Ctrl+r exec --no-startup-id cp ~/.config/i3/Matcha-Polybar-Top-theme/polybar/config ~/.config/polybar/
 bindsym $mod+t exec --no-startup-id pkill picom;exec --no-startup-id notify-send 'Compositor OFF'
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b;exec --no-startup-id notify-send 'Compositor ON'
@@ -104,6 +107,7 @@ bindsym $mod+Shift+d --release exec --no-startup-id "killall dunst; exec notify-
 bindsym Print exec --no-startup-id scrot
 bindsym $mod+Print --release exec --no-startup-id scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id scrot -d 8
+bindsym $mod+Shift+w --release exec --no-startup-id feh --randomize --bg-fill ~/Pictures/backgrounds/i3wm-matcha/*
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # start dmenu (a program launcher)
@@ -113,7 +117,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-bindsym $mod+z exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=16.5" -nb '#141A1B' -nf '#009B7B' -sb '#009B7B' -sf '#141A1B' -i"
+bindsym $mod+z exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=16.5" -nb '#2D47AA' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#2D47AA' -i"
 
 # change focus
 # bindsym $mod+j focus left
@@ -156,7 +160,8 @@ bindsym $mod+e layout toggle split
 #bindsym $mod+Shift+space floating toggle
 #bindsym $mod+s floating toggle
 #bindsym $mod+s floating toggle resize set 1200 700; move position center
-bindsym $mod+Shift+s floating toggle sticky enable; move position center
+#bindsym $mod+Shift+s floating toggle sticky enable; move position center
+bindsym $mod+Shift+s "mark --add _; [con_mark=f] floating disable, border pixel 3, mark --add --toggle _; [con_mark=_] floating enable, border normal 3; mark --add --toggle f;"
 
 # Toggle between dock mode and hide mode
 bindsym $mod+h bar mode toggle
@@ -231,45 +236,45 @@ for_window [class="^libreoffice-writer|Soffice$"] focus
 for_window [class="^Thunderbird"] focus
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border normal 1
+for_window [title="alsamixer"] floating enable border normal 3
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
-for_window [class="Galculator"] floating enable border normal 1
-for_window [class="SuperTuxKart"] floating disable border pixel 1
-#for_window [class="openarena.x86_64"] floating enable border pixel 1
-for_window [class="Imagewriter"] floating enable border normal 1
-#for_window [class="vlc"] floating enable border normal 1
-#for_window [class="smplayer"] floating enable; move position center border pixel 1
-for_window [class="SimpleScreenRecorder"] floating enable border normal 1
-#for_window [class="Transmission-gtk"] floating disable border pixel 1
-#for_window [class="Viewnior"] floating enable border normal 1
-for_window [class="Ristretto"] floating enable border normal 1
-for_window [class="Gpicview"] floating enable border normal 1
-for_window [class="Gpick"] floating enable border normal 1
-for_window [class="feh"] floating enable border normal 1
-#for_window [class="Gedit"] floating enable border normal 1
-for_window [class="GParted"] floating enable border normal 1
-for_window [class="GParted"] floating enable border normal 1
+for_window [class="Galculator"] floating enable border normal 3
+for_window [class="SuperTuxKart"] floating disable border pixel 3
+#for_window [class="openarena.x86_64"] floating enable border pixel 3
+for_window [class="Imagewriter"] floating enable border normal 3
+#for_window [class="vlc"] floating enable border normal 3
+#for_window [class="smplayer"] floating enable; move position center border pixel 3
+for_window [class="SimpleScreenRecorder"] floating enable border normal 3
+#for_window [class="Transmission-gtk"] floating disable border pixel 3
+#for_window [class="Viewnior"] floating enable border normal 3
+for_window [class="Ristretto"] floating enable border normal 3
+for_window [class="Gpicview"] floating enable border normal 3
+for_window [class="Gpick"] floating enable border normal 3
+for_window [class="feh"] floating enable border normal 3
+#for_window [class="Gedit"] floating enable border normal 3
+for_window [class="GParted"] floating enable border normal 3
+for_window [class="GParted"] floating enable border normal 3
 for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="Lxappearance"] floating enable sticky enable border normal 1
+for_window [class="Lxappearance"] floating enable sticky enable border normal 3
 for_window [title="MuseScore: Play Panel"] floating enable
-for_window [class="Nitrogen"] floating enable border normal 1
-for_window [class="Pavucontrol"] floating enable border normal 1
+for_window [class="Nitrogen"] floating enable border normal 3
+for_window [class="Pavucontrol"] floating enable border normal 3
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pamac-updater"] floating enable
-for_window [class="qt5ct"] floating enable sticky enable border normal 1
-for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal 1
+for_window [class="qt5ct"] floating enable sticky enable border normal 3
+for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal 3
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
-for_window [class="Roman Brojo"] floating enable border normal 1
+for_window [class="Roman Brojo"] floating enable border normal 3
 for_window [class="Thus"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 #for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-for_window [class="Xarchiver"] floating enable sticky enable border normal 1
+for_window [class="Xarchiver"] floating enable sticky enable border normal 3
 # special floating
-for_window [instance="^float$" class="(?i)urxvt"] floating enable border normal 1, move relative center
+for_window [instance="^float$" class="(?i)urxvt"] floating enable border normal 3, move relative center
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -299,25 +304,23 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-set $mode_launcher Launch: w, e, r, s, d, t, o, p, s, f, g, z, c, v, n, m
+set $mode_launcher Launch: w, e, r, s, d, t, o, s, f, g, z, v, n, m
 bindsym $mod+x mode "$mode_launcher"
 
 mode "$mode_launcher" {
-    bindsym w exec firefox, mode "default"
-    bindsym e exec subl, mode "default"
-    bindsym r exec urxvt -e ranger, mode "default"
-    bindsym t exec thunar, mode "default"
-    bindsym o exec lowriter, mode "default"
-    bindsym p exec pavucontrol, mode "default"
-    bindsym s exec simplescreenrecorder, mode "default"
-    bindsym d exec evince, mode "default"
-    bindsym f exec nautilus --new-window, mode "default"
-    bindsym g exec gimp, mode "default"
-    bindsym z exec zathura, mode "default"
-    bindsym c exec galculator, mode "default"
-    bindsym v exec vlc, mode "default"
-    bindsym n exec urxvt -e ncmpcpp, mode "default"
-    bindsym m exec smplayer, mode "default"
+    bindsym w exec --no-startup-id firefox, mode "default"
+    bindsym e exec --no-startup-id subl, mode "default"
+    bindsym r exec --no-startup-id urxvt -e ranger, mode "default"
+    bindsym t exec --no-startup-id thunar, mode "default"
+    bindsym o exec --no-startup-id lowriter, mode "default"
+    bindsym s exec --no-startup-id simplescreenrecorder, mode "default"
+    bindsym d exec --no-startup-id evince, mode "default"
+    bindsym f exec --no-startup-id nautilus --new-window, mode "default"
+    bindsym g exec --no-startup-id gimp, mode "default"
+    bindsym z exec --no-startup-id zathura, mode "default"
+    bindsym v exec --no-startup-id vlc, mode "default"
+    bindsym n exec --no-startup-id urxvt -e ncmpcpp, mode "default"
+    bindsym m exec --no-startup-id smplayer, mode "default"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
@@ -377,7 +380,7 @@ exec --no-startup-id xset -dpms s off
 #############################
 
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 6
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
@@ -386,11 +389,11 @@ gaps outer 0
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
+#smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+#smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner

@@ -9,11 +9,35 @@ let mapleader =" "
 " Some basics:
 	set nocompatible
 	filetype plugin on
-	colo elflord
+	colo blues
 	syntax on
-	set cursorline
 	set encoding=utf-8
+	set cursorline
+"    set cursorcolumn
 	set number relativenumber
+	set tabstop=4
+	set shiftwidth=4
+	set expandtab
+    set autoindent
+    set smartindent
+    set showmatch
+	set showmode
+    set timeoutlen=0
+	set laststatus=2
+	set statusline=
+	set statusline+=%0*\ %n\                                 " Buffer number
+	set statusline+=%1*\ %<%F%m%r%h%w\                       " File path, modified, readonly, helpfile, preview
+	set statusline+=%3*│                                     " Separator
+	set statusline+=%2*\ %Y\                                 " FileType
+	set statusline+=%3*│                                     " Separator
+	set statusline+=%2*\ %{''.(&fenc!=''?&fenc:&enc).''}     " Encoding
+	set statusline+=\ (%{&ff})                               " FileFormat (dos/unix..)
+	set statusline+=%=                                       " Right Side
+	set statusline+=%2*\ col:\ %02v\                         " Colomn number
+	set statusline+=%3*│                                     " Separator
+	set statusline+=%1*\ ln:\ %02l/%L\ (%3p%%)\              " Line number / total lines, percentage of document
+"	set statusline+=%0*\ %{toupper(g:currentmode[mode()])}\  " The current mode
+
 " Enable autocompletion:
 	set wildmode=longest,list,full
 " Disables automatic commenting on newline:

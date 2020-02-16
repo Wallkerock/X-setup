@@ -23,7 +23,7 @@ super + space
 	rofi -show drun -show-icons -drun-icon-theme Newaita-dark
 
 super + m
-	find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu | xargs xdg-open
+	sh -c "find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu -i | xargs -0 xdg-open"
 
 super + F1
 	nautilus --new-window
@@ -37,11 +37,14 @@ super + shift + F2
 super + F3
 	thunderbird
 
-super + v ; {w,o,e,n,m,p,g,v,t,f,r,z}
-	{firefox,lowriter,subl,urxvt -e ncmpcpp,smplayer,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
+super + v ; {w,o,e,s,n,m,p,g,v,t,f,r,z}
+	{firefox,lowriter,subl,smplayer,urxvt -e ncmpcpp,mousepad,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
 
 super + shift + x
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+super + ctrl + r
+	cp ~/.config/bspwm/Bspwm-Beam/polybar/config /home/lubomir/.config/polybar/
 
 Print
 	scrot

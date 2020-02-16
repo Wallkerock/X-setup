@@ -75,7 +75,7 @@ Xcursor.theme: Breeze
 Xcursor.size:                     0
 
 *.geometry:					150x45
-!*.internalBorder:			10
+*.internalBorder:			20
 !*.font:					xft:xos4 Terminus:size=11
 !*.font:                     9x15,xft:TerminessTTFNerdFontMono
 *.font:						xft:Ubuntu Mono:size=12
@@ -90,7 +90,7 @@ URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-#URxvt*cursorUnderline:            true
+!URxvt*cursorUnderline:            true
 URxvt*pointerBlank:               false
 URxvt*saveLines:                  5000
 !URxvt*lineSpace:                  0.1

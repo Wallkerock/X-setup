@@ -65,7 +65,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center =
-modules-right = system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -192,6 +192,11 @@ bar-progress-fill-font = 3
 bar-progress-empty-font = 3
 bar-progress-empty-foreground = ${colors.foreground-alt}
 
+[module/ssh]
+type = custom/script
+exec = ~/.scripts/ssh.sh
+interval = 4
+
 [module/system-uptime-pretty]
 type = custom/script
 exec = sh ~/.scripts/system-uptime-pretty.sh
@@ -276,7 +281,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF7E39}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF5E00}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -317,7 +322,7 @@ format = <label>
 format-warn = <ramp> <label-warn>
 ;format-warn-overline = ${self.format-underline}
 
-label = %{F#FF7E39}T: %temperature-c%%{F-}
+label = %{F#FF5E00}T: %temperature-c%%{F-}
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
@@ -495,7 +500,7 @@ click-left = "cp ~/.config/bspwm/Bspwm-Dark-Orange/polybar/config /home/lubomir/
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF7E39
+content-foreground = #FF5E00
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh

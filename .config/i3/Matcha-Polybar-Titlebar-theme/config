@@ -54,7 +54,7 @@ bindsym $mod+Shift+b border normal
 bindsym $mod+Shift+Ctrl+b border pixel 2
 
 ## class                 border  backgr. text    indicator child_border
-client.focused          #39AF97 #14997E #ffffff #FFBE42   #2EB398
+client.focused          #37A690 #10876E #ffffff #FFBE42   #2EB398
 client.focused_inactive #9D60AE #855791 #DFDFDF #505050   #8D519E
 client.unfocused        #4D5B5F #475154 #BCBCBC #475154   #475154
 client.urgent           #FFD380 #ffb52a #ffffff #ffb52a   #ffb52a
@@ -312,15 +312,15 @@ mode "$mode_launcher" {
     bindsym t exec thunar, mode "default"
     bindsym o exec lowriter, mode "default"
     bindsym p exec pavucontrol, mode "default"
-    bindsym s exec simplescreenrecorder, mode "default"
+    bindsym s exec smplayer, mode "default"
     bindsym d exec evince, mode "default"
     bindsym f exec nautilus --new-window, mode "default"
     bindsym g exec gimp, mode "default"
     bindsym z exec zathura, mode "default"
     bindsym c exec galculator, mode "default"
-    bindsym v exec vlc, mode "default"
+    bindsym v exec --no-startup-id vlc, mode "default"
     bindsym n exec urxvt -e ncmpcpp, mode "default"
-    bindsym m exec smplayer, mode "default"
+    bindsym m exec mousepad, mode "default"
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
@@ -359,8 +359,8 @@ exec_always --no-startup-id pkill sxhkd
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom -b
 #exec --no-startup-id nitrogen --restore
-#exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/i3wm-matcha-b.png
-exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/nature.jpg
+exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/blackcat.jpg
+#exec_always --no-startup-id feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-matcha/nature.jpg
 exec --no-startup-id pgrep pulseaudio || start-pulseaudio-x11
 exec --no-startup-id xfsettingsd
 exec_always --no-startup-id numlockx on

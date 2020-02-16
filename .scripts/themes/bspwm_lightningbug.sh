@@ -25,8 +25,8 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/tapeta3.jpg &
 xfconf-query -c xsettings -p /Net/ThemeName -s "LightningBug-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Vibrancy-Full-Dark-Yellow" &
 
-bspc config border_width         2
-bspc config window_gap           6
+bspc config border_width         3
+bspc config window_gap           14
 
 bspc config gapless_monocle true
 bspc config single_monocle false

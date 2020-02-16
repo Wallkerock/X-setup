@@ -29,8 +29,11 @@ PS1='\[\e[1;33m\]\d\[\e[1;37m\]:\[\e[1;34m\]\w\[\e[1;37m\]$\[\e[1;0m\] '
 alias grep="grep --color=always"
 alias ls="ls --color=auto --group-directories-first"
 alias ll="ls -laF"
-alias cc="clear"
 alias rr="reset"
+alias p="sudo pacman -Syu"
+alias pp="sudo pacman -Ss"
+alias y="yay -Syu --aur"
+alias yy="yay -Ss"
 alias pocasie="curl sk.wttr.in/48.16,17.11"
 alias email='curl -u $user:$pass --silent "https://mail.google.com/mail/feed/atom" |  grep -oPm2 "(?<=<title>)[^<]+" | sed '1d''
 alias neomutt="env TERM=rxvt-256color neomutt"

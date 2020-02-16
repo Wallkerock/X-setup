@@ -11,7 +11,7 @@ fi
 x=${geometry[0]}
 y=${geometry[1]}
 panel_width=$((${geometry[2]} - 0))
-panel_height=20
+panel_height=23
 #font="-xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1"
 #font="-*-iosevka-bold-r-normal--12-120-0-0-m-0-iso10646-1"
 #font="-misc-fixed-bold-r-normal--14-130-75-75-c-70-iso10646-1"

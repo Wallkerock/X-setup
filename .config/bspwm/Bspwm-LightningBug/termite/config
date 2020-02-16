@@ -3,10 +3,10 @@ allow_bold = true
 #audible_bell = false
 bold_is_bright = true
 cell_height_scale = 1.0
-cell_width_scale = 1.0
+cell_width_scale = 1.2
 clickable_url = true
 #dynamic_title = true
-font = Ubuntu Mono 11
+font = Iosevka Slab 11
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -23,7 +23,7 @@ scrollback_lines = 10000
 #browser = xdg-open
 
 # "system", "on" or "off"
-#cursor_blink = system
+cursor_blink = system
 
 # "block", "underline" or "ibeam"
 cursor_shape = block
@@ -44,9 +44,9 @@ cursor_shape = block
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
 cursor = #E0E0E0
-#cursor_foreground = #dcdccc
+cursor_foreground = #0F0F0F
 
-foreground = #C4C4C4
+foreground = #DFDFDF
 #foreground_bold = #ffffff
 #background = #3f3f3f
 
@@ -57,21 +57,21 @@ background = rgba(28, 28, 28, 0.95)
 highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #222531
+color0 = #282828
 color1 = #BA2922
 color2 = #7E7E80
-color3 = #696969
-color4 = #2C3854
-color5 = #5D657E
-color6 = #638EE7
+color3 = #626262
+color4 = #292929
+color5 = #646464
+color6 = #B8860B
 color7 = #E0E0E0
 color8 = #4E4E4E
 color9 = #CC372C
 color10 = #8D8D8F
 color11 = #FFA500
-color12 = #507CEF
-color13 = #6578AB
-color14 = #416EDE
+color12 = #E6A80F
+color13 = #777777
+color14 = #DDAB23
 color15 = #E8E8E8
 
 [hints]

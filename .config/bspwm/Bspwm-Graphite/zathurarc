@@ -27,7 +27,7 @@ set notification-bg             "#edb54b" #0B
 set notification-fg             "#202020" #00
 
 set recolor-lightcolor          "#FFFFFF" #00
-set recolor-darkcolor           "#202020" #06
+set recolor-darkcolor           "#141414" #06
 set recolor                     "true"
 
 set page-padding                "1"

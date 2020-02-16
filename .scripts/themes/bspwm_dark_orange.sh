@@ -29,8 +29,10 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "Orange-5" &
 bspc config border_width         2
 bspc config window_gap           10
 
-bspc config gapless_monocle true
-bspc config single_monocle false
+bspc config split_ratio          0.50
+bspc config borderless_monocle   false
+bspc config gapless_monocle      true
+bspc config single_monocle       false
 
 #bspc config focused_sticky_border_color     "#FFB600"
 bspc config focused_border_color            "#F2DEA3"

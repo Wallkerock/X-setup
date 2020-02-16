@@ -75,10 +75,10 @@ Xcursor.theme: Breeze
 Xcursor.size:                     0
 
 *.geometry:					160x45
-!*.internalBorder:			10
-!*.font:					xft:xos4 Terminus:size=11
+*.internalBorder:			20
+*.font:					xft:JetBrains Mono:size=11
 !*.font:					xft:DejaVu Sans Mono:size=11
-*.font:						xft:Ubuntu Mono:size=12
+!*.font:						xft:Ubuntu Mono:size=12
 
 ! alternative font settings with 'terminus':
 !URxvt.font: -*-fixed-*-r-normal--*-*-*-*-*-*-iso10646-*
@@ -90,12 +90,12 @@ URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-URxvt*cursorUnderline:            true
+!URxvt*cursorUnderline:            true
 URxvt*saveLines:                  5000
 !URxvt*lineSpace:                  0.1
 URxvt*letterSpace:                -1
 !!! perl extension
-Rxvt.perl-ext-common:             default,matcher,resize-font,url-select,keyboard-select,clipboard
+Rxvt.perl-ext-common:             default,matcher,resize-font,url-select,keyboard-select,clipboard,ibeamcursor
 URxvt.resize-font.smaller:        C-Down
 URxvt.resize-font.bigger:         C-Up
 !!! copy/paste

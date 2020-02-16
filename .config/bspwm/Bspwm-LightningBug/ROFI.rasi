@@ -17,7 +17,7 @@
   blue:       #FFC945;
   mangenta:   #d886f3;
   cyan:       #6cdcf7;
-  emphasis:   #B8860B;
+  emphasis:   #3A3A3A;
   text:       #FFFFFF;
   text-alt:   #DADADA;
   fg:         #abb2bf;
@@ -72,7 +72,7 @@ listview {
 element {
   padding: 5px;
   text-color: @text-alt;
-  highlight: bold #A23939; /* green */
+  highlight: bold #FFB600; /* green */
   border-radius: 2px;
 }
 

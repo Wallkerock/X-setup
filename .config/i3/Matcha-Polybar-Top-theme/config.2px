@@ -159,7 +159,8 @@ bindsym $mod+e layout toggle split
 #bindsym $mod+Shift+space floating toggle
 #bindsym $mod+s floating toggle
 #bindsym $mod+s floating toggle resize set 1200 700; move position center
-bindsym $mod+Shift+s floating toggle sticky enable; move position center
+#bindsym $mod+Shift+s floating toggle sticky enable; move position center
+bindsym $mod+Shift+s "mark --add _; [con_mark=f] floating disable, border pixel 2, mark --add --toggle _; [con_mark=_] floating enable, border normal 2; mark --add --toggle f;"
 
 # Toggle between dock mode and hide mode
 bindsym $mod+h bar mode toggle
@@ -272,7 +273,7 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="Xarchiver"] floating enable sticky enable border normal 2
 # special floating
-for_window [instance="^float$" class="(?i)urxvt"] floating enable, move relative center
+for_window [instance="^float$" class="(?i)urxvt"] floating enable border normal 2, move relative center
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

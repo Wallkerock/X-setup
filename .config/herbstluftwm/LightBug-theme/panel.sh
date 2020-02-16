@@ -21,7 +21,7 @@ font="-*-inconsolata-bold-r-normal--14-140-0-0-m-0-iso10646-1"
 bgcolor=$(hc get frame_border_normal_color)
 selbg=$(hc get window_border_active_color)
 selbg='#CC9100'
-selfg='#FFFFFF'
+selfg='#1B1B1B'
 
 ####
 # Try to find textwidth binary.

@@ -34,12 +34,13 @@ bspc config automatic_scheme alternate
 bspc config initial_polarity second_child
 
 bspc config split_ratio          0.50
+bspc config borderless_monocle   false
 bspc config gapless_monocle      true
 bspc config single_monocle       false
 
 #bspc config focused_sticky_border_color     "#FFB600"
 bspc config focused_border_color            "#407460"
-bspc config normal_border_color             "#A4BCAF"
+bspc config normal_border_color             "#93AA9D"
 #bspc config urgent_border_color             "#red"
 #bspc config active_border_color             "#magenta"
 bspc config presel_feedback_color           "#407460"

@@ -28,7 +28,7 @@ height = 24
 ;offset-y = 1%
 radius = 0.0
 fixed-center = false
-bottom = false
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -80,9 +80,9 @@ font-5 = Roboto:pixelsize=9;2
 ;font-4 = Monaco:pixelsize=9;2
 ;font-5 = Roboto:pixelsize=9;2
 
-modules-left = rofi info-hlwm-workspaces xwindow
-modules-center = 
-modules-right = system-uptime-pretty weather updates-arch gmail home filesystem memory temperature cpu pulseaudio eth xkeyboard date reload powermenu
+modules-left = rofi
+modules-center =
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -205,8 +205,16 @@ type = custom/script
 ;label = %{F#CC9100}/ %{F#E3E3E3}%output% %{F#CC9100}/%{F-}
 label = %{F#E3E3E3}%output%%{F-}
 ;label-padding = 4
-exec = sh ~/.config/i3/Canvas-Polybar-theme/polybar/scripts/system-uptime-pretty.sh
+exec = sh ~/.scripts/system-uptime-pretty.sh
 interval = 30
+
+[module/openweathermap-detailed]
+type = custom/script
+exec = sh ~/.scripts/openweathermap-detailed.sh
+label-foreground = #FF9F00
+interval = 600
+label-font = 0
+click-left = sh ~/.scripts/pocasie-i3.sh &
 
 [module/weather]
 type = custom/script
@@ -215,25 +223,24 @@ label-foreground = #ACACAC
 ;label-foreground = #909090
 ;label-background = #3555D0
 interval = 300
-exec = sh ~/.scripts/weather-i3.sh -i
+exec = sh ~/.scripts/weather.sh -i
 click-left = sh ~/.scripts/pocasie.sh
 
 [module/updates-arch]
 type = custom/script
-label-foreground = #FFC023
+label-foreground = #FFFFFF
 exec = sh ~/.scripts/updates-pacman.sh
-interval = 60
-click-left = sh ~/.scripts/updates-install.sh &
-click-right = sh ~/.scripts/update_dunst.sh &
+interval = 40
+click-left = sh ~/.scripts/updates-install-i3.sh
+click-right = sh ~/.scripts/checkupdates.sh
 
 [module/gmail]
 type = custom/script
-label = %{F#939393}mail: %output%%{F-}
+label = %output%
 interval = 30
-exec = ~/.scripts/gmail-hw.py
-;click-left = firefox --new-window https://mail.google.com/mail/u/1/#inbox &
+exec = ~/.scripts/mail.sh
 click-left = thunderbird &
-click-right = sh ~/.scripts/check_mail.sh
+click-right = ~/.scripts/check_mail.sh
 
 [module/home]
 type = internal/fs
@@ -271,7 +278,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF9595}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF3A3A}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -341,12 +348,73 @@ format = <label>
 ;   %percentage-core[1-9]% - load percentage for specific core
 label = %{F#E3E3E3}CPU %percentage:2%%%{F-}
 
+[module/info-publicip]
+type = custom/script
+exec = ~/.scripts/info-publicip.sh
+label-foreground = #FFFFFF
+interval = 60
+
+[module/connection]
+type = custom/script
+;label-foreground = #15FF00
+interval = 5
+;label = "eth"
+exec = ~/.scripts/network/web.sh
+click-left = networkmanager_dmenu
+
+[module/eth]
+type = internal/network
+interface = enp2s0
+exec = check-network
+interval = 2.0
+;udspeed-minwidth = 0
+
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %{F#BABABA}(%downspeed:8%)%{F-}%{A}
+
+format-disconnected = <label-disconnected>
+label-disconnected = %{F#797979}down: ?%{F-}%{A}
+
+[module/clipboard]
+type = custom/text
+;content-padding = 2
+content-foreground = #CC9100
+;content-background = #6B88FA
+content = "cb"
+click-left = sh ~/.scripts/clipboard.sh
+click-right = sh ~/.scripts/clipboard-clear.sh
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+;format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+;format-prefix-overline = ${colors.secondary}
+
+; Available tokens:
+;   %layout%
+;   %name%
+;   %number%
+; Default: %layout%
+label-layout = %{F#FFFFFF} %layout%%{F-}
+;label-layout-overline = ${colors.secondary}
+
+; Available tokens:
+;   %name%
+; Default: %name%
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+;label-indicator-overline = ${colors.secondary}
+
 [module/pulseaudio]
 type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
-sink = alsa_output.pci-0000_12_00.3.analog-stereo
+;sink = alsa_output.pci-0000_12_00.3.analog-stereo
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
@@ -360,7 +428,7 @@ interval = 5
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = %{F#FFA0A0}vol: <label-volume>%{F-}
+format-volume = %{F#FF9F00}vol: <label-volume>%{F-}
 
 ; Available tags:
 ;   <label-muted> (default)
@@ -374,68 +442,9 @@ label-volume = %percentage:2%%
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted =  muted
-label-muted-foreground = #666
-
-; Only applies if <ramp-volume> is used
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-
-bar-volume-width = 21
-bar-volume-foreground-0 = #909090
-bar-volume-foreground-1 = #909090
-bar-volume-foreground-2 = #909090
-bar-volume-foreground-3 = #909090
-bar-volume-foreground-4 = #909090
-bar-volume-foreground-5 = #909090
-bar-volume-foreground-6 = #FFA500
-bar-volume-foreground-7 = #FFA500
-bar-volume-foreground-8 = #FF0000
-bar-volume-gradient = true
-bar-volume-indicator =
-bar-volume-indicator-font = 3
-bar-volume-fill = |
-bar-volume-fill-font = 3
-bar-volume-empty = |
-bar-volume-empty-font = 3
-bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[module/eth]
-type = internal/network
-interface = enp2s0
-exec = check-network
-interval = 2.0
-;udspeed-minwidth = 0
-
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %{A1:networkmanager_dmenu:}%{F#909090}down: %{F#909090}(%downspeed:8%)%{F-}%{A}
-;label-connected = %{A1:networkmanager_dmenu:}%{F#E3E3E3} %{F#89A8EE}%local_ip% (%downspeed:8%)%{F-}%{A}
-
-format-disconnected = <label-disconnected>
-label-disconnected = %{A1:networkmanager_dmenu:}%{F#797979}ip: ?%{F-}%{A}
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix-foreground = ${colors.foreground-alt}
-;format-prefix-overline = ${colors.secondary}
-
-; Available tokens:
-;   %layout%
-;   %name%
-;   %number%
-; Default: %layout%
-label-layout = %{F#E3E3E3} %layout%%{F-}
-
-; Available tokens:
-;   %name%
-; Default: %name%
-label-indicator-padding = 1
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-;label-indicator-overline = ${colors.secondary}
+label-muted = " muted "
+label-muted-foreground = #FFFFFF
+label-muted-background = #FF0000
 
 [module/date]
 type = internal/date
@@ -464,7 +473,7 @@ click-left = "cp ~/.config/herbstluftwm/LightBug-theme/polybar/config ~/.config/
 [module/powermenu]
 type = custom/script
 label-padding = 2
-label-foreground = #FF6666
+label-foreground = #FF3A3A
 ;label-background = #3555D0
 interval = 120
 exec = echo ""

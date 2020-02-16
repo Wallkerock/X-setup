@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #303030
+background = #000000
 background-alt = #444444
 foreground = #FFFFFF
 foreground-alt = #555555
@@ -42,10 +42,10 @@ border-bottom-size = 0
 border-bottom-color = #202020
 
 border-left-size = 0
-border-left-color = #303030
+border-left-color = #000000
 
 border-right-size = 0
-border-right-color = #303030
+border-right-color = #000000
 
 padding-left = 0
 padding-right = 1
@@ -64,14 +64,14 @@ font-4 = Monaco:pixelsize=9;2
 font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
-modules-center = 
-modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date reload powermenu
+modules-center =
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #303030
+tray-background = #000000
 
 wm-restack = bspwm
 
@@ -106,9 +106,9 @@ label-focused-overline = #FFFFFF
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = #DBDBDB
+label-occupied-foreground = #A0A0A0
 ;label-occupied-background = #373737
-;label-occupied-overline = #313131
+;label-occupied-overline = #717171
 label-occupied-padding = 1
 
 label-urgent = %name%
@@ -116,7 +116,7 @@ label-urgent = %name%
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = #5E5E5E
+label-empty-foreground = #393939
 label-empty-padding = 1
 
 fuzzy-match = true
@@ -231,7 +231,7 @@ click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/* &"
 type = custom/script
 label-foreground = #FFFFFF
 exec = sh ~/.scripts/updates-pacman.sh
-interval = 60
+interval = 40
 click-left = sh ~/.scripts/updates-install.sh &
 click-right = sh ~/.scripts/checkupdates.sh &
 

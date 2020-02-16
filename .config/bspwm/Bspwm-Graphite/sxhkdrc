@@ -20,8 +20,11 @@ alt + space
 super + space
 	rofi -show drun -show-icons -drun-icon-theme Newaita-dark
 
+super + m
+	find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu -i | xargs -0 xdg-open
+
 super + F1
-	nautilus --new-window
+	thunar
 
 super + F2
 	firefox
@@ -32,8 +35,14 @@ super + shift + F2
 super + F3
 	thunderbird
 
-super + v ; {w,o,e,n,m,p,g,v,t,f,r}
-	{firefox,lowriter,subl,urxvt -e ncmpcpp,smplayer,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger}
+super + v ; {w,o,e,s,n,m,p,g,v,t,f,r,z}
+	{firefox,lowriter,subl,smplayer,urxvt -e ncmpcpp,mousepad,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
+
+super + shift + x
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+super + ctrl + r
+	cp ~/.config/bspwm/Bspwm-Graphite/polybar/config /home/lubomir/.config/polybar/
 
 Print
 	scrot
@@ -193,26 +202,28 @@ super + w
 super + e ; {super + e,e}
 	bspc node {@/ --equalize,@parent --balance}
 
-# # Dynamic gaps
-# super + shift + bracket{left,right}
-# 	bspc config window_gap "$(($(bspc config window_gap) {-,+} 2 ))"
-# # Original gaps
-# super + shift + backslash
-# 	bspc config window_gap 26
+# Global Dynamic gaps
+alt + bracket{left,right}
+	bspc config window_gap "$(($(bspc config window_gap) {-,+} 2 ))"
+# Original gaps
+alt + backslash
+	bspc config window_gap 24
+alt + 0
+	bspc config window_gap 0
 
 # Focused Dynamic gaps
 super + shift + bracket{left,right}
 	bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {-,+} 2 ))"
 # Original gaps
 super + shift + backslash
-	bspc config -d focused window_gap 16
+	bspc config -d focused window_gap 24
 
-# # Dybamic borders
-# super + ctrl + bracket{left,right}
-# 	bspc config border_width "$(($(bspc config border_width) {-,+} 1 ))"
-# # Original borders
-# super + ctrl + backslash
-# 	bspc config border_width 3
+# Global Dybamic borders
+alt + ctrl + bracket{left,right}
+	bspc config border_width "$(($(bspc config border_width) {-,+} 1 ))"
+# Original borders
+alt + ctrl + backslash
+	bspc config border_width 3
 
 # Focused Dybamic borders
 super + ctrl + bracket{left,right}
