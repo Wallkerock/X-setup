@@ -58,7 +58,7 @@ bspc config external_rules_command sh ~/.scripts/bspwm/windows_rules.sh
 
 ### AUTOSTART ###
 
-pkill compton && sleep 1; compton &
+pkill picom && sleep 1; picom -b &
 ###############
 $HOME/.config/polybar/launch.sh
 feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-solarized/javor.jpg &
