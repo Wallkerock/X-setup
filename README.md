@@ -14,7 +14,6 @@ Repository contain also configuration files for these panels:
 <br>
 <h3>Bspwm with Polybar</h3>
 
-<br>
 <h4>theme Bspwm Canvas</h4>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-polybar.png">
