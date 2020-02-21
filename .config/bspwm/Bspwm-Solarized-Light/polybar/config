@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #00746A
+background = #00655C
 background-alt = #444444
 foreground = #FDF6E3
 foreground-alt = #555555
@@ -39,13 +39,13 @@ border-top-color = #FFA500
 ;border-top-color = #009BAE
 
 border-bottom-size = 1
-border-bottom-color = #00635C
+border-bottom-color = #005A52
 
 border-left-size = 0
-border-left-color = #00746A
+border-left-color = #00655C
 
 border-right-size = 0
-border-right-color = #00746A
+border-right-color = #00655C
 
 padding-left = 0
 padding-right = 1
@@ -53,7 +53,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-separator = %{F#63A29E}%{F-}
+separator = %{F#418C85}%{F-}
 
 font-0 = Iosevka:bold:pixelsize=11;3
 ;font-0 = Misc Fixed:bold:pixelsize=14;2
@@ -71,7 +71,7 @@ tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #00746A
+tray-background = #00655C
 
 wm-restack = bspwm
 
@@ -116,7 +116,7 @@ label-urgent = %name%
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = #50B7AF
+label-empty-foreground = #4FAEA7
 label-empty-padding = 1
 
 fuzzy-match = true
