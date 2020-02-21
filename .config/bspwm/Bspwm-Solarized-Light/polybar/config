@@ -116,7 +116,7 @@ label-urgent = %name%
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = #4FAEA7
+label-empty-foreground = #4AA29C
 label-empty-padding = 1
 
 fuzzy-match = true
