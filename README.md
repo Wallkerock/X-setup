@@ -26,6 +26,13 @@ Repository contain also configuration files for these panels:
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-dark-orange-02.png">
 
 <br>
+<h4>theme Solarized Light</h4>
+
+<img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-solarized-light-01.png">
+
+<img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-solarized-light-02.png">
+
+<br>
 <h3>i3wm with Polybar</h3>
 
 <h4>theme Canvas Polybar Titlebar</h3>
