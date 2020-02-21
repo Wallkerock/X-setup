@@ -12,7 +12,7 @@ Repository contain also configuration files for these panels:
 - <a href="https://github.com/polybar/polybar">polybar</a> - highly customizable universal bar for many window managers
 
 <br>
-<h3>Bspwm with Polybar (theme Bspwm Canvas)</h3>
+<h3>Bspwm with Polybar</h3>
 
 <h4>theme Bspwm Canvas</h4>
 
@@ -26,11 +26,15 @@ Repository contain also configuration files for these panels:
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-dark-orange-02.png">
 
 <br>
-<h4>i3wm with Polybar (theme i3wm Canvas Polybar Titlebar)</h4>
+<h3>i3wm with Polybar (theme i3wm Canvas Polybar Titlebar)</h3>
+
+<h4>theme Canvas Polybar Titlebar</h3>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/i3wm-polybar.png">
 
 <br>
-<h4>i3wm with i3blocks (theme i3wm Canvas i3blocks)</h4>
+<h3>i3wm with i3blocks (theme i3wm Canvas i3blocks)</h3>
+
+<h4>theme i3wm Canvas i3blocks</h4>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/i3wm-i3blocks.png">
