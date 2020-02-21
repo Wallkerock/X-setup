@@ -8,9 +8,9 @@
 ;=====================================================
 
 [colors]
-background = #100906
+background = #181818
 background-alt = #444444
-foreground = #F2DEA3
+foreground = #FFFFFF
 foreground-alt = #555555
 primary = #ffb52a
 secondary = #e60053
@@ -38,14 +38,14 @@ border-top-size = 0
 border-top-color = #FFA500
 ;border-top-color = #009BAE
 
-border-bottom-size = 0
-border-bottom-color = #090200
+border-bottom-size = 1
+border-bottom-color = #0B0B0B
 
 border-left-size = 0
-border-left-color = #100906
+border-left-color = #181818
 
 border-right-size = 0
-border-right-color = #100906
+border-right-color = #181818
 
 padding-left = 0
 padding-right = 1
@@ -53,25 +53,26 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-separator = %{F#403624}%{F-}
+separator = %{F#3C3C3C}%{F-}
 
-font-0 = Iosevka:bold:pixelsize=11;3
+font-0 = Iosevka:bold:pixelsize=10;4
+;font-0 = Iosevka:pixelsize=10;4
 ;font-0 = Misc Fixed:bold:pixelsize=14;3
 font-1 = Cantarell:bold:pixelsize=10;2
 font-2 = Cantarell:bold:pixelsize=10;2
-font-3 = FontAwesome:pixelsize=11;3
+font-3 = FontAwesome:pixelsize=9;2
 font-4 = Monaco:pixelsize=9;2
 font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
-modules-center =
-modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
+modules-center = 
+modules-right = system-uptime-pretty weather updates-arch gmail home filesystem memory temperature cpu pulseaudio eth connection clipboard xkeyboard date reload powermenu
 
 tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #100906
+tray-background = #181818
 
 wm-restack = bspwm
 
@@ -86,7 +87,7 @@ cursor-scroll = ns-resize
 [module/xwindow]
 type = internal/xwindow
 label-padding = 2
-label-foreground = #BDA572
+label-foreground = #ADADAD
 label = %title:0:30:...%
 
 [module/bspwm]
@@ -97,16 +98,16 @@ enable-scroll = true
 reverse-scroll = false
 
 label-focused = %name%
-label-focused-foreground = #F2DEA3
+label-focused-foreground = #FFFFFF
 ;label-focused-foreground = #22978E
 ;label-focused-background = #90#22978E
 ;label-focused-background = #EEE8D5
-;label-focused-underline = #F2DEA3
-label-focused-overline = #F2DEA3
+;label-focused-underline = #FFFFFF
+label-focused-overline = #FFFFFF
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = #CCBA87
+label-occupied-foreground = #ADADAD
 ;label-occupied-background = #373737
 ;label-occupied-overline = #313131
 label-occupied-padding = 1
@@ -116,7 +117,7 @@ label-urgent = %name%
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = #493E28
+label-empty-foreground = #404040
 label-empty-padding = 1
 
 fuzzy-match = true
@@ -124,10 +125,35 @@ fuzzy-match = true
 [module/rofi]
 type = custom/text
 content-padding = 2
-content-foreground = #F2DEA3
+content-foreground = #FFFFFF
 ;content-background = #6B88FA
 content = 
 click-left = "rofi -show drun -show-icons -drun-icon-theme Newaita-holidays-dark >/dev/null 2>&1 &"
+
+[module/firefox]
+type = custom/text
+content-padding = 0
+separator = 0
+content-foreground = #FFFFFF
+;content-background = #6B88FA
+content = 
+click-left = firefox &
+
+[module/editor]
+type = custom/text
+content-padding = 0
+content-foreground = #FFFFFF
+;content-background = #6B88FA
+content = 
+click-left = subl &
+
+[module/terminal]
+type = custom/text
+content-padding = 0
+content-foreground = #FFFFFF
+;content-background = #6B88FA
+content = 
+click-left = urxvt &
 
 [module/mpd]
 type = internal/mpd
@@ -192,37 +218,32 @@ bar-progress-fill-font = 3
 bar-progress-empty-font = 3
 bar-progress-empty-foreground = ${colors.foreground-alt}
 
-[module/ssh]
+[module/connection]
 type = custom/script
-exec = ~/.scripts/ssh.sh
-interval = 4
+;label-foreground = #FF5151
+interval = 5
+;label = "eth"
+exec = ~/web.sh
+click-left = networkmanager_dmenu
 
 [module/system-uptime-pretty]
 type = custom/script
 exec = sh ~/.scripts/system-uptime-pretty.sh
 interval = 30
 
-[module/openweathermap-detailed]
-type = custom/script
-exec = sh ~/.scripts/openweathermap-detailed.sh
-label-foreground = #958564
-interval = 600
-label-font = 0
-click-left = sh ~/.scripts/pocasie.sh &
-
 [module/weather]
 type = custom/script
 ;label-padding = 2
-label-foreground = #958564
+label-foreground = #A5FFBB
 ;label-background = #3555D0
 interval = 300
-exec = sh ~/.scripts/weather.sh -i
-click-left = sh ~/.scripts/pocasie.sh &
+exec = sh ~/.scripts/weather-i3.sh -i
+click-left = sh ~/.scripts/pocasie.sh
 
 [module/background]
 type = custom/script
 ;label-padding = 2
-label-foreground = #F2DEA3
+label-foreground = #FFFFFF
 ;label-background = #5072F8
 interval = 120
 exec = echo ""
@@ -230,20 +251,20 @@ click-left = "feh --randomize --bg-fill ~/Pictures/backgrounds/bspwm-dark/* &"
 
 [module/updates-arch]
 type = custom/script
-label-foreground = #F2DEA3
-exec = sh ~/.scripts/updates-pacman.sh
-interval = 30
-click-left = sh ~/.scripts/updates-install.sh
-click-right = sh ~/.scripts/checkupdates.sh
+label-foreground = #FFFFFF
+exec = sh ~/.scripts/updates-bspwm.sh
+interval = 60
+click-left = sh ~/.scripts/updates-install.sh &
+;click-right = sh ~/.scripts/update_dunst.sh &
+click-right = sh ~/.scripts/checkupdates.sh &
 
 [module/gmail]
 type = custom/script
-label = %{F#958564}%output%%{F-}
-interval = 15
-exec = sh ~/.scripts/mail.sh
+label = %{F#FFFFFF}mail: %output%%{F-}
+interval = 30
+exec = ~/.scripts/mail.sh
 ;click-left = firefox --new-window https://mail.google.com/mail/u/1/#inbox &
 click-left = thunderbird &
-click-right = sh ~/.scripts/check_mail.sh
 
 [module/home]
 type = internal/fs
@@ -261,7 +282,7 @@ mount-0 = /home
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#F2DEA3}/home: %percentage_used%%%{F-}
+label-mounted = %{F#FFFFFF}/home: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -281,7 +302,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF5E00}/: %percentage_used%%%{F-}
+label-mounted = %{F#FFB0CC}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -292,14 +313,14 @@ interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-overline = #4bffdc
 format = <label>
-label = %{F#F2DEA3}RAM: %percentage_used:2%%%{F-}
+label = %{F#FFFFFF}RAM: %percentage_used:2%%%{F-}
 
 bar-used-width = 10
-bar-used-foreground-0 = #F2DEA3
-bar-used-foreground-1 = #F2DEA3
-bar-used-foreground-2 = #F2DEA3
-bar-used-foreground-3 = #F2DEA3
-bar-used-foreground-4 = #F2DEA3
+bar-used-foreground-0 = #FFFFFF
+bar-used-foreground-1 = #FFFFFF
+bar-used-foreground-2 = #FFFFFF
+bar-used-foreground-3 = #FFFFFF
+bar-used-foreground-4 = #FFFFFF
 bar-used-fill = |
 bar-used-fill-font = 3
 bar-used-empty = |
@@ -322,7 +343,7 @@ format = <label>
 format-warn = <ramp> <label-warn>
 ;format-warn-overline = ${self.format-underline}
 
-label = %{F#FF5E00}T: %temperature-c%%{F-}
+label = %{F#FFD345}T: %temperature-c%%{F-}
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
@@ -349,15 +370,14 @@ format = <label>
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = %{F#15FF00}CPU: %percentage:2%%%{F-}
+label = %{F#FFFFFF}CPU %percentage:2%%%{F-}
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
-;sink = alsa_output.pci-0000_12_00.3.analog-stereo
-sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
 
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
@@ -371,7 +391,7 @@ interval = 5
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = %{F#958564}vol: <label-volume>%{F-}
+format-volume = %{F#909090}vol: <label-volume>%{F-}
 
 ; Available tags:
 ;   <label-muted> (default)
@@ -394,15 +414,15 @@ ramp-volume-1 = 
 ramp-volume-2 = 
 
 bar-volume-width = 21
-bar-volume-foreground-0 = #F2DEA3
-bar-volume-foreground-1 = #F2DEA3
-bar-volume-foreground-2 = #F2DEA3
-bar-volume-foreground-3 = #F2DEA3
-bar-volume-foreground-4 = #F2DEA3
-bar-volume-foreground-5 = #F2DEA3
-bar-volume-foreground-6 = #F2DEA3
-bar-volume-foreground-7 = #F2DEA3
-bar-volume-foreground-8 = #F2DEA3
+bar-volume-foreground-0 = #FFFFFF
+bar-volume-foreground-1 = #FFFFFF
+bar-volume-foreground-2 = #FFFFFF
+bar-volume-foreground-3 = #FFFFFF
+bar-volume-foreground-4 = #FFFFFF
+bar-volume-foreground-5 = #FFFFFF
+bar-volume-foreground-6 = #FFFFFF
+bar-volume-foreground-7 = #FFFFFF
+bar-volume-foreground-8 = #FFFFFF
 bar-volume-gradient = true
 bar-volume-indicator =
 bar-volume-indicator-font = 3
@@ -412,20 +432,6 @@ bar-volume-empty = |
 bar-volume-empty-font = 3
 bar-volume-empty-foreground = #616161
 
-[module/info-publicip]
-type = custom/script
-exec = ~/.scripts/info-publicip.sh
-label-foreground = #FFFFFF
-interval = 200
-
-[module/connection]
-type = custom/script
-;label-foreground = #FF5151
-interval = 5
-;label = "eth"
-exec = ~/.scripts/network/web.sh
-click-left = networkmanager_dmenu
-
 [module/eth]
 type = internal/network
 interface = enp2s0
@@ -434,20 +440,19 @@ interval = 2.0
 ;udspeed-minwidth = 0
 
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %{F#958564}(%downspeed:8%)%{F-}%{A}
+label-connected = %{A1:networkmanager_dmenu:}%{F#FFFFFF}down: %{F#A9A9A9}(%downspeed:8%)%{F-}%{A}
 
 format-disconnected = <label-disconnected>
-label-disconnected = %{F#797979}ip: ?%{F-}%{A}
+label-disconnected = %{A1:networkmanager_dmenu:}%{F#797979}ip: ?%{F-}%{A}
 
 [module/clipboard]
 type = custom/text
 ;content-padding = 2
-content-foreground = #958564
+content-foreground = #A6A6A6
 ;content-background = #6B88FA
-!content = ""
-content = "cb"
-click-left = sh ~/.scripts/clipboard.sh
-click-right = sh ~/.scripts/clipboard-clear.sh
+content = ""
+click-left = sh ~/.scripts/clipboard.sh &
+click-right = sh ~/.scripts/clipboard-clear.sh &
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -462,7 +467,7 @@ format-prefix-foreground = ${colors.foreground-alt}
 ;   %name%
 ;   %number%
 ; Default: %layout%
-label-layout = %{F#F2DEA3} %layout%%{F-}
+label-layout = %{F#A6A6A6} %layout%%{F-}
 ;label-layout-overline = ${colors.secondary}
 
 ; Available tokens:
@@ -478,32 +483,32 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#958564}%d.%m.%Y  %{F-}"
+date-alt = "%{F#909090}%d.%m.%Y  %{F-}"
 
-time = %H:%M%{F#958564}, %Y-%m-%{F-}%{F#F2DEA3}%d%{F-}
+time = %H:%M%{F#909090}, %Y-%m-%{F-}%{F#FFFFFF}%d%{F-}
 time-alt = %H:%M
 
 ;format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-overline = #0a6cf5
 
-label = %{F#F2DEA3}%date%%time%%{F-}
+label = %{F#FFFFFF}%date%%time%%{F-}
 
 [module/reload]
 type = custom/text
 ;content-padding = 2
-content-foreground = #958564
+content-foreground = #707070
 ;content-background = #3555D0
 content = ""
-click-left = "cp ~/.config/bspwm/Bspwm-Dark-Orange/polybar/config /home/lubomir/.config/polybar/ &"
+click-left = "cp ~/.config/bspwm/Bspwm-Dark/polybar/config /home/lubomir/.config/polybar/ &"
 
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF5E00
+content-foreground = #FF7C7C
 ;content-background = #3555D0
 content = ""
-click-left = sh ~/.scripts/power-menu-bspwm.sh
+click-left = sh ~/.scripts/power-menu-bspwm.sh &
 
 [settings]
 screenchange-reload = true
