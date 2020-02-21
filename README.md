@@ -12,12 +12,14 @@ Repository contain also configuration files for these panels:
 - <a href="https://github.com/polybar/polybar">polybar</a> - highly customizable universal bar for many window managers
 
 <br>
-<h4>Bspwm with Polybar (theme Bspwm Canvas)</h4>
+<h3>Bspwm with Polybar (theme Bspwm Canvas)</h3>
+
+<h4>theme Bspwm Canvas</h4>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-polybar.png">
 
 <br>
-<h4>Bspwm with Polybar (theme Dark Orange)</h4>
+<h4>theme Dark Orange</h4>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-dark-orange-01.png">
 
