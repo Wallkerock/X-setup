@@ -17,6 +17,13 @@ Repository contain also configuration files for these panels:
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-polybar.png">
 
 <br>
+<h4>Bspwm with Polybar (theme Dark Orange)</h4>
+
+<img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-dark-orange-01.png">
+
+<img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/bspwm-dark-orange-02.png">
+
+<br>
 <h4>i3wm with Polybar (theme i3wm Canvas Polybar Titlebar)</h4>
 
 <img src="https://github.com/Wallkerock/X-setup/blob/master/.pics/i3wm-polybar.png">
