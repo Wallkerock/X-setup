@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Abrus
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_abrus.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm abrus
+Name[en_US.utf8]=Theme Bspwm Abrus
