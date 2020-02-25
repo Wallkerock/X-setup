@@ -13,14 +13,14 @@
   black:      #000000;
   red:        #eb6e67;
   green:      #34B2A9;
-  violet:     #FF5D35;
+  violet:     #BE3838;
   yellow:     #f8c456;
   blue:       #6eaafb;
   magenta:    #d886f3;
   cyan:       #6cdcf7;
   emphasis:   #DDD8C7;
   text:       #423200;
-  text-alt:   #423200;
+  text-alt:   #5C4600;
   fg:         #abb2bf;
   bg:         #282c34;
 
@@ -42,8 +42,8 @@ window {
 mainbox {
   transparency: "real";
   padding: 10% 10%;
-  border: 8px;
-  border-color: #2AA198;
+  border: 2px;
+  border-color: #B58900;
 }
 
 inputbar {
@@ -74,7 +74,7 @@ listview {
 element {
   padding: 5px;
   text-color: @text-alt;
-  highlight: bold #FF7B36; /* green */
+  highlight: bold #BE3838; /* green */
   border-radius: 2px;
 }
 

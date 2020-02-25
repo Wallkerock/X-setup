@@ -9,14 +9,14 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "daronge"
+let g:colors_name = "matcha"
 hi Normal       guifg=Cyan      guibg=Black
-hi Comment      term=bold       ctermfg=DarkGray    guifg=#80a0ff
+hi Comment      term=bold       ctermfg=238    guifg=#80a0ff
 hi Constant     term=underline  ctermfg=Magenta     guifg=Magenta
 hi Special      term=bold       ctermfg=DarkMagenta guifg=Red
 hi Identifier   term=underline  cterm=bold          ctermfg=Cyan    guifg=#40ffff
 hi Statement    term=bold       ctermfg=Yellow      gui=bold        guifg=#aa4444
-hi PreProc      term=underline  ctermfg=LightBlue   guifg=#ff80ff
+hi PreProc      term=underline  cterm=bold  ctermfg=LightBlue   guifg=#ff80ff
 hi Type         term=underline  ctermfg=LightGreen  guifg=#60ff60   gui=bold
 hi Function     term=bold       ctermfg=White       guifg=White
 hi Repeat       term=underline  ctermfg=White       guifg=white
@@ -26,11 +26,11 @@ hi Error        term=reverse    ctermbg=Red         ctermfg=White   guibg=Red   
 hi Todo         term=standout   ctermbg=Yellow      ctermfg=Black   guifg=Blue  guibg=Yellow
 
 " LINE NUMBER
-hi LineNr ctermbg=none ctermfg=236
+hi LineNr ctermbg=none ctermfg=23
 
 " CURSOR LINE
-hi CursorLine term=bold cterm=bold ctermbg=233 guibg=Grey40 guifg=LightGrey
-hi CursorLineNr term=bold cterm=bold guifg=#050505 guibg=lightgrey ctermfg=202 ctermbg=237
+hi CursorLine term=bold cterm=bold ctermbg=235 guibg=Grey40 guifg=LightGrey
+hi CursorLineNr term=bold cterm=bold guifg=#050505 guibg=lightgrey ctermfg=white ctermbg=023
 " hi CursorColumn term=bold ctermbg=236 guibg=Grey40
 
 " BRACKETS COLOR
@@ -38,14 +38,14 @@ hi MatchParen cterm=none ctermbg=darkred ctermfg=white
 
 " STATUS BAR COLORS
 
-au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=255 ctermbg=232
-au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=237 ctermbg=255
-hi statusline guifg=black guibg=#8fbfdc ctermfg=237 ctermbg=255
+au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=white ctermbg=black
+au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=023 ctermbg=white
+hi statusline guifg=black guibg=#8fbfdc ctermfg=023 ctermbg=white
 
-hi User1 ctermfg=007 ctermbg=237 guibg=#4e4e4e guifg=#adadad
-hi User2 ctermfg=007 ctermbg=234 guibg=#303030 guifg=#adadad
-hi User3 ctermfg=234 ctermbg=234 guibg=#303030 guifg=#303030
-hi User4 ctermfg=237 ctermbg=237 guibg=#4e4e4e guifg=#4e4e4e
+hi User1 ctermfg=007 ctermbg=023 guibg=#4e4e4e guifg=#adadad
+hi User2 ctermfg=007 ctermbg=236 guibg=#303030 guifg=#adadad
+hi User3 ctermfg=236 ctermbg=236 guibg=#303030 guifg=#303030
+hi User4 ctermfg=023 ctermbg=023 guibg=#4e4e4e guifg=#4e4e4e
 
 " Status line
 	" default: set statusline=%f\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)

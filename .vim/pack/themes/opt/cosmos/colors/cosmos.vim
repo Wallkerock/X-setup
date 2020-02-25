@@ -9,7 +9,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "daronge"
+let g:colors_name = "cosmos"
 hi Normal       guifg=Cyan      guibg=Black
 hi Comment      term=bold       ctermfg=DarkGray    guifg=#80a0ff
 hi Constant     term=underline  ctermfg=Magenta     guifg=Magenta
@@ -30,7 +30,7 @@ hi LineNr ctermbg=none ctermfg=236
 
 " CURSOR LINE
 hi CursorLine term=bold cterm=bold ctermbg=233 guibg=Grey40 guifg=LightGrey
-hi CursorLineNr term=bold cterm=bold guifg=#050505 guibg=lightgrey ctermfg=202 ctermbg=237
+hi CursorLineNr term=bold cterm=bold guifg=#050505 guibg=lightgrey ctermfg=15 ctermbg=237
 " hi CursorColumn term=bold ctermbg=236 guibg=Grey40
 
 " BRACKETS COLOR

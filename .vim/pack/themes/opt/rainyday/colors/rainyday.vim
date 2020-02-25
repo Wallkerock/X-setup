@@ -9,7 +9,7 @@ set background=dark
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "beam"
+let g:colors_name = "rainyday"
 
 hi Normal		  guifg=white  guibg=black
 hi Comment term=NONE cterm=NONE ctermfg=244 gui=NONE guifg=#006300
@@ -21,36 +21,36 @@ hi Number term=NONE cterm=NONE ctermfg=19 gui=NONE guifg=#0000C0
 hi Boolean term=NONE cterm=bold ctermfg=19 gui=bold guifg=#0000C0
 hi Float term=NONE cterm=NONE ctermfg=19 gui=NONE guifg=#0000C0
 
-hi Identifier term=bold cterm=bold ctermfg=17 gui=bold guifg=#000161
-hi Function term=bold cterm=bold ctermfg=17 gui=bold guifg=#000161
+hi Identifier term=bold cterm=bold ctermfg=25 gui=bold guifg=#000161
+hi Function term=bold cterm=bold ctermfg=25 gui=bold guifg=#000161
 
-hi Statement term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Conditional term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Repeat term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Label term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Operator term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Keyword term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Exception term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
+hi Statement term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Conditional term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Repeat term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Label term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Operator term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Keyword term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Exception term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
 
-hi PreProc term=bold cterm=bold ctermfg=22 gui=bold guifg=#3e347d
-hi Include term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
-hi Define term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
-hi Macro term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
-hi PreCondit term=bold cterm=bold ctermfg=17 gui=bold guifg=#3e347d
+hi PreProc term=bold cterm=bold ctermfg=160 gui=bold guifg=#3e347d
+hi Include term=bold cterm=bold ctermfg=25 gui=bold guifg=#3e347d
+hi Define term=bold cterm=bold ctermfg=25 gui=bold guifg=#3e347d
+hi Macro term=bold cterm=bold ctermfg=25 gui=bold guifg=#3e347d
+hi PreCondit term=bold cterm=bold ctermfg=25 gui=bold guifg=#3e347d
 
-hi Type term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi StorageClass term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Structure term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
-hi Typedef term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
+hi Type term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi StorageClass term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Structure term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
+hi Typedef term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
 
-hi Special term=bold cterm=bold ctermfg=127 gui=bold guifg=#9425a8
-hi SpecialChar term=bold cterm=bold ctermfg=127 gui=bold guifg=#9425a8
-hi Tag term=bold cterm=bold ctermfg=127 gui=bold guifg=#9425a8
-hi Delimiter term=bold cterm=bold ctermfg=127 gui=bold guifg=#9425a8
+hi Special term=bold cterm=bold ctermfg=130 gui=bold guifg=#9425a8
+hi SpecialChar term=bold cterm=bold ctermfg=130 gui=bold guifg=#9425a8
+hi Tag term=bold cterm=bold ctermfg=130 gui=bold guifg=#9425a8
+hi Delimiter term=bold cterm=bold ctermfg=130 gui=bold guifg=#9425a8
 hi SpecialComment term=NONE cterm=NONE ctermfg=22 ctermbg=NONE gui=NONE guifg=#006300
-hi Debug term=bold cterm=bold ctermfg=127 gui=bold guifg=#9425a8
+hi Debug term=bold cterm=bold ctermfg=130 gui=bold guifg=#9425a8
 
-hi Underlined term=underline cterm=underline ctermfg=127 gui=underline guifg=#9425a8
+hi Underlined term=underline cterm=underline ctermfg=130 gui=underline guifg=#9425a8
 
 hi Ignore term=NONE cterm=NONE ctermfg=231 gui=NONE guifg=bg
 
@@ -69,9 +69,9 @@ hi Cursor term=NONE cterm=NONE ctermfg=231 ctermbg=0 gui=NONE guifg=bg guibg=fg
 " hi CursorIM
 hi clear CursorColumn
 
-hi CursorLine term=bold cterm=bold guifg=LightGrey guibg=Grey40 ctermfg=NONE ctermbg=252
-hi CursorLineNr term=bold cterm=bold guifg=#FFFFFF guibg=black ctermfg=White ctermbg=177
-hi LineNr term=NONE cterm=NONE ctermbg=NONE ctermfg=66 gui=NONE guifg=#545454
+hi CursorLine term=bold cterm=bold guifg=LightGrey guibg=Grey40 ctermfg=NONE ctermbg=146
+hi CursorLineNr term=bold cterm=bold guifg=#FFFFFF guibg=black ctermfg=255 ctermbg=103
+hi LineNr term=NONE cterm=NONE ctermbg=NONE ctermfg=244 gui=NONE guifg=#545454
 
 hi Directory term=NONE cterm=NONE ctermfg=17 gui=NONE guifg=#000161
 hi DiffAdd term=NONE cterm=NONE ctermbg=194 guibg=#C8FFC8
@@ -101,7 +101,7 @@ hi Search term=NONE cterm=NONE ctermbg=227 gui=NONE guibg=#ffff80
 " hi SpecialKey
 hi SpellBad term=underline cterm=underline ctermbg=231 gui=undercurl guibg=Red
 hi SpellCap term=underline cterm=underline ctermbg=4 gui=undercurl guibg=#0000C0
-hi SpellLocal term=underline cterm=underline ctermbg=127 gui=undercurl guibg=Magenta
+hi SpellLocal term=underline cterm=underline ctermbg=130 gui=undercurl guibg=Magenta
 hi SpellRare term=underline cterm=underline ctermbg=115 gui=undercurl guibg=DarkCyan
 hi StatusLine term=bold cterm=bold ctermbg=67 ctermfg=231 gui=bold guibg=#4D7A97 guifg=white
 hi StatusLineNC term=bold cterm=bold ctermbg=253 ctermfg=231 gui=bold guibg=#D9DEE4 guifg=white
@@ -111,7 +111,7 @@ hi StatusLineTermNC term=bold cterm=bold ctermfg=254 ctermbg=28 gui=bold guifg=w
 " hi TabLineFill
 " hi TabLineSel
 " hi Terminal
-hi Title term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
+hi Title term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
 hi Visual term=NONE cterm=NONE ctermbg=153 gui=NONE guibg=#CDE8FF
 hi VisualNOS term=bold,underline cterm=bold,underline ctermfg=16 gui=bold,underline
 hi WarningMsg term=NONE cterm=NONE ctermfg=196 gui=NONE guifg=Red
@@ -121,14 +121,14 @@ hi WildMenu term=NONE cterm=NONE ctermfg=16 ctermbg=226
 hi MatchParen cterm=none ctermbg=lightgreen ctermfg=white
 
 " STATUS BAR COLORS
-au InsertEnter * hi statusline guifg=White guibg=#FF0000 ctermfg=126 ctermbg=109
-au InsertLeave * hi statusline guifg=White guibg=#EEE8D5 ctermfg=015 ctermbg=109
-hi statusline guifg=black guibg=NONE ctermfg=015 ctermbg=109
+au InsertEnter * hi statusline guifg=White guibg=#FF0000 ctermfg=015 ctermbg=146
+au InsertLeave * hi statusline guifg=White guibg=#EEE8D5 ctermfg=255 ctermbg=103
+hi statusline guifg=black guibg=NONE ctermfg=255 ctermbg=103
 
-hi User1 ctermfg=015 ctermbg=255 guibg=#4e4e4e guifg=#adadad
-hi User2 ctermfg=008 ctermbg=255 guibg=#303030 guifg=#adadad
-hi User3 ctermfg=231 ctermbg=255 guibg=#303030 guifg=#303030
-hi User4 ctermfg=239 ctermbg=255 guibg=#4e4e4e guifg=#4e4e4e
+hi User1 ctermfg=015 ctermbg=146 guibg=#4e4e4e guifg=#adadad
+hi User2 ctermfg=008 ctermbg=146 guibg=#303030 guifg=#adadad
+hi User3 ctermfg=231 ctermbg=146 guibg=#303030 guifg=#303030
+hi User4 ctermfg=239 ctermbg=146 guibg=#4e4e4e guifg=#4e4e4e
 
 " hi Scrollbar
 " hi Menu
@@ -144,7 +144,7 @@ hi NERDTreeDirSlash term=NONE cterm=NONE ctermfg=17 gui=NONE guifg=#000161
 " Markdown
 """"""""""""""""""""""
 
-hi mkdHeading term=bold cterm=bold ctermfg=89 gui=bold guifg=#7F0055
+hi mkdHeading term=bold cterm=bold ctermfg=17 gui=bold guifg=#7F0055
 hi mkdCodeStart term=bold cterm=bold ctermfg=17 gui=bold guifg=#000161
 hi mkdCodeEnd term=bold cterm=bold ctermfg=17 gui=bold guifg=#000161
 hi mkdCode term=bold cterm=bold ctermfg=17 gui=bold guifg=#000161

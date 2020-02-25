@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #00655C
+background = #826200
 background-alt = #444444
 foreground = #FDF6E3
 foreground-alt = #555555
@@ -35,17 +35,16 @@ underline-size = 2
 underline-color = #00f
 
 border-top-size = 0
-border-top-color = #FFA500
-;border-top-color = #009BAE
+border-top-color = #816100
 
 border-bottom-size = 0
-border-bottom-color = #005A52
+border-bottom-color = #816100
 
 border-left-size = 0
-border-left-color = #00655C
+border-left-color = #826200
 
 border-right-size = 0
-border-right-color = #00655C
+border-right-color = #826200
 
 padding-left = 0
 padding-right = 1
@@ -53,7 +52,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-separator = %{F#418C85}%{F-}
+separator = %{F#A9924D}%{F-}
 
 font-0 = Iosevka:bold:pixelsize=11;3
 ;font-0 = Misc Fixed:bold:pixelsize=14;3
@@ -71,7 +70,7 @@ tray-position = right
 ;tray-detached = true
 ;tray-padding = 0
 ;tray-transparent = true
-tray-background = #00655C
+tray-background = #826200
 
 wm-restack = bspwm
 
@@ -110,7 +109,7 @@ label-urgent = %name%
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = #4AA29C
+label-empty-foreground = #C39E29
 label-empty-padding = 1
 
 fuzzy-match = true
@@ -230,16 +229,16 @@ interval = 30
 [module/updates-arch]
 type = custom/script
 label-foreground = #FDF6E3
-exec = sh ~/.scripts/updates-pacman.sh
+exec = sh ~/.config/bspwm/Bspwm-Solarized-Yellow/scripts/updates-pacman.sh
 interval = 60
 click-left = sh ~/.scripts/updates-install-jetbm.sh &
 click-right = sh ~/.scripts/checkupdates.sh &
 
 [module/gmail]
 type = custom/script
-label = %{F#FDF6E3}mail: %output%%{F-}
+label = %{F#FDF6E3}%output%%{F-}
 interval = 30
-exec = ~/.scripts/mail.sh
+exec = sh ~/.config/bspwm/Bspwm-Solarized-Yellow/scripts/mail.sh
 ;click-left = firefox --new-window https://mail.google.com/mail/u/1/#inbox &
 click-left = thunderbird &
 click-right = sh ~/.scripts/check_mail.sh
@@ -280,7 +279,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FFE359}/: %percentage_used%%%{F-}
+label-mounted = %{F#FFFA59}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -306,7 +305,7 @@ format = <label>
 format-warn = <ramp> <label-warn>
 ;format-warn-overline = ${self.format-underline}
 
-label = %{F#FFE359}T: %temperature-c%%{F-}
+label = %{F#FFFA59}T: %temperature-c%%{F-}
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
@@ -374,7 +373,7 @@ label-muted-background = #FF0000
 
 [module/info-publicip]
 type = custom/script
-exec = ~/.scripts/info-publicip.sh
+exec = sh ~/.config/bspwm/Bspwm-Solarized-Yellow/scripts/info-publicip.sh
 interval = 60
 
 [module/connection]
@@ -382,7 +381,7 @@ type = custom/script
 label-foreground = #00E2CD
 interval = 5
 ;label = "eth"
-exec = ~/.scripts/network/web.sh
+exec = sh ~/.config/bspwm/Bspwm-Solarized-Yellow/scripts/web.sh
 click-left = networkmanager_dmenu
 
 [module/eth]
@@ -436,9 +435,9 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#FDF6E3}%d%{F-}%{F#A7D8D4}.%m.%Y, %{F-}"
+date-alt = "%{F#FDF6E3}%d%{F-}%{F#DCD1AE}.%m.%Y, %{F-}"
 
-time = %H:%M%{F#A7D8D4}, %Y-%m-%{F-}%{F#FDF6E3}%d%{F-}
+time = %H:%M%{F#DCD1AE}, %Y-%m-%{F-}%{F#FDF6E3}%d%{F-}
 time-alt = %H:%M
 
 ;format-prefix = 
@@ -453,12 +452,12 @@ type = custom/text
 content-foreground = #4ECAC1
 ;content-background = #3555D0
 content = ""
-click-left = "cp ~/.config/bspwm/Bspwm-Solarized-Light/polybar/config /home/lubomir/.config/polybar/ &"
+click-left = "cp ~/.config/bspwm/Bspwm-Solarized-Yellow/polybar/config /home/lubomir/.config/polybar/ &"
 
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FFE359
+content-foreground = #FFFA59
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh &

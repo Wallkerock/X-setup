@@ -27,7 +27,7 @@ rofi.fullscreen:        true
 ! ------------------------------------------------------------------------------
 
 !*fading:                         0
-!*fadeColor:                      #EEE8D5
+!*fadeColor:                      #000000
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #16A085
 
@@ -35,41 +35,41 @@ rofi.fullscreen:        true
 ! RXVT UNICODE setup
 ! ------------------------------------------------------------------------------
 
-*.foreground:                 #3B341B
-*.background:                 #FDF6E3
-*.cursorColor:                #3B341B
+*.foreground:                 #E7E9ED
+*.background:                 [97]#16181C
+*.cursorColor:                #E7E9ED
 
 !! black dark/light
-*color0:                          #FDF6E3
-*color8:                          #848484
+*color0:                          #16181C
+*color8:                          #8E9F97
 
 !! red dark/light
-*color1:                          #C74B2C
-*color9:                          #CC2C58
+*color1:                          #C34848
+*color9:                          #C34848
 
 !! green dark/light
-*color2:                          #37342A
-*color10:                         #4F4935
+*color2:                          #C45F5F
+*color10:                         #7C91CA
 
 !! yellow dark/light
-*color3:                          #393528
-*color11:                         #FE4214
+*color3:                          #BB4C4C
+*color11:                         #E22121
 
 !! blue dark/light
-*color4:                          #FDF6E3
-*color12:                         #00887D
+*color4:                          #191B1F
+*color12:                         #D64B4B
 
 !! magenta dark/light
-*color5:                          #343124
-*color13:                         #57A49E
+*color5:                          #7C8189
+*color13:                         #7C8189
 
 !! cyan dark/light
-*color6:                          #29958D
-*color14:                         #30918B
+*color6:                          #7C8089
+*color14:                         #DEDEDE
 
 !! white dark/light
-*color7:                          #686459
-*color15:                         #433B1E
+*color7:                          #E7E9ED
+*color15:                         #C4C4C4
 
 !-------------------------------------------
 ! RXVT UNICODE appearance
@@ -78,10 +78,10 @@ rofi.fullscreen:        true
 Xcursor.theme: Breeze
 Xcursor.size:                   0
 
-*.geometry:					150x40
-!*.internalBorder:			10
-*.font:                      xft:JetBrains Mono:size=11
-!*.font:                      xft:Ubuntu Mono:size=12
+*.geometry:					150x45
+*.internalBorder:			20
+!*.font:					xft:DejaVu Sans Mono:size=11
+*.font:						xft:Ubuntu Mono:size=12
 
 ! alternative font settings with 'terminus':
 !URxvt.font: -*-fixed-*-r-normal--*-*-*-*-*-*-iso10646-*
@@ -105,7 +105,7 @@ URxvt.resize-font.bigger:         C-Up
 URxvt.clipboard.autocopy:         true
 URxvt.keysym.M-c:                 perl:clipboard:copy
 URxvt.keysym.M-v:                 perl:clipboard:paste
-!URxvt.iconFile:    /usr/share/icons/Newaita/apps/48/Terminal.svg
+URxvt.iconFile:    /usr/share/icons/Clarity/scalable/apps/terminal.svg
 
 !-------------------------------------------
 ! Unused possibilities

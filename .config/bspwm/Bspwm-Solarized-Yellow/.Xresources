@@ -52,23 +52,23 @@ rofi.fullscreen:        true
 *color10:                         #4F4935
 
 !! yellow dark/light
-*color3:                          #393528
-*color11:                         #FE4214
+*color3:                          #413818
+*color11:                         #BE3838
 
 !! blue dark/light
 *color4:                          #FDF6E3
-*color12:                         #00887D
+*color12:                         #8F6C00
 
 !! magenta dark/light
 *color5:                          #343124
-*color13:                         #57A49E
+*color13:                         #B45864
 
 !! cyan dark/light
-*color6:                          #29958D
-*color14:                         #30918B
+*color6:                          #A87F00
+*color14:                         #AF3E54
 
 !! white dark/light
-*color7:                          #686459
+*color7:                          #72684B
 *color15:                         #433B1E
 
 !-------------------------------------------
@@ -79,7 +79,7 @@ Xcursor.theme: Breeze
 Xcursor.size:                   0
 
 *.geometry:					150x40
-!*.internalBorder:			10
+*.internalBorder:			10
 *.font:                      xft:JetBrains Mono:size=11
 !*.font:                      xft:Ubuntu Mono:size=12
 
