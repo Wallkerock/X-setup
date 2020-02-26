@@ -44,19 +44,19 @@ hi WildMenu   ctermfg=Black	   ctermbg=Yellow    guibg=Yellow guifg=Black
 
 " syntax highlighting
 hi Comment    term=underline cterm=NONE ctermfg=180   gui=NONE guifg=red2
-hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
-hi Identifier cterm=NONE ctermfg=DarkCyan    gui=NONE guifg=cyan4
-hi PreProc    cterm=NONE ctermfg=DarkRed gui=NONE guifg=DarkRed
+hi Constant   term=NONE cterm=NONE	guibg=NONE guifg=NONE ctermbg=NONE ctermfg=17
+hi Identifier cterm=bold ctermfg=DarkCyan    gui=NONE guifg=cyan4 ctermbg=NONE ctermfg=166
+hi PreProc    cterm=bold ctermfg=DarkCyan    gui=NONE guifg=cyan4 ctermbg=NONE ctermfg=160
 hi Special    cterm=NONE ctermfg=DarkYellow    gui=NONE guifg=deeppink
-hi Statement  cterm=bold ctermfg=Blue	     gui=bold guifg=blue
+hi Statement  term=bold cterm=bold	guibg=NONE guifg=NONE ctermbg=NONE ctermfg=29
 hi Type	      cterm=NONE ctermfg=Blue	     gui=bold guifg=blue
-hi Operator				ctermfg=DarkGrey			guifg=DarkGrey
+hi Operator   term=bold cterm=bold	guibg=NONE guifg=NONE ctermbg=NONE ctermfg=21
 hi Function	term=bold		ctermfg=White guifg=White
-hi Repeat	term=underline	ctermfg=White		guifg=white
+hi Repeat	term=bold cterm=bold	guibg=NONE guifg=NONE ctermbg=NONE ctermfg=21
 hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=Blue guibg=Yellow
 
 " LINE NUMBER
-hi LineNr cterm=bold ctermbg=NONE ctermfg=Grey
+hi LineNr cterm=NONE ctermbg=NONE ctermfg=Grey
 
 " CURSOR LINE
 hi CursorLine term=bold cterm=bold guifg=LightGrey guibg=Grey40 ctermfg=NONE ctermbg=187
@@ -71,10 +71,10 @@ au InsertEnter * hi statusline guifg=White guibg=#FF0000 ctermfg=Red ctermbg=230
 au InsertLeave * hi statusline guifg=White guibg=#EEE8D5 ctermfg=006 ctermbg=187
 hi statusline guifg=black guibg=NONE ctermfg=006 ctermbg=187
 
-hi User1 ctermfg=015 ctermbg=187 guibg=#4e4e4e guifg=#adadad
-hi User2 ctermfg=008 ctermbg=187 guibg=#303030 guifg=#adadad
-hi User3 ctermfg=231 ctermbg=187 guibg=#303030 guifg=#303030
-hi User4 ctermfg=239 ctermbg=187 guibg=#4e4e4e guifg=#4e4e4e
+hi User1 term=bold cterm=bold ctermfg=015 ctermbg=187 guibg=#4e4e4e guifg=#adadad
+hi User2 term=bold cterm=bold ctermfg=008 ctermbg=187 guibg=#303030 guifg=#adadad
+hi User3 term=bold cterm=bold ctermfg=231 ctermbg=187 guibg=#303030 guifg=#303030
+hi User4 term=bold cterm=bold ctermfg=239 ctermbg=187 guibg=#4e4e4e guifg=#4e4e4e
 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
