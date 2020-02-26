@@ -42,7 +42,7 @@ window {
 mainbox {
   transparency: "real";
   padding: 10% 10%;
-  border: 2px;
+  border: 3px;
   border-color: #B58900;
 }
 

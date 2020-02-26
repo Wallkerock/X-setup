@@ -17,7 +17,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:HDMI3}
 width = 1920
 height = 25
 ;offset-x = 25
@@ -279,7 +279,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FFFA59}/: %percentage_used%%%{F-}
+label-mounted = %{F#FDF6E3}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -305,7 +305,7 @@ format = <label>
 format-warn = <ramp> <label-warn>
 ;format-warn-overline = ${self.format-underline}
 
-label = %{F#FFFA59}T: %temperature-c%%{F-}
+label = %{F#FDF6E3}T: %temperature-c%%{F-}
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
@@ -435,9 +435,9 @@ type = internal/date
 interval = 1
 
 date =
-date-alt = "%{F#FDF6E3}%d%{F-}%{F#DCD1AE}.%m.%Y, %{F-}"
+date-alt = "%{F#FDF6E3}%d%{F-}%{F#D0C6A4}.%m.%Y, %{F-}"
 
-time = %H:%M%{F#DCD1AE}, %Y-%m-%{F-}%{F#FDF6E3}%d%{F-}
+time = %H:%M%{F#D0C6A4}, %Y-%m-%{F-}%{F#FDF6E3}%d%{F-}
 time-alt = %H:%M
 
 ;format-prefix = 
@@ -457,7 +457,7 @@ click-left = "cp ~/.config/bspwm/Bspwm-Solarized-Yellow/polybar/config /home/lub
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FFFA59
+content-foreground = #FDF6E3
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh &

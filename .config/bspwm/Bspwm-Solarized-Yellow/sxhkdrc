@@ -31,8 +31,8 @@ super + shift + F2
 super + F3
 	thunderbird
 
-super + v ; {w,o,e,s,n,m,p,g,v,t,f,r,z}
-	{firefox,lowriter,subl,smplayer,urxvt -e ncmpcpp,mousepad,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
+super + v ; {w,o,e,s,n,m,p,g,c,v,t,f,r,z}
+	{firefox,lowriter,subl,smplayer,urxvt -e ncmpcpp,mousepad,pavucontrol,gimp,galculator,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
 
 super + shift + x
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'

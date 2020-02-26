@@ -24,10 +24,10 @@ set completion-bg               "#EEE8D5" #00
 set completion-fg               "#CA5235" #0C
 
 set notification-bg             "#edb54b" #0B
-set notification-fg             "#333025" #00
+set notification-fg             "#272418" #00
 
 set recolor-lightcolor          "#FDF6E3" #00
-set recolor-darkcolor           "#333025" #06
+set recolor-darkcolor           "#272418" #06
 set recolor                     "true"
 
 set page-padding                "1"

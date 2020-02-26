@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Bspwm Solarized Yellow
+Exec=bash -c 'sh ~/.scripts/themes/bspwm_solarized_yellow.sh'
+Icon=style
+Terminal=false
+Categories=GTK;Settings;
+Comment=theme bspwm solarized yellow
+Name[en_US.utf8]=Theme Bspwm Solarized Yellow
