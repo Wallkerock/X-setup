@@ -62,7 +62,8 @@ bspc config external_rules_command sh ~/.scripts/bspwm/windows_rules.sh
 pkill picom && sleep 1; picom &
 ###############
 $HOME/.config/polybar/launch.sh
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark-orange/wall839.jpg &
+#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark-orange/wall839.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark-orange/MinimalClock.png &
 #nitrogen --restore &
 ###############
 pgrep pulseaudio || start-pulseaudio-x11 &

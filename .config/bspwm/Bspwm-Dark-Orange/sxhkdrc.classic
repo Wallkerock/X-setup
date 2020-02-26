@@ -9,17 +9,12 @@ super + Return
 super + shift + Return
 	termite
 
-super + z
-	j4-dmenu-desktop --dmenu="dmenu -fn "Iosevka:bold:pixelsize=17" -nb '#181818' -nf '#D8D8D8' -sb '#D8D8D8' -sf '#181818' -i"
-
-alt + space
-	dmenu_run -i -p 'Arch Linux ' -fn 'Iosevka:pixelsize=17' -nb '#181818' -nf '#D8D8D8' -sf '#181818' -sb '#D8D8D8'
+# program launcher
+# super + @space
+# 	dmenu_run
 
 super + space
 	rofi -show drun -show-icons -drun-icon-theme Newaita-dark
-
-super + m
-	find ~/ -not -path '*/\.*' 2> /dev/null | sed 's/ /\\ /g' | sort -f | rofi -dmenu | xargs xdg-open
 
 super + F1
 	nautilus --new-window
@@ -35,9 +30,6 @@ super + F3
 
 super + v ; {w,o,e,n,m,p,g,v,t,f,r}
 	{firefox,lowriter,subl,urxvt -e ncmpcpp,smplayer,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger}
-
-super + shift + x
-	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 Print
 	scrot
@@ -72,7 +64,7 @@ super + {_,shift + }q
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
-super + f
+super + m
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
@@ -100,24 +92,8 @@ super + shift + c
 #
 
 # set the window state
-#super + {t,shift + t,shift + f}
-#	bspc node -t {tiled,pseudo_tiled,fullscreen}
-
-# alternate between pseudo tiled & tiled layout
-super + shift + s
-     if [ -z "$(bspc query -N -n focused.pseudo_tiled)" ]; then \
-         bspc node focused -t pseudo_tiled; \
-     else \
-         bspc node focused -t tiled; \
-     fi
-
-# alternate between fullscreen & tiled layout
-super + shift + f
-    if [ -z "$(bspc query -N -n focused.fullscreen)" ]; then \
-        bspc node focused -t fullscreen; \
-    else \
-        bspc node focused -t tiled; \
-    fi
+super + {t,shift + t,f}
+	bspc node -t {tiled,pseudo_tiled,fullscreen}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -209,10 +185,7 @@ super + shift + bracket{left,right}
 	bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {-,+} 2 ))"
 # Original gaps
 super + shift + backslash
-	bspc config -d focused window_gap 10
-
-super + shift + KP_0
-	bspc config -d focused window_gap 0
+	bspc config -d focused window_gap 26
 
 # # Dybamic borders
 # super + ctrl + bracket{left,right}
@@ -263,17 +236,8 @@ super + x ; x
 #
 
 ## Volume control
-# XF86Audio{RaiseVolume,LowerVolume,Mute}
-# 	amixer {-q set Master 5%+,-q set Master 5%-,set Master toggle} & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-
-XF86AudioRaiseVolume
-	sh ~/.scripts/volume-notification/volume.sh up & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-
-XF86AudioLowerVolume
-	sh ~/.scripts/volume-notification/volume.sh down & canberra-gtk-play -i audio-volume-change -d "changeVolume"
-
-XF86AudioMute
-	sh ~/.scripts/volume-notification/volume.sh mute & canberra-gtk-play -i audio-volume-change -d "changeVolume"
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	amixer {-q set Master 5%+,-q set Master 5%-,set Master toggle} & canberra-gtk-play -i audio-volume-change -d "changeVolume"
 
 #
 # wallpapers
@@ -281,10 +245,3 @@ XF86AudioMute
 
 super + shift + w
 	feh --randomize --bg-fill ~/Pictures/backgrounds/bspwm-dark/*
-
-#
-# notify restart
-#
-
-super + backslash
-	killall dunst; notify-send 'restart dunst'

@@ -12,14 +12,13 @@
 * {
   black:      #000000;
   red:        #eb6e67;
-  green:      #95ee8f;
+  orange:     #FF5035;
   yellow:     #f8c456;
-  blue:       #6eaafb;
   mangenta:   #d886f3;
-  cyan:       #6cdcf7;
-  emphasis:   #616161;
-  text:       #FFFFFF;
-  text-alt:   #FFFFFF;
+  lightgreen: #F7F66C;
+  emphasis:   #241C1A;
+  text:       #CBE4D9;
+  text-alt:   #B0C3BB;
   fg:         #abb2bf;
   bg:         #282c34;
 
@@ -35,13 +34,13 @@ window {
   fullscreen: false;
   width: 1600;
   height: 800;
-  background-color: #181818;
+  background-color: #0F0706;
 }
 
 mainbox {
   padding: 10% 10%;
   border: 2px;
-  border-color: #EAEAEA;
+  border-color: #C9D4BA;
 }
 
 inputbar {
@@ -50,7 +49,7 @@ inputbar {
 }
 
 prompt {
-  text-color: @blue;
+  text-color: @orange;
 }
 
 textbox-prompt-colon {
@@ -72,7 +71,7 @@ listview {
 element {
   padding: 5px;
   text-color: @text-alt;
-  highlight: bold #95ee8f; /* green */
+  highlight: bold #FF5035; /* orange */
   border-radius: 2px;
 }
 

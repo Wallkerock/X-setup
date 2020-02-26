@@ -7,6 +7,37 @@ Xft.hintstyle:   hintslight
 Xft.lcdfilter:   lcddefault
 
 ! ------------------------------------------------------------------------------
+! XTERM setup
+! ------------------------------------------------------------------------------
+
+XTerm*pointerColor:				#16A085
+XTerm*faceSize:					10
+XTerm*reverseVideo:				on
+XTerm*faceName:					xft:Hack:size=10
+XTerm*selectToClipboard:		true
+XTerm*cursorColor:				#476DB1
+
+xterm*foreground:	#1C1C1C
+xterm*background:	#E1E1E1
+xterm*color0:		#222531
+xterm*color1:		#BA2922
+xterm*color2:		#7E7E80
+xterm*color3:		#696969
+xterm*color4:		#2C3854
+xterm*color5:		#5D657E
+xterm*color6:		#638EE7
+xterm*color7:		#E0E0E0
+xterm*color8:		#4E4E4E
+xterm*color9:		#CC372C
+xterm*color10:		#8D8D8F
+xterm*color11:		#FFA500
+xterm*color12:		#507CEF
+xterm*color13:		#6578AB
+xterm*color14:		#416EDE
+xterm*color15:		#E8E8E8
+
+
+! ------------------------------------------------------------------------------
 ! ROFI setup
 ! ------------------------------------------------------------------------------
 
@@ -26,8 +57,8 @@ rofi.fullscreen:        true
 ! ALL setup
 ! ------------------------------------------------------------------------------
 
-!*fading:                         0
-!*fadeColor:                      #000000
+*fading:                          0
+*fadeColor:                       black
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #16A085
 
@@ -35,17 +66,17 @@ rofi.fullscreen:        true
 ! RXVT UNICODE setup
 ! ------------------------------------------------------------------------------
 
-*.foreground:                 #DFDFDF
-*.background:                 [97]#0F0F0F
-*.cursorColor:                #DFDFDF
+URxvt.foreground:                 #DFDFDF
+URxvt.background:                 [95]#2C2C2C
+URxvt.cursorColor:                #DFDFDF
 
 !! black dark/light
 *color0:                          #1F1F1F
-*color8:                          #717171
+*color8:                          #4E4E4E
 
 !! red dark/light
-*color1:                          #A6534F
-*color9:                          #AF5650
+*color1:                          #BA2922
+*color9:                          #CC372C
 
 !! green dark/light
 *color2:                          #7E7E80
@@ -53,35 +84,31 @@ rofi.fullscreen:        true
 
 !! yellow dark/light
 *color3:                          #696969
-*color11:                         #FFD487
+*color11:                         #FFA500
 
 !! blue dark/light
-*color4:                          #212121
-*color12:                         #86B58E
+*color4:                          #303030
+*color12:                         #507CEF
 
 !! magenta dark/light
-*color5:                          #9C9C9C
-*color13:                         #8A8A8A
+*color5:                          #5D657E
+*color13:                         #6578AB
 
 !! cyan dark/light
 *color6:                          #787878
-*color14:                         #9E9E9E
+*color14:                         #416EDE
 
 !! white dark/light
 *color7:                          #E0E0E0
 *color15:                         #E8E8E8
 
-!-------------------------------------------
-! RXVT UNICODE appearance
-!-------------------------------------------
-
 Xcursor.theme: Breeze
-Xcursor.size:                   0
+Xcursor.size:                     0
 
-*.geometry:					150x45
-!*.internalBorder:			10
-!*.font:					xft:DejaVu Sans Mono:size=11
-*.font:						xft:Ubuntu Mono:size=12
+URxvt.geometry:					160x40
+!URxvt.internalBorder:			10
+!URxvt.font:					xft:xos4 Terminus:size=11
+URxvt.font:						xft:Ubuntu Mono:size=11
 
 ! alternative font settings with 'terminus':
 !URxvt.font: -*-fixed-*-r-normal--*-*-*-*-*-*-iso10646-*
@@ -93,7 +120,6 @@ URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-URxvt*cursorUnderline:            true
 URxvt*saveLines:                  5000
 !URxvt*lineSpace:                  0.1
 URxvt*letterSpace:                -1
@@ -105,7 +131,6 @@ URxvt.resize-font.bigger:         C-Up
 URxvt.clipboard.autocopy:         true
 URxvt.keysym.M-c:                 perl:clipboard:copy
 URxvt.keysym.M-v:                 perl:clipboard:paste
-URxvt.iconFile:    /usr/share/icons/Clarity/scalable/apps/terminal.svg
 
 !-------------------------------------------
 ! Unused possibilities

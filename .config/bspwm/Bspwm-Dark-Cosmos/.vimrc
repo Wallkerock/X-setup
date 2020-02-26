@@ -9,11 +9,11 @@ let mapleader =" "
 " Some basics:
 	set nocompatible
 	filetype plugin on
-	colo dark
+	colo cosmos
 	syntax on
 	set encoding=utf-8
 	set cursorline
-    set scrolloff=999
+    set scrolloff=10
 "    set cursorcolumn
 	set number
 	set tabstop=4
