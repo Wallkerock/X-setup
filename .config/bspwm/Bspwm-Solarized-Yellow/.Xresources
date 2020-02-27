@@ -41,7 +41,7 @@ rofi.fullscreen:        true
 
 !! black dark/light
 *color0:                          #FDF6E3
-*color8:                          #848484
+*color8:                          #85837A
 
 !! red dark/light
 *color1:                          #C74B2C
@@ -68,8 +68,8 @@ rofi.fullscreen:        true
 *color14:                         #AF3E54
 
 !! white dark/light
-*color7:                          #72684B
-*color15:                         #433B1E
+*color7:                          #6F6139
+*color15:                         #51492D
 
 !-------------------------------------------
 ! RXVT UNICODE appearance
