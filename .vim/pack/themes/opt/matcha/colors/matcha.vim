@@ -20,7 +20,7 @@ hi PreProc      term=underline  cterm=bold  ctermfg=LightBlue   guifg=#ff80ff
 hi Type         term=underline  ctermfg=LightGreen  guifg=#60ff60   gui=bold
 hi Function     term=bold       ctermfg=White       guifg=White
 hi Repeat       term=underline  ctermfg=White       guifg=white
-hi Operator     ctermfg=Red     guifg=Red
+hi Operator     term=bold       cterm=bold          ctermfg=Red     guifg=Red
 hi Ignore       ctermfg=black   guifg=bg
 hi Error        term=reverse    ctermbg=Red         ctermfg=White   guibg=Red   guifg=White
 hi Todo         term=standout   ctermbg=Yellow      ctermfg=Black   guifg=Blue  guibg=Yellow
@@ -34,7 +34,7 @@ hi CursorLineNr term=bold cterm=bold guifg=#050505 guibg=lightgrey ctermfg=white
 " hi CursorColumn term=bold ctermbg=236 guibg=Grey40
 
 " BRACKETS COLOR
-hi MatchParen cterm=none ctermbg=darkred ctermfg=white
+hi MatchParen cterm=none ctermbg=DarkRed ctermfg=White
 
 " STATUS BAR COLORS
 

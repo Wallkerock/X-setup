@@ -25,6 +25,10 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/blackcat.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Matcha-dark-sea" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Vibrancy-Full-Dark-Teal" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
+
+###############
+bspc monitor HDMI3 -d 1 2 3 4 5 6 7 8 9
 
 bspc config border_width         2
 bspc config window_gap           6

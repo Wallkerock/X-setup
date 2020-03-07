@@ -25,9 +25,9 @@ if [ "$updates_arch" = 0 ]; then
 fi
 
 if [ "$updates_arch" = 1 ]; then
-    echo %{F#15FF00}"up: $updates_arch"%{F-}
+    echo %{F#FDF6E3}"[ up: $updates_arch ]"%{F-}
 else
-    echo %{F#15FF00}"ups: $updates_arch"%{F-}
+    echo %{F#FDF6E3}"[ ups: $updates_arch ]"%{F-}
 fi
 
 ###########################

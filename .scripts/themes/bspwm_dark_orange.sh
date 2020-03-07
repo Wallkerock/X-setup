@@ -21,13 +21,15 @@ cp ~/.config/bspwm/Bspwm-Dark-Orange/compton-restart.sh /home/lubomir/.scripts/ 
 
 sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark-orange/sun.jpg &
+#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark-orange/wall839.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark-orange/MinimalClock.png &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Materia-Dark-Orange" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Orange-5" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
-bspc config border_width         2
-bspc config window_gap           10
+bspc config border_width         3
+bspc config window_gap           0
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   false

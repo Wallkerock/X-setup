@@ -25,7 +25,19 @@ let mapleader =" "
 	set showmode
     set timeoutlen=0
 	set laststatus=2
-	set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%\ \ \ @%{strftime(\"%H:%M:%S\")}
+	set statusline=
+    set statusline+=%0*\ %n\                                 " Buffer number
+    set statusline+=%1*\ %<%F%m%r%h%w\                       " File path, modified, readonly, helpfile, preview
+"    set statusline+=%3*│                                     " Separator
+    set statusline+=%2*\ %Y\                                 " FileType
+"    set statusline+=%3*│                                     " Separator
+    set statusline+=%2*\ %{''.(&fenc!=''?&fenc:&enc).''}     " Encoding
+    set statusline+=\ (%{&ff})                               " FileFormat (dos/unix..)
+    set statusline+=%=                                       " Right Side
+    set statusline+=%2*\ col:\ %02v\                         " Colomn number
+"    set statusline+=%3*│                                     " Separator
+    set statusline+=%1*\ ln:\ %02l/%L\ (%3p%%)\              " Line number / total lines, percentage of document
+"	set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%\ \ \ @%{strftime(\"%H:%M:%S\")}
 
 " Enable autocompletion:
 	set wildmode=longest,list,full

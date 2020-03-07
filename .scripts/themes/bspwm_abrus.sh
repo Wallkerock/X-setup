@@ -17,17 +17,17 @@ cp ~/.config/bspwm/Bspwm-Abrus/picom.conf /home/lubomir/.config/ -b &
 cp ~/.config/bspwm/Bspwm-Abrus/dunstrc /home/lubomir/.config/dunst/ &
 cp ~/.config/bspwm/Bspwm-Abrus/zathurarc /home/lubomir/.config/zathura/ &
 cp ~/.config/bspwm/Bspwm-Abrus/termite/config /home/lubomir/.config/termite/ &
-cp ~/.config/bspwm/Bspwm-Abrus/compton-restart.sh /home/lubomir/.scripts/ &
 
 sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 
 feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-abrus/mini.jpg &
 
-xfconf-query -c xsettings -p /Net/ThemeName -s "Abrus-dark" &
+xfconf-query -c xsettings -p /Net/ThemeName -s "Abrus-My" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Abrus" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
-bspc config border_width         3
-bspc config window_gap           0
+bspc config border_width         2
+bspc config window_gap           6
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   false

@@ -34,8 +34,8 @@ super + shift + F2
 super + F3
 	thunderbird
 
-super + v ; {w,o,e,s,n,m,p,g,v,t,f,r,z}
-	{firefox,lowriter,subl,smplayer,urxvt -e ncmpcpp,mousepad,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
+super + v ; {w,o,e,s,c,n,m,p,g,v,t,f,r,z}
+	{firefox,lowriter,subl,smplayer,galculator,urxvt -e ncmpcpp,mousepad,pavucontrol,gimp,vlc,thunar,nautilus --new-window,urxvt -e ranger,zathura}
 
 super + shift + x
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
@@ -78,7 +78,7 @@ super + {_,shift + }q
 # alternate between the tiled and monocle layout
 super + f
 #	bspc desktop -l next
-	sh ~/.config/bspwm/Bspwm-Dark-Orange/monocle_layout.sh
+	sh ~/.config/bspwm/Bspwm-Abrus/monocle_layout.sh
 
 # send the newest marked node to the newest preselected node
 super + y
@@ -99,6 +99,12 @@ super + {_,shift + }r
 # Circulate the leaves of the tree
 super + shift + c
 	bspc node @/ --circulate {backward,forward}
+
+super + shift + i
+    sh ~/.scripts/scheme_spiral.sh
+
+super + i
+    sh ~/.scripts/scheme_alternate.sh
 
 #
 # state/flags
@@ -158,10 +164,10 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+# super + {o,i}
+# 	bspc wm -h off; \
+# 	bspc node {older,newer} -f; \
+# 	bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -207,7 +213,7 @@ alt + bracket{left,right}
 	bspc config window_gap "$(($(bspc config window_gap) {-,+} 2 ))"
 # Original gaps
 alt + backslash
-	bspc config window_gap 0
+	bspc config window_gap 6
 alt + 0
 	bspc config window_gap 0
 
@@ -216,7 +222,7 @@ super + shift + bracket{left,right}
 	bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {-,+} 2 ))"
 # Original gaps
 super + shift + backslash
-	bspc config -d focused window_gap 0
+	bspc config -d focused window_gap 6
 
 super + shift + KP_0
 	bspc config -d focused window_gap 0
@@ -226,14 +232,14 @@ alt + ctrl + bracket{left,right}
 	bspc config border_width "$(($(bspc config border_width) {-,+} 1 ))"
 # Original borders
 alt + ctrl + backslash
-	bspc config border_width 3
+	bspc config border_width 2
 
 # Focused Dynamic borders
 super + ctrl + bracket{left,right}
 	bspc config -d focused border_width "$(($(bspc config -d focused border_width) {-,+} 1 ))"
 # Original borders
 super + ctrl + backslash
-	bspc config -d focused border_width 3
+	bspc config -d focused border_width 2
 ####################################
 
 # Expand tiled space

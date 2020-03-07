@@ -21,6 +21,7 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/herbstluftwm-stylish/tapeta2.jp
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Materia-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Materia-Dark" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 # theme
 

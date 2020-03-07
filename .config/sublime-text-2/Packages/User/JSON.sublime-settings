@@ -1,7 +1,7 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
-    "font_face": "Ubuntu Mono",
-    "font_size": 12,
+	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
+    "font_face": "Go Mono",
+    "font_size": 11,
 	"ignored_packages":
 	[
 		"Vintage"

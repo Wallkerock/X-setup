@@ -1,7 +1,7 @@
 {
-	"color_scheme": "Packages/Theme - Solarized Space/Solarized V Markdown (Light).tmTheme",
-    "font_face": "Ubuntu Mono",
-    "font_size": 12,
+	"color_scheme": "Packages/Color Scheme - Default/Sollow.tmTheme",
+    "font_face": "JetBrains Mono",
+    "font_size": 11,
 	"ignored_packages":
 	[
 		"Vintage"

@@ -25,6 +25,7 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/minimalist.jpg &
 xfconf-query -c xsettings -p /Net/ThemeName -s "Beam" &
 #xfconf-query -c xsettings -p /Net/IconThemeName -s "Flat-Remix-Green-Light" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Newaita-holidays" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 bspc config border_width         2
 bspc config window_gap           16

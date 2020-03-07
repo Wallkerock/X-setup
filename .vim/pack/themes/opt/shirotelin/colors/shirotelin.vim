@@ -138,10 +138,10 @@ au InsertEnter * hi statusline guifg=White guibg=#FF0000 ctermfg=196 ctermbg=252
 au InsertLeave * hi statusline guifg=White guibg=#EEE8D5 ctermfg=015 ctermbg=252
 hi statusline guifg=black guibg=NONE ctermfg=015 ctermbg=252
 
-hi User1 ctermfg=015 ctermbg=255 guibg=#4e4e4e guifg=#adadad
-hi User2 ctermfg=008 ctermbg=255 guibg=#303030 guifg=#adadad
-hi User3 ctermfg=231 ctermbg=255 guibg=#303030 guifg=#303030
-hi User4 ctermfg=239 ctermbg=255 guibg=#4e4e4e guifg=#4e4e4e
+hi User1 term=bold cterm=bold ctermfg=015 ctermbg=253 guibg=#4e4e4e guifg=#adadad
+hi User2 term=bold cterm=bold ctermfg=241 ctermbg=254 guibg=#303030 guifg=#adadad
+hi User3 term=bold cterm=bold ctermfg=231 ctermbg=255 guibg=#303030 guifg=#303030
+hi User4 term=bold cterm=bold ctermfg=239 ctermbg=255 guibg=#4e4e4e guifg=#4e4e4e
 
 " hi Scrollbar
 " hi Menu

@@ -13,7 +13,7 @@
   black:      #000000;
   red:        #eb6e67;
   green:      #34B2A9;
-  violet:     #FF5D35;
+  orange:     #FF5500;
   yellow:     #f8c456;
   blue:       #6eaafb;
   magenta:    #d886f3;
@@ -52,7 +52,7 @@ inputbar {
 }
 
 prompt {
-  text-color: @violet;
+  text-color: @orange;
 }
 
 textbox-prompt-colon {
@@ -74,7 +74,7 @@ listview {
 element {
   padding: 5px;
   text-color: @text-alt;
-  highlight: bold #FF7B36; /* green */
+  highlight: bold #FF5500; /* orange */
   border-radius: 2px;
 }
 

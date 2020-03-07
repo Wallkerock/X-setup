@@ -1,0 +1,1220 @@
+{
+	"folder_history":
+	[
+	],
+	"last_window_id": 20,
+	"settings":
+	{
+		"new_window_height": 1049.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"termina",
+						"i3-sensible-terminal"
+					],
+					[
+						"VOL",
+						"VOL"
+					],
+					[
+						"no",
+						"normal"
+					],
+					[
+						"con",
+						"content"
+					],
+					[
+						"bak",
+						"backslash"
+					],
+					[
+						"click",
+						"click-right"
+					],
+					[
+						"e",
+						"echo"
+					],
+					[
+						"net",
+						"network"
+					],
+					[
+						"vlume",
+						"volume-notyification"
+					],
+					[
+						"M",
+						"Mute"
+					],
+					[
+						"g",
+						"greenclip-daemon"
+					],
+					[
+						"format",
+						"format-underline"
+					],
+					[
+						"label-",
+						"label-underline"
+					]
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 95.0,
+				"selected_items":
+				[
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"istall",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"",
+						"Preferences: Browse Packages"
+					],
+					[
+						"pack",
+						"Preferences: Browse Packages"
+					]
+				],
+				"width": 575.0
+			},
+			"console":
+			{
+				"height": 132.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/lubomir/.config/i3/config",
+				"/home/lubomir/.scripts/themes/i3wm_canvas_polybar_titlebar.sh",
+				"/home/lubomir/.config/i3/Canvas-Polybar-Top-theme/config",
+				"/home/lubomir/.config/i3/Canvas-Polybar-Titlebar-theme/config",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Titlebar-theme/ROFI.rasi",
+				"/home/lubomir/.config/i3/Daronge-theme/ROFI.rasi",
+				"/home/lubomir/.config/i3/Beam-Polybar-Top-theme/ROFI.rasi",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark/ROFI.rasi",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark/bspwmrc",
+				"/home/lubomir/.scripts/themes/bspwm_dark.sh",
+				"/home/lubomir/.vim/pack/themes/opt/beam/colors/beam.vim",
+				"/home/lubomir/.config/i3/Beam-Polybar-Top-theme/.vimrc",
+				"/home/lubomir/.Xresources",
+				"/home/lubomir/.config/i3/Canvas-Polybar-Titlebar-theme/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Canvas/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/.Xresources",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/ROFI.rasi",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/picom.conf",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/picom.conf",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/ROFI.rasi",
+				"/home/lubomir/.scripts/themes/bspwm_lightningbug.sh",
+				"/home/lubomir/.scripts/themes/bspwm_solarized_light.sh",
+				"/home/lubomir/.config/greenclip.cfg",
+				"/home/lubomir/Downloads/Stardust.2007.1080p.BluRay.H264.AAC-RARBG/RARBG.txt",
+				"/home/lubomir/Documents/X-setup/.ssh-file",
+				"/home/lubomir/.config/i3/Beam-Polybar-Top-theme/polybar/config",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Top-theme/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/dunstrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/dunstrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/polybar/config",
+				"/home/lubomir/Documents/X-setup/.python_history",
+				"/home/lubomir/Documents/X-setup/.config/herbstluftwm/settings",
+				"/home/lubomir/.config/bspwm/Bspwm-Matcha/sxhkdrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/sxhkdrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/polybar/config",
+				"/home/lubomir/Documents/Passwords/Registracie",
+				"/home/lubomir/Downloads/manjaro/.Xresources",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/sxhkdrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Beam/bspwmrc",
+				"/home/lubomir/.config/herbstluftwm/Aline/panel.sh",
+				"/home/lubomir/.config/bspwm/panel-back/panel_dzen2.sh",
+				"/home/lubomir/.config/bspwm/panel-back/panel.sh",
+				"/home/lubomir/.config/bspwm/panel-back/panel_bar.sh",
+				"/home/lubomir/.wget-hsts",
+				"/home/lubomir/.config/i3/Daronge-theme/config.orange_borders",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Top-theme/config.2px",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Top-theme/config.1px",
+				"/home/lubomir/.local/share/gtksourceview-3.0/styles/134272-molokai.xml",
+				"/home/lubomir/.config/herbstluftwm/LightBug-theme/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/picom.conf",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/sxhkdrc",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Top-theme/ROFI.rasi",
+				"/home/lubomir/.local/share/gtksourceview-3.0/styles/classic.xml",
+				"/usr/share/gtksourceview-3.0/styles/classic.xml",
+				"/home/lubomir/.config/Mousepad/accels.scm",
+				"/home/lubomir/.idlerc/config-main.cfg",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/.Xresources",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/zathurarc",
+				"/home/lubomir/Zettai Kareshi 01.srt",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/sxhkdrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Matcha/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Beam/polybar/config",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Titlebar-theme/polybar/config",
+				"/home/lubomir/.config/i3/Daronge-theme/polybar/config",
+				"/home/lubomir/www.sh",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Top-theme/polybar/config",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Titlebar-theme/config",
+				"/home/lubomir/i3_cycle_windows.pl",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Top-theme/picom.conf",
+				"/home/lubomir/.config/i3/Matcha-Polybar-Top-theme/picom.conf.2px",
+				"/home/lubomir/.scripts/system-uptime-pretty.sh",
+				"/home/lubomir/\\",
+				"/home/lubomir/.config/sxhkd/sxhkdrc",
+				"/home/lubomir/tabc.sh",
+				"/home/lubomir/.config/i3/Daronge-theme/dunstrc",
+				"/home/lubomir/.config/i3/Daronge-theme/config",
+				"/home/lubomir/.config/i3/Beam-Polybar-Top-theme/config",
+				"/home/lubomir/prvy.py",
+				"/home/lubomir/.config/dunst/dunstrc",
+				"/home/lubomir/.config/herbstluftwm/LightBug-theme/autostart",
+				"/home/lubomir/.config/herbstluftwm/autostart",
+				"/home/lubomir/.config/herbstluftwm/Canvas-theme/autostart",
+				"/home/lubomir/.config/herbstluftwm/Canvas-theme/ROFI.rasi",
+				"/home/lubomir/.config/bspwm/Bspwm-Beam/sxhkdrc",
+				"/home/lubomir/.local/share/applications/Theme-i3wm-DARONGE-Polybar.desktop",
+				"/home/lubomir/.scripts/themes/hlwm_lightbug.sh",
+				"/home/lubomir/.scripts/themes/hlwm_canvas.sh",
+				"/home/lubomir/.config/herbstluftwm/LightBug-theme/ROFI.rasi",
+				"/home/lubomir/.config/herbstluftwm/LightBug-theme/picom.conf",
+				"/home/lubomir/.scripts/themes/i3wm_daronge_polybar_top.sh",
+				"/home/lubomir/.config/i3/Dark-Orange-theme/polybar/config",
+				"/home/lubomir/.config/i3/Dark-Orange-theme/config",
+				"/home/lubomir/.scripts/themes/bspwm_dark_orange.sh",
+				"/home/lubomir/.config/i3/Canvas-Polybar-Top-theme/polybar/config",
+				"/home/lubomir/.config/bspwm/bspwmrc",
+				"/home/lubomir/.icewm/startup",
+				"/home/lubomir/.config/herbstluftwm/LightBug-theme/panel.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Canvas/.Xresources",
+				"/home/lubomir/.config/herbstluftwm/LightBug-theme/.Xresources",
+				"/home/lubomir/.icewm/theme",
+				"/home/lubomir/.icewm/preferences",
+				"/home/lubomir/.icewm/menu",
+				"/home/lubomir/.config/bspwm/Bspwm-Canvas/sxhkdrc",
+				"/home/lubomir/.icewm/programs",
+				"/home/lubomir/.icewm/winoptions",
+				"/home/lubomir/.config/herbstluftwm/panel.sh",
+				"/home/lubomir/.config/i3/Canvas-Polybar-Titlebar-theme/picom.conf",
+				"/home/lubomir/.config/herbstluftwm/settings",
+				"/home/lubomir/.config/herbstluftwm/monitorSetup",
+				"/home/lubomir/.config/herbstluftwm/autostart.bak",
+				"/home/lubomir/.config/herbstluftwm/statusbar",
+				"/home/lubomir/.scripts/themes/bspwm_beam.sh",
+				"/home/lubomir/.config/herbstluftwm/volume.sh",
+				"/home/lubomir/.config/i3/Matcha-theme/.i3status.conf",
+				"/home/lubomir/.config/i3/Matcha-theme/config",
+				"/home/lubomir/.config/herbstluftwm/Canvas-theme/panel.sh",
+				"/home/lubomir/.config/herbstluftwm/Aline/autostart",
+				"/home/lubomir/.config/picom.conf",
+				"/home/lubomir/.config/herbstluftwm/scripts/toggle_single_float.sh"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"100906",
+					"CFBC85",
+					"C9B57A",
+					"B2956B",
+					"5D4E47",
+					"1E1816",
+					"616161",
+					"FFD19B",
+					"F1C5A3",
+					"FFFFFF",
+					"2D47AA",
+					"EABA94",
+					"green",
+					"46",
+					"82",
+					"87ffaf",
+					"1C2F28",
+					"273C35",
+					"ECAA8B",
+					"E29774",
+					"C36437",
+					"F2DEA3",
+					"sticky",
+					"subl",
+					"compton",
+					"EC4D99",
+					"44C1B8",
+					"63462F",
+					"71533B",
+					"756445",
+					"B2956B",
+					"433B1E",
+					"green",
+					"LightGreen",
+					"PaleGreen",
+					"122",
+					"121",
+					"87ffaf",
+					"89",
+					"8a",
+					"FFCA7E",
+					"484848",
+					"3",
+					"2",
+					"3B3B3B",
+					"2E2E2E",
+					"a8",
+					"a8b",
+					"a8bc",
+					"3C3C3C",
+					"3E3D32",
+					"242424",
+					"f0f0f0",
+					"number",
+					"line-number",
+					"00887D",
+					"007D72",
+					"E65FA0",
+					"303030",
+					"2",
+					"FFB600",
+					"FFFFFF",
+					"00887D",
+					"20",
+					"1E1816",
+					"C36437",
+					"F2DEA3",
+					"AF9037",
+					"D6B75E",
+					"E4CE8E",
+					"subl",
+					"3C7569",
+					"alza",
+					"00120B",
+					"42271A",
+					"E4CE8E",
+					"DFBB51",
+					"E4CE8E",
+					"408A7B",
+					"14997E",
+					"00120B",
+					"light",
+					"828282",
+					"303030",
+					"001B10",
+					"000000",
+					"171717",
+					"7C6A48",
+					"83714F",
+					"97825B",
+					"0A0300",
+					"1E1816",
+					"E4CE8E",
+					"49443B",
+					"61473B",
+					"Dark",
+					"FF5E00",
+					"FF7E39",
+					"6A4535",
+					"5C5547",
+					"864E35",
+					"944522",
+					"FFFFFF",
+					"Canvas",
+					"4560CE",
+					"EC8F4F",
+					"F2DEA3",
+					"FF8B9A",
+					"FF9595",
+					"URxvt",
+					"1",
+					"2",
+					"282828",
+					"D8EBE0",
+					"262626",
+					"202020",
+					"262626",
+					"808080",
+					"303030",
+					"8F8F8F",
+					"1",
+					"2",
+					"171717",
+					"Matcha",
+					"FF3E3E",
+					"FFFFFF",
+					"ffffff",
+					"FFFFFF"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"border-radius: 0px",
+					""
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 954.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"termina",
+						"i3-sensible-terminal"
+					],
+					[
+						"VOL",
+						"VOL"
+					],
+					[
+						"no",
+						"normal"
+					],
+					[
+						"con",
+						"content"
+					],
+					[
+						"bak",
+						"backslash"
+					],
+					[
+						"click",
+						"click-right"
+					],
+					[
+						"e",
+						"echo"
+					],
+					[
+						"net",
+						"network"
+					],
+					[
+						"vlume",
+						"volume-notyification"
+					],
+					[
+						"M",
+						"Mute"
+					],
+					[
+						"g",
+						"greenclip-daemon"
+					],
+					[
+						"format",
+						"format-underline"
+					],
+					[
+						"label-",
+						"label-underline"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/lubomir/.config/bspwm/Bspwm-Graphite/.Xresources",
+					"settings":
+					{
+						"buffer_size": 10106,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/lubomir/.config/bspwm/Bspwm-Graphite/bspwmrc",
+					"settings":
+					{
+						"buffer_size": 2649,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/lubomir/.config/bspwm/Bspwm-Matcha/sxhkdrc",
+					"settings":
+					{
+						"buffer_size": 7240,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/lubomir/zzz/mail.sh",
+					"settings":
+					{
+						"buffer_size": 1193,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/lubomir/.config/bspwm/Bspwm-Graphite/sxhkdrc",
+					"settings":
+					{
+						"buffer_size": 7170,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/lubomir/.scripts/themes/bspwm_graphite.sh",
+					"settings":
+					{
+						"buffer_size": 2701,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/lubomir/.Xresources",
+					"settings":
+					{
+						"buffer_size": 10106,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 95.0,
+				"selected_items":
+				[
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"istall",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"",
+						"Preferences: Browse Packages"
+					],
+					[
+						"pack",
+						"Preferences: Browse Packages"
+					]
+				],
+				"width": 575.0
+			},
+			"console":
+			{
+				"height": 132.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/lubomir/.vim/pack/themes/opt/shirotelin/colors/shirotelin.vim",
+				"/home/lubomir/.scripts/themes/bspwm_abrus.sh",
+				"/home/lubomir/.scripts/themes/bspwm_beam.sh",
+				"/home/lubomir/.scripts/themes/bspwm_canvas.sh",
+				"/home/lubomir/.scripts/themes/bspwm_dark.sh",
+				"/home/lubomir/.scripts/themes/bspwm_dark_cosmos.sh",
+				"/home/lubomir/.scripts/themes/bspwm_dark_orange.sh",
+				"/home/lubomir/.scripts/themes/bspwm_graphite.sh",
+				"/home/lubomir/.scripts/themes/bspwm_lightningbug.sh",
+				"/home/lubomir/.scripts/themes/bspwm_matcha.sh",
+				"/home/lubomir/.scripts/themes/bspwm_materia.sh",
+				"/home/lubomir/.scripts/themes/bspwm_nordic.sh",
+				"/home/lubomir/.scripts/themes/bspwm_fat.sh",
+				"/home/lubomir/.scripts/themes/bspwm_solarized_dark.sh",
+				"/home/lubomir/.scripts/themes/bspwm_solared.sh",
+				"/home/lubomir/.scripts/themes/bspwm_solarized_light.sh",
+				"/home/lubomir/.scripts/themes/bspwm_solarized_yellow.sh",
+				"/home/lubomir/.scripts/themes/hlwm_canvas.sh",
+				"/home/lubomir/.scripts/themes/hlwm_lightbug.sh",
+				"/home/lubomir/.scripts/themes/hlwm_stylish.sh",
+				"/home/lubomir/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/lubomir/.config/sublime-text-2/Packages/User/JSON.sublime-settings",
+				"/home/lubomir/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/xsettings.xml",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/xsettings.xml",
+				"/home/lubomir/.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml",
+				"/home/lubomir/.config/xfce4/xfconf/xfce-perchannel-xml/sed9TmVKV",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/sxhkdrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/ROFI.rasi",
+				"/home/lubomir/.config/bspwm/Bspwm-Abrus/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/sxhkdrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/polybar/config",
+				"/home/lubomir/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml",
+				"/home/lubomir/.config/herbstluftwm/Canvas-theme/autostart",
+				"/home/lubomir/.config/herbstluftwm/autostart",
+				"/home/lubomir/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml",
+				"/home/lubomir/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml",
+				"/home/lubomir/.gtkrc-2.0",
+				"/home/lubomir/.config/gtk-2.0/gtkfilechooser.ini",
+				"/home/lubomir/.config/gtk-3.0/settings.ini",
+				"/home/lubomir/.config/picom.conf",
+				"/home/lubomir/.config/i3/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Matcha/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/sxhkdrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/zathurarc",
+				"/home/lubomir/.config/i3/Crux-theme/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/ROFI.rasi",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/.Xresources",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/scripts/mail.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/scripts/updates-pacman.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/dunstrc",
+				"/home/lubomir/.scripts/updates-install-jetbm.sh",
+				"/home/lubomir/Downloads/manjaro/.Xresources",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/sxhkdrc",
+				"/home/lubomir/.config/sublime-text-2/Packages/Color Scheme - Default/Nordic.tmTheme",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Materia/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Materia/sxhkdrc",
+				"/home/lubomir/.themes/LightningBug-Dark/gtk-3.0/gtk.css",
+				"/home/lubomir/.config/bspwm/Bspwm-Matcha/bspwmrc",
+				"/home/lubomir/zzz/pokus.sh",
+				"/home/lubomir/zzz/mail.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Abrus/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Abrus/sxhkdrc",
+				"/home/lubomir/.themes/Materia-Manjaro-Dark/index.theme",
+				"/home/lubomir/.themes/Materia-Manjaro-Dark-gtk/index.theme",
+				"/home/lubomir/.themes/Nordic-darker/gtk-3.0/gtk.css",
+				"/home/lubomir/.themes/Nordic-darker/gtk-3.0/gtk-dark.css",
+				"/home/lubomir/.themes/Nordic-darker/gnome-shell/gnome-shell.css",
+				"/usr/share/themes/Nordic/gtk-3.0/gtk-dark.css",
+				"/home/lubomir/.config/yabar/example.config",
+				"/home/lubomir/.config/bspwm/Bspwm-Matcha/scripts/web.sh",
+				"/home/lubomir/.Xresources",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/scripts/updates-pacman.sh",
+				"/home/lubomir/.config/bspwm/panel-back/panel.sh",
+				"/home/lubomir/tiling_window_managers-master/bspwm/bspwmrc",
+				"/home/lubomir/tiling_window_managers-master/bspwm/sxhkdrc",
+				"/home/lubomir/tiling_window_managers-master/bspwm/panel",
+				"/home/lubomir/.config/bspwm/panel-back/panel_dzen2.sh",
+				"/home/lubomir/.config/bspwm/panel-back/panel_bar.sh",
+				"/home/lubomir/.config/bspwm/panel-back/panel_colors",
+				"/home/lubomir/scheme_alternate.sh",
+				"/home/lubomir/.config/sublime-text-2/Packages/Color Scheme - Default/Sollow.tmTheme",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/JSON.sublime-settings",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/Preferences.sublime-settings",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/Preferences.sublime-settings",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/ROFI.rasi",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/picom.conf",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/dunstrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/bspwmrc",
+				"/home/lubomir/.config/bspwm/Bspwm-Abrus/monocle_layout.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Abrus/unmonocle.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Abrus/monocle.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/polybar/config",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/monocle_layout.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/unmonocle.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/monocle.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Cosmos/unmonocle.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Cosmos/monocle.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Cosmos/monocle_layout.sh",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Yellow/ROFI.rasi",
+				"/home/lubomir/.vimrc",
+				"/home/lubomir/.vim/pack/themes/opt/breeze/colors/breeze.vim",
+				"/home/lubomir/.vim/pack/themes/opt/sollow/colors/sollow.vim",
+				"/home/lubomir/.config/bspwm/Bspwm-Nordic/.Xresources",
+				"/home/lubomir/.local/share/applications/Theme-Bspwm-NORDIC.desktop",
+				"/home/lubomir/Documents/Passwords/Registracie",
+				"/home/lubomir/.config/bspwm/Bspwm-Matcha/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Materia/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Solarized-Light/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Canvas/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Beam/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Cosmos/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Graphite/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-LightningBug/zathurarc",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/picom.conf",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark-Orange/.vimrc",
+				"/home/lubomir/.vim/pack/themes/opt/daronge/colors/daronge.vim",
+				"/home/lubomir/.themes/Nordic-darker-standard-buttons/index.theme",
+				"/usr/share/libthai/thbrk.tri",
+				"/home/lubomir/.config/bspwm/Bspwm-Dark/polybar/config"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"171717",
+					"444444",
+					"D8D8D8",
+					"FF4748",
+					"FF8B9A",
+					"545454",
+					"tiled",
+					"FDF6E3",
+					"FF5D35",
+					"B8860B",
+					"searchbar",
+					"nautilus",
+					"3B4252",
+					"2E3440",
+					"191B1F",
+					"FF1F3E",
+					"highlight",
+					"select",
+					"4c566a",
+					"3E4551",
+					"666e7f",
+					"progressbar",
+					"4c566a",
+					"576279",
+					"4c566a",
+					"8fbcbb",
+					"progress",
+					"progree",
+					"4c566a",
+					"progressbar",
+					"4c566a",
+					"progress",
+					"FF1F59",
+					"FF3D1E",
+					"854B42",
+					"505B71",
+					"4A5366",
+					"424A5B",
+					"FFFFFF",
+					"00E2CD",
+					"FFFFFF",
+					"FDF6E3",
+					"FFFFFF",
+					"924500",
+					"7a8424",
+					"A74F00",
+					"7D4818",
+					"FF0000",
+					"3b341b",
+					"bracket",
+					"4A5E64",
+					"393F4D",
+					"FF0071",
+					"D7005F",
+					"FF004A",
+					"FF2967",
+					"FF2929",
+					"3B4252",
+					"101216",
+					"D6D6D8",
+					"AEAFB3",
+					"909195",
+					"7E8186",
+					"767B88",
+					"676A6F",
+					"494C53",
+					"7B7D82",
+					"D0DAED",
+					"C9D2E4",
+					"0B0C0E",
+					"B9BEC7",
+					"27BED6",
+					"FF4040",
+					"FF3D1E",
+					"E7E9ED",
+					"3B4252",
+					"FF3D1E",
+					"7D8088",
+					"CBE4D9",
+					"16181C",
+					"Abrus",
+					"100906",
+					"120B08",
+					"19100C",
+					"150F0D",
+					"0A0300",
+					"826200",
+					"selected",
+					"b58900",
+					"3B341B",
+					"826200",
+					"B58900",
+					"DCD1AE",
+					"FFFA59",
+					"333025",
+					"179",
+					"4e4e4e",
+					"645420",
+					"6C5A22",
+					"7A600F",
+					"826200",
+					"7A600F",
+					"826200",
+					"DC322F",
+					"826200",
+					"8F6C00",
+					"A27A00",
+					"B58900",
+					"8F6C00",
+					"DF0000",
+					"FF4200",
+					"483500",
+					"FFFA59",
+					"927C34",
+					"DCD1AE",
+					"483500",
+					"FDF6E3",
+					"8F6C00",
+					"997400",
+					"20",
+					"19",
+					"997400",
+					"D7CFB5",
+					"FF3838",
+					"D7A300",
+					"FDF6E3",
+					"484848",
+					"EEE8D5"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"border-radius: 0px",
+					""
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 6,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/lubomir/.config/bspwm/Bspwm-Graphite/.Xresources",
+							"settings":
+							{
+								"buffer_size": 10106,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5088,
+										5088
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/lubomir/.config/bspwm/Bspwm-Graphite/bspwmrc",
+							"settings":
+							{
+								"buffer_size": 2649,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2159,
+										2159
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 561.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/lubomir/.config/bspwm/Bspwm-Matcha/sxhkdrc",
+							"settings":
+							{
+								"buffer_size": 7240,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5046,
+										5046
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/lubomir/zzz/mail.sh",
+							"settings":
+							{
+								"buffer_size": 1193,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/lubomir/.config/bspwm/Bspwm-Graphite/sxhkdrc",
+							"settings":
+							{
+								"buffer_size": 7170,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5088,
+										5088
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 3357.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/lubomir/.scripts/themes/bspwm_graphite.sh",
+							"settings":
+							{
+								"buffer_size": 2701,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1707,
+										1707
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/home/lubomir/.Xresources",
+							"settings":
+							{
+								"buffer_size": 10106,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3062,
+										3062
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1275.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,0,0,0,0,972,392,1890,706,1920,1080",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"window_id": 18,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

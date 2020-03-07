@@ -13,13 +13,13 @@
   black:      #000000;
   red:        #eb6e67;
   green:      #595959;
-  violet:     #E65FA0;
+  violet:     #FF5AAC;
   yellow:     #f8c456;
   blue:       #6eaafb;
   magenta:    #d886f3;
   cyan:       #6cdcf7;
-  emphasis:   #407460;
-  text:       #FDF6E3;
+  emphasis:   #B1C2B8;
+  text:       #252525;
   text-alt:   #252525;
   fg:         #abb2bf;
   bg:         #282c34;
@@ -74,7 +74,7 @@ listview {
 element {
   padding: 5px;
   text-color: @text-alt;
-  highlight: bold #FF67B2; /* green */
+  highlight: bold #FF5AAC; /* green */
   border-radius: 2px;
 }
 

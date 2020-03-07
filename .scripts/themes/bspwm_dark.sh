@@ -21,10 +21,11 @@ cp ~/.config/bspwm/Bspwm-Dark/compton-restart.sh /home/lubomir/.scripts/ &
 
 sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark/tapeta2.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-dark/black-2.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Materia-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Grey-Numix" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 bspc config border_width         2
 bspc config window_gap           10

@@ -21,6 +21,7 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/hlwm-lightbug/openbox-lightbug.
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "LightningBug-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Vibrancy-Full-Dark-Yellow" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 # sleep 1; xrdb ~/.Xresources &
 # killall picom && sleep 1; picom &

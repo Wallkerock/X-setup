@@ -24,6 +24,7 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/tapeta3.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "LightningBug-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Vibrancy-Full-Dark-Yellow" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 bspc config border_width         3
 bspc config window_gap           14

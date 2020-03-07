@@ -22,11 +22,15 @@ sed -i 's/iconset=.*/iconset=PapirusDark/g' ~/.config/smplayer/smplayer.ini &
 
 feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-materia/tapeta3.jpg &
 
-xfconf-query -c xsettings -p /Net/ThemeName -s "Materia-Manjaro-gtk" &
+xfconf-query -c xsettings -p /Net/ThemeName -s "Materia-Manjaro-Dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Green-Numix-5" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 bspc config border_width         2
 bspc config window_gap           10
+
+bspc config automatic_scheme alternate
+bspc config initial_polarity second_child
 
 bspc config gapless_monocle true
 bspc config single_monocle false

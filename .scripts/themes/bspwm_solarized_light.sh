@@ -20,10 +20,11 @@ cp ~/.config/bspwm/Bspwm-Solarized-Light/termite/config /home/lubomir/.config/te
 
 sed -i 's/iconset=.*/iconset=Papirus/g' ~/.config/smplayer/smplayer.ini &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-solarized/javor.jpg &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-solarized/spring.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Breeze-Solarized-Light" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Green-Numix" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 bspc config border_width         8
 bspc config window_gap           20

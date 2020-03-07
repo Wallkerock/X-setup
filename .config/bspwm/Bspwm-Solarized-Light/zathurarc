@@ -38,5 +38,4 @@ set recolor-keephue             "Boolean"
 
 # Rest of your configs go here:
 
-
-
+set selection-clipboard			clipboard

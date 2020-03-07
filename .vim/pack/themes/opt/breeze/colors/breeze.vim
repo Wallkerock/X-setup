@@ -59,9 +59,13 @@ hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=Blue guibg=Yellow
 hi LineNr cterm=NONE ctermbg=NONE ctermfg=Grey
 
 " CURSOR LINE
-hi CursorLine term=bold cterm=bold guifg=LightGrey guibg=Grey40 ctermfg=NONE ctermbg=187
-hi CursorLineNr term=bold cterm=bold guifg=#FFFFFF guibg=DarkGreen ctermfg=White ctermbg=187
+hi CursorLine term=bold cterm=bold,underline guifg=LightGrey guibg=Grey40 ctermfg=NONE ctermbg=NONE
+hi CursorLineNr term=bold cterm=bold,underline guifg=#FFFFFF guibg=DarkGreen ctermfg=NONE ctermbg=NONE
 " hi CursorColumn term=bold ctermbg=236 guibg=Grey40
+
+"hi CursorLine term=bold cterm=bold,underline guifg=LightGrey guibg=Grey40 ctermfg=NONE ctermbg=187
+"hi CursorLineNr term=bold cterm=bold,underline guifg=#FFFFFF guibg=DarkGreen ctermfg=White ctermbg=187
+"" hi CursorColumn term=bold ctermbg=236 guibg=Grey40
 
 " BRACKETS COLOR
 hi MatchParen cterm=none ctermbg=lightgreen ctermfg=white

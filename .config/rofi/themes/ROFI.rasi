@@ -12,22 +12,23 @@
 * {
   black:      #000000;
   red:        #eb6e67;
-  green:      #95ee8f;
+  green:      #E5E5E5;
+  violet:     #D4304E;
   yellow:     #f8c456;
   blue:       #6eaafb;
-  mangenta:   #d886f3;
+  magenta:    #d886f3;
   cyan:       #6cdcf7;
-  emphasis:   #3B5EE9;
-  text:       #dfdfdf;
-  text-alt:   #b2b2b2;
+  emphasis:   #E5E5E5;
+  text:       #0D0D0D;
+  text-alt:   #2F2F2F;
   fg:         #abb2bf;
   bg:         #282c34;
 
   spacing: 0;
   background-color: transparent;
 
-  font: "Roboto 12";
-  text-color: @text;
+  font: "Droid Serif Regular 12";
+  text-color: @text-alt;
 }
 
 window {
@@ -35,13 +36,14 @@ window {
   fullscreen: false;
   width: 1600;
   height: 800;
-  background-color: #282828FE;
+  background-color: #F5F5F5;
 }
 
 mainbox {
+  transparency: "real";
   padding: 10% 10%;
-  border: 2px;
-  border-color: #3B5EE9;
+  border: 3px;
+  border-color: #303030;
 }
 
 inputbar {
@@ -50,7 +52,7 @@ inputbar {
 }
 
 prompt {
-  text-color: @blue;
+  text-color: @violet;
 }
 
 textbox-prompt-colon {
@@ -72,7 +74,7 @@ listview {
 element {
   padding: 5px;
   text-color: @text-alt;
-  highlight: bold #95ee8f; /* green */
+  highlight: bold #000000; /* green */
   border-radius: 2px;
 }
 
@@ -94,11 +96,12 @@ message {
   border-radius: 2px;
   background-color: @emphasis;
   border: 1px;
-  border-color: @cyan;
+  border-color: @green;
 }
 
 button selected {
   padding: 5px;
   border-radius: 2px;
   background-color: @emphasis;
+  text-color: @text;
 }

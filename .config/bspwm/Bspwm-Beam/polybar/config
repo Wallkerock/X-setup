@@ -17,7 +17,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:HDMI3}
 width = 1920
 height = 25
 ;offset-x = 25
@@ -65,7 +65,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center =
-modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true

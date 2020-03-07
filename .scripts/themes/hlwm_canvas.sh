@@ -21,6 +21,7 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/herbstluftwm-canvas/dark_sky.jp
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Canvas-dark" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Newaita-dark" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10" &
 
 #sleep 1; xrdb ~/.Xresources &
 #killall picom && sleep 1; picom &

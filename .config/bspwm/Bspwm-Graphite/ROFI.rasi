@@ -12,22 +12,22 @@
 * {
   black:      #000000;
   red:        #eb6e67;
-  green:      #595959;
-  violet:     #E65FA0;
+  green:      #E5E5E5;
+  violet:     #D4304E;
   yellow:     #f8c456;
   blue:       #6eaafb;
   magenta:    #d886f3;
   cyan:       #6cdcf7;
-  emphasis:   #595959;
-  text:       #FDF6E3;
-  text-alt:   #484848;
+  emphasis:   #E5E5E5;
+  text:       #0D0D0D;
+  text-alt:   #2F2F2F;
   fg:         #abb2bf;
   bg:         #282c34;
 
   spacing: 0;
   background-color: transparent;
 
-  font: "Roboto 12";
+  font: "Droid Serif Regular 12";
   text-color: @text-alt;
 }
 
@@ -43,7 +43,7 @@ mainbox {
   transparency: "real";
   padding: 10% 10%;
   border: 3px;
-  border-color: #595959;
+  border-color: #303030;
 }
 
 inputbar {
@@ -74,7 +74,7 @@ listview {
 element {
   padding: 5px;
   text-color: @text-alt;
-  highlight: bold #FF87C2; /* green */
+  highlight: bold #000000; /* green */
   border-radius: 2px;
 }
 

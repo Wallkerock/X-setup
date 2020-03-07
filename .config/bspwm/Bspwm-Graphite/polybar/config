@@ -65,7 +65,7 @@ font-5 = Roboto:pixelsize=9;2
 
 modules-left = rofi bspwm xwindow
 modules-center = 
-modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature info-publicip connection eth clipboard xkeyboard pulseaudio date powermenu
+modules-right = ssh system-uptime-pretty openweathermap-detailed updates-arch gmail home filesystem memory cpu temperature connection eth clipboard xkeyboard pulseaudio date powermenu
 
 tray-position = right
 ;tray-detached = true
@@ -205,7 +205,7 @@ interval = 30
 [module/openweathermap-detailed]
 type = custom/script
 exec = sh ~/.scripts/openweathermap-detailed.sh
-label-foreground = #CAFF99
+label-foreground = #AAAAAA
 interval = 600
 label-font = 0
 click-left = sh ~/.scripts/pocasie.sh &
@@ -280,7 +280,7 @@ mount-0 = /
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %{F#FF8B9A}/: %percentage_used%%%{F-}
+label-mounted = %{F#FF5455}/: %percentage_used%%%{F-}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -460,7 +460,7 @@ click-left = "cp ~/.config/bspwm/Bspwm-Graphite/polybar/config /home/lubomir/.co
 [module/powermenu]
 type = custom/text
 content-padding = 2
-content-foreground = #FF8B9A
+content-foreground = #FF5455
 ;content-background = #3555D0
 content = ""
 click-left = sh ~/.scripts/power-menu-bspwm.sh &

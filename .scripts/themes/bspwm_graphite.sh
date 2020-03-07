@@ -20,11 +20,12 @@ cp ~/.config/bspwm/Bspwm-Graphite/termite/config /home/lubomir/.config/termite/ 
 
 sed -i 's/iconset=.*/iconset=Papirus/g' ~/.config/smplayer/smplayer.ini &
 
-feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/bspwm-logo.png &
-#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/minimalist.jpg &
+#feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/light-white.png &
+feh --bg-fill /home/lubomir/Pictures/backgrounds/bspwm-graphite/crow-5.jpg &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Stylish-Light-Laptop" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Limon" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Serif 10" &
 
 bspc config border_width         3
 bspc config window_gap           24
@@ -38,9 +39,10 @@ bspc config borderless_monocle   false
 bspc config gapless_monocle      true
 bspc config single_monocle       false
 
-bspc config focused_border_color            "#444444"
+bspc config focused_sticky_border_color     "#FF004E"
+bspc config focused_border_color            "#303030"
 bspc config normal_border_color             "#D6D6D6"
-bspc config presel_feedback_color           "#444444"
+bspc config presel_feedback_color           "#303030"
 bspc config window_gap                      "#bspwm_window_gap"
 
 bspc config top_padding         25
@@ -54,3 +56,4 @@ sleep 1; xrdb -load ~/.Xresources &
 killall sxhkd && sleep 1; sxhkd &
 killall picom && sleep 1; picom &
 killall dunst; notify-send "restart dunst" &
+#killall xfsettingsd && xfsettingsd &

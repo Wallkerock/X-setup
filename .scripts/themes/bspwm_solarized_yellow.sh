@@ -5,6 +5,7 @@ cp ~/.config/bspwm/Bspwm-Solarized-Yellow/polybar/launch.sh /home/lubomir/.confi
 sleep 1
 cp ~/.config/bspwm/Bspwm-Solarized-Yellow/bspwmrc /home/lubomir/.config/bspwm/ &
 cp ~/.config/bspwm/Bspwm-Solarized-Yellow/sxhkdrc /home/lubomir/.config/sxhkd/ &
+cp ~/.config/bspwm/Bspwm-Solarized-Yellow/xsettings.xml /home/lubomir/.config/xfce4/xfconf/xfce-perchannel-xml/ &
 cp ~/.config/bspwm/Bspwm-Solarized-Yellow/qt5ct.conf /home/lubomir/.config/qt5ct/ &
 cp ~/.config/bspwm/Bspwm-Solarized-Yellow/gimprc /home/lubomir/.config/GIMP/2.10/ &
 #cp ~/.config/bspwm/Bspwm-Solarized-Yellow/smplayer.ini /home/lubomir/.config/smplayer/ &
@@ -24,6 +25,7 @@ feh --bg-fill /home/lubomir/Pictures/backgrounds/wm-paper.png &
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "NumixSolarizedLightYellow" &
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Vibrancy-Light-Yellow" &
+xfconf-query -c xsettings -p /Gtk/FontName -s "Roboto Regular 10"
 
 bspc config border_width         3
 bspc config window_gap           14
@@ -58,4 +60,4 @@ sleep 1; xrdb ~/.Xresources &
 killall sxhkd && sleep 1; sxhkd &
 killall picom && sleep 1; picom &
 killall dunst; notify-send "restart dunst" &
-
+#killall xfsettingsd && xfsettingsd &

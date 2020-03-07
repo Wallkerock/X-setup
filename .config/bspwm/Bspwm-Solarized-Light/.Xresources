@@ -79,7 +79,7 @@ Xcursor.theme: Breeze
 Xcursor.size:                   0
 
 *.geometry:					150x40
-!*.internalBorder:			10
+*.internalBorder:			10
 *.font:                      xft:JetBrains Mono:size=11
 !*.font:                      xft:Ubuntu Mono:size=12
 
@@ -96,7 +96,7 @@ URxvt*cursorBlink:                true
 !URxvt*cursorUnderline:            true
 URxvt*saveLines:                  5000
 !URxvt*lineSpace:                  0.1
-URxvt*letterSpace:                -1
+URxvt*letterSpace:                0.1
 !!! perl extension
 Rxvt.perl-ext-common:             default,matcher,resize-font,url-select,keyboard-select,clipboard,ibeamcursor
 URxvt.resize-font.smaller:        C-Down
